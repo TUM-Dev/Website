@@ -1,0 +1,26 @@
+---
+layout: def
+permalink: /en
+---
+
+
+<div class="txt">
+    <h1><strong>#LGBTUM</strong> Exzellenz ist Bunt!</h1>
+    <p class="switch_lang"><a href="/">[DE]</a></p>
+    <h2>The student union of the Technische Universität München organizes a truck for the Christopher Street Day! You want to participate? Here's what you need to know:</h2>
+    <br /><br />
+    <h2>
+        {% for data in site.data.eckdaten_en %}
+        <strong>{{data.question}}</strong>
+        {{data.answer}}
+        <br />
+        {% endfor %}
+    </h2>
+</div>
+
+<div class="btns">
+    <a class="reload btn" href="https://helfen.fs.tum.de/CSD2018/">Sign up!</a><br /><br />
+    <a class="reload btn" href="https://www.facebook.com/events/2076874072524510/">Event on Facebook</a><br />
+    <a class="text-btn" href="https://helfen.fs.tum.de/CSD2018Helfer/" style="color: whitesmoke">Psst! We are still looking for helpers!</a>
+</div>
+

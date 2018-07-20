@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}️</title>
+    <meta name="description" content="{{ site.description }}️" />
+    <style type="text/css">
+        {% include /css/onepage-scroll.css %}
+        {% include /css/main.css %}
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="page-top" class="index, disabled-onepage-scroll">
+
+<div class="wrapper">
+    <div class="main">
+
+        <section id="section07" class="page1">
+            <div class="page_container" >
+
+                <div class="scroll"><span></span><span></span><span></span></div>
+            </div>
+        </section>
+
+        <section class="page2">
+            <div class="page_container" style="height: 100%">
+
+                {{ content }}
+
+                <div class="credit txt">
+                     <a href="http://bruck.me" target="blank">Kordian Bruck</a> <br />
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="assets/one.js"></script>
+
+<script>
+    onePageScroll(".main", {
+        sectionContainer : "section",
+        loop : true,
+        updateURL: false,
+        pagination: false,
+        responsiveFallback : false
+    });
+</script>
+
+</body>
+</html>

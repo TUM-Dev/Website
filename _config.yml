@@ -1,0 +1,22 @@
+title: TUM Apps
+description: > # this means to ignore newlines until "baseurl:"
+  TUM Mobile Apps
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://github.com/TCA-Team/" # the base hostname & protocol for your site
+
+include: ['_pages']
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: "_assets/images"
+    values:
+      image: true
