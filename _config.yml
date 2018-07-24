@@ -1,13 +1,24 @@
 title: TUM Apps
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   TUM Mobile Apps
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://github.com/TCA-Team/" # the base hostname & protocol for your site
+baseurl: ""
+url: "https://tum.app/" # the base hostname & protocol for your site
 
-include: ['_pages']
+
 
 
 # Build settings
+include: ['_pages']
+exclude:
+- .idea
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+
 markdown: kramdown
 permalink: pretty
 
