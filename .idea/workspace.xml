@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05a8fda9-6430-4f44-9a5a-7b8231591fd7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_pages/index.html" afterDir="false" />
+    <list default="true" id="05a8fda9-6430-4f44-9a5a-7b8231591fd7" name="Default" comment="Add template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/css/onepage-scroll.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/def.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/en.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/one.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,26 +19,29 @@
     <session id="1425699395">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="21" />
-          <entry key="html" value="80" />
+          <entry key="html" value="110" />
           <entry key="js" value="5" />
-          <entry key="scss" value="13" />
+          <entry key="scss" value="15" />
+          <entry key="txt" value="16" />
           <entry key="yml" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="21" />
-          <entry key="HTML" value="80" />
+          <entry key="HTML" value="110" />
           <entry key="JavaScript" value="5" />
-          <entry key="SCSS" value="13" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="SCSS" value="15" />
           <entry key="YAML" value="30" />
         </counts>
       </usages-collector>
@@ -88,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
+            <state relative-caret-position="594">
+              <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -106,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="95" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="95" />
+            <state relative-caret-position="505">
+              <caret line="347" column="20" lean-forward="true" selection-start-line="347" selection-start-column="20" selection-end-line="347" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -118,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_site/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="270">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -153,6 +148,7 @@
       <find>normal</find>
       <find>video</find>
       <find>&quot;assets/</find>
+      <find>sing-up-button</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;assets/</replace>
@@ -187,8 +183,8 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_pages/index.html" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/_layouts/main.html" />
         <option value="$PROJECT_DIR$/assets/css/style.scss" />
+        <option value="$PROJECT_DIR$/_layouts/main.html" />
       </list>
     </option>
   </component>
@@ -199,10 +195,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="y" value="27" />
-    <option name="width" value="1920" />
-    <option name="height" value="1173" />
+    <option name="x" value="2087" />
+    <option name="y" value="265" />
+    <option name="width" value="1910" />
+    <option name="height" value="879" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -212,6 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,7 +247,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,7 +292,8 @@
       <workItem from="1532092482902" duration="1182000" />
       <workItem from="1532417386563" duration="272000" />
       <workItem from="1532422263577" duration="10000" />
-      <workItem from="1532422293164" duration="3361000" />
+      <workItem from="1532422293164" duration="3454000" />
+      <workItem from="1533210887130" duration="1539000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1532093667702</created>
@@ -305,11 +302,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532093667703</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add template">
+      <created>1532431238880</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532431238880</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6474000" />
+    <option name="totallyTimeSpent" value="8106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1173" extended-state="6" />
@@ -342,7 +346,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Add template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add template" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_docs/examples/cheatsheet.md" />
@@ -357,7 +362,6 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-05-03-jekyll-doc-theme.md" />
     <entry file="file://$PROJECT_DIR$/_layouts/post.html" />
     <entry file="file://$PROJECT_DIR$/_layouts/page.html" />
-    <entry file="file://$PROJECT_DIR$/_layouts/main.html" />
     <entry file="file://$PROJECT_DIR$/_includes/footer.html" />
     <entry file="file://$PROJECT_DIR$/_includes/head.html" />
     <entry file="file://$PROJECT_DIR$/_site/assets/photos/20170715_103739.jpg" />
@@ -371,11 +375,7 @@
     <entry file="file://$PROJECT_DIR$/_site/assets/images/TUM_bunt_rainbow.png" />
     <entry file="file://$PROJECT_DIR$/_site/assets/style.css" />
     <entry file="file://$PROJECT_DIR$/_site/assets/one.js" />
-    <entry file="file://$PROJECT_DIR$/_site/en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9421" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/en.html" />
     <entry file="file://$PROJECT_DIR$/_site/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11124" />
@@ -414,20 +414,8 @@
     <entry file="file://$PROJECT_DIR$/robots.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7614">
-          <caret line="423" column="29" selection-start-line="423" selection-start-column="29" selection-end-line="423" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_pages/en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/_pages/en.html" />
     <entry file="file://$PROJECT_DIR$/_site/assets/img/scr-img/app-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -444,32 +432,11 @@
     <entry file="file://$PROJECT_DIR$/.jekyll-metadata">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/assets/css/owl.carousel.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/_site/assets/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_pages/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -482,6 +449,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="75" column="33" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -499,17 +487,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/main.html">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
+        <state relative-caret-position="505">
+          <caret line="347" column="20" lean-forward="true" selection-start-line="347" selection-start-column="20" selection-end-line="347" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/_layouts/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="95" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="95" />
+        <state relative-caret-position="594">
+          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
         </state>
       </provider>
     </entry>
