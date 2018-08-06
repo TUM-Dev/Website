@@ -1,5 +1,6 @@
 ---
 ---
+
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700");
 @import "font-awesome.min.css";
 @import "owl.carousel.min.css";
@@ -306,6 +307,9 @@ p {
   margin: 0;
   line-height: 1;
   padding: 0;
+  img {
+    max-height: 80px;
+  }
 }
 
 .menu_area .navbar-brand:hover,
@@ -339,19 +343,20 @@ p {
 }
 
 .sing-up-button > a {
-  color: #fff;
+  color: #0076BC;
   font-weight: 500;
   display: inline-block;
-  border: 2px solid #a883e9;
+  border: 2px solid #fff;
   height: 50px;
   min-width: 178px;
   line-height: 46px;
   text-align: center;
   border-radius: 24px 24px 24px 24px;
+  background: #fff;
 }
 
 .sing-up-button > a:hover {
-  background: #fb397d;
+  background: #A1B11A;
   color: #fff;
   border-color: transparent;
   -webkit-transition-duration: 500ms;
@@ -362,7 +367,7 @@ p {
 /* stcicky css */
 
 .header_area.sticky {
-  background-color: #884bdf;
+  background-color: #0076BC;
   -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   height: 70px;
@@ -373,6 +378,10 @@ p {
 
 .header_area.sticky .menu_area .navbar-brand {
   font-size: 50px;
+  img {
+    max-height: 50px;
+    transition: max-height 1s ease-in-out;
+  }
 }
 
 .header_area.sticky .menu_area #nav .nav-link {
@@ -388,7 +397,7 @@ p {
 -------------------------- */
 
 .wellcome_area {
-  background-image: url(../img/bg-img/welcome-bg.png);
+  background: #0076BC;
   height: 900px;
   position: relative;
   z-index: 1;
@@ -405,6 +414,11 @@ p {
   content: '';
   bottom: 0;
   z-index: 2;
+}
+
+.white-welcome-box {
+  background: #fff;
+  border-radius: 5px;
 }
 
 .welcome-thumb {
