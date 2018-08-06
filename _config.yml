@@ -1,0 +1,33 @@
+title: TUM Apps
+description: >
+  TUM Mobile Apps
+baseurl: ""
+url: "https://tum.app/" # the base hostname & protocol for your site
+
+
+
+
+# Build settings
+include: ['_pages']
+exclude:
+- .idea
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: "_assets/images"
+    values:
+      image: true

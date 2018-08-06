@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ site.description }}️"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ site.title }}️</title>
+
+    <link rel="icon" href="{{site.baseurl}}/assets/img/core-img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+</head>
+<body>
+<!-- ***** Header Area Start ***** -->
+<header class="header_area animated">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Menu Area Start -->
+            <div class="col-12 col-lg-10">
+                <div class="menu_area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!-- Menu Area -->
+                        <div class="collapse navbar-collapse" id="ca-navbar">
+                            <ul class="navbar-nav" id="nav">
+                                <li class="nav-item active"><a class="nav-link" href="#home">Campus App</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about">TUM Interaktiv</a></li>
+                            </ul>
+                            <div class="sing-up-button d-lg-none">
+                                <a href="#">Login</a>
+                            </div>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
+                                aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="navbar-toggler-icon"></span></button>
+
+                        <a class="navbar-brand" href="#">
+                            <img src="{{site.baseurl}}/assets/img/tum.png" />
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <!-- Signup btn -->
+            <div class="col-12 col-lg-2">
+                <div class="sing-up-button d-none d-lg-block">
+                    <a href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{{ content }}
+
+<footer class="footer-social-icon text-center section_padding_70 clearfix">
+    <div class="footer-text">
+        <h2>Ca.</h2>
+    </div>
+    <div class="footer-social-icon">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+    <div class="footer-menu">
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="copyright-text">
+        <p>Copyright ©2017 Ca. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+    </div>
+</footer>
+
+<a id="scrollUp" href="#top"><i class="fa fa-angle-up"></i></a>
+
+<!-- Jquery-2.2.4 JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+<!-- All Plugins JS -->
+<script src="{{site.baseurl}}/assets/js/plugins.js"></script>
+<!-- Footer Reveal JS -->
+<script src="{{site.baseurl}}/assets/js/footer-reveal.min.js"></script>
+<!-- Active JS -->
+<script src="{{site.baseurl}}/assets/js/active.js"></script>
+</body>
+
+</html>
