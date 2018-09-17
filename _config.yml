@@ -4,9 +4,6 @@ description: >
 baseurl: ""
 url: "https://tum.app/" # the base hostname & protocol for your site
 
-
-
-
 # Build settings
 include: ['_pages']
 exclude:
