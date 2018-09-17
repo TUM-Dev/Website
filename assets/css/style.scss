@@ -427,6 +427,17 @@ p {
   z-index: 2;
 }
 
+.welcome_area a {
+  color: #000;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.welcome_area img {
+  border-radius: 80px;box-shadow: 0px 0px 7px #ccc
+}
+
 .white-welcome-box {
   background: #fff;
   border-radius: 5px;
@@ -611,7 +622,7 @@ p {
 .app-download-btn.active a,
 .app-download-btn a:hover {
   border-color: transparent;
-  background-color: #fb397d;
+  background-color: #0076BC;
 }
 
 .app-download-btn a i {

@@ -43,7 +43,11 @@
     // :: 4.0 ScrollUp Active Code
     $('#scrollUp').on('click', function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
-    })
+    });
+    $("#home a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top }, "slow");
+    });
 
     // :: 6.0 onePageNav Active Code
     if ($.fn.onePageNav) {
