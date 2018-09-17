@@ -351,7 +351,7 @@ p {
   min-width: 178px;
   line-height: 46px;
   text-align: center;
-  border-radius: 24px 24px 24px 24px;
+  border-radius: 24px;
   background: #fff;
 }
 
@@ -487,7 +487,7 @@ p {
   min-width: 167px;
   line-height: 46px;
   text-align: center;
-  border-radius: 24px 24px 24px 0px;
+  border-radius: 24px;
   margin-left: 10px;
 }
 
@@ -546,7 +546,7 @@ p {
 .single-special {
   border: 1px solid #eff2f6;
   padding: 40px;
-  border-radius: 40px 40px 40px 0px;
+  border-radius: 40px;
   -webkit-transition-duration: 800ms;
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
@@ -589,7 +589,7 @@ p {
   -ms-flex-align: center;
   align-items: center;
   padding: 15px 30px;
-  border-radius: 30px 30px 30px 0;
+  border-radius: 30px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   -webkit-box-pack: center;
@@ -826,7 +826,7 @@ p {
 .single-price-plan {
   background: #ffffff;
   border: 1px solid #ebebeb;
-  border-radius: 30px 30px 30px 0;
+  border-radius: 30px;
   margin-bottom: 30px;
 }
 
@@ -1035,7 +1035,7 @@ p {
   line-height: 45px;
   color: #fb397d;
   font-weight: 500;
-  border-radius: 23px 23px 23px 0;
+  border-radius: 23px;
 }
 
 .get-started-button > a:hover {
@@ -1056,13 +1056,13 @@ p {
 
 .member-image {
   margin-bottom: 30px;
-  border-radius: 30px 30px 30px 0;
+  border-radius: 30px;
   position: relative;
   z-index: 1;
 }
 
 .member-image img {
-  border-radius: 30px 30px 30px 0;
+  border-radius: 30px;
 }
 
 .member-text > h4 {
@@ -1082,7 +1082,7 @@ p {
   width: 100%;
   height: 100%;
   background-color: rgba(105, 75, 228, 0.8);
-  border-radius: 30px 30px 30px 0;
+  border-radius: 30px;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -webkit-transition: all 500ms;
@@ -1121,7 +1121,7 @@ p {
   width: 40px;
   line-height: 40px;
   text-align: center;
-  border-radius: 10px 10px 10px 0;
+  border-radius: 10px;
   display: block;
   margin: 2.5px;
 }
@@ -1162,17 +1162,17 @@ p {
 #name {
   font-size: 18px;
   padding: 15px 15px;
-  border-radius: 25px 25px 25px 0;
+  border-radius: 25px;
 }
 
 #email {
   font-size: 18px;
   padding: 15px 15px;
-  border-radius: 25px 25px 25px 0;
+  border-radius: 25px;
 }
 
 #message {
-  border-radius: 25px 25px 25px 0;
+  border-radius: 25px;
 }
 
 .btn.submit-btn {
@@ -1181,7 +1181,7 @@ p {
   min-width: 185px;
   color: #ffffff;
   font-weight: 500;
-  border-radius: 22px 25px 22px 0;
+  border-radius: 22px;
 }
 
 .btn.submit-btn:hover {
@@ -1218,7 +1218,7 @@ p {
   width: 40px;
   line-height: 40px;
   font-weight: 500;
-  border-radius: 10px 10px 10px 0px;
+  border-radius: 10px;
   margin-right: 10px;
 }
 
