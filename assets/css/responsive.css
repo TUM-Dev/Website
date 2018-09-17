@@ -123,6 +123,7 @@
     .header_area .menu_area #nav .nav-link,
     .header_area.sticky .menu_area #nav .nav-link {
         padding: 5px 15px;
+        color: #000;
     }
     #ca-navbar {
         padding: 20px;
