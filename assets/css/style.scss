@@ -166,7 +166,7 @@ ol {
   font-size: 24px;
   right: 30px;
   width: 50px;
-  background-color: #fb397d;
+  background-color: #0076BC;
   color: #fff;
   text-align: center;
   height: 50px;
@@ -202,7 +202,7 @@ p {
 
 .section-heading > h2 {
   font-weight: 300;
-  color: #5b32b4;
+  color: #0076BC;
   font-size: 48px;
   margin: 0;
 }
@@ -335,7 +335,7 @@ p {
 }
 
 .menu_area nav ul li > a:hover {
-  color: #fb397d;
+  color: #A1B11A;
 }
 
 .sing-up-button {
@@ -359,9 +359,9 @@ p {
   background: #A1B11A;
   color: #fff;
   border-color: transparent;
-  -webkit-transition-duration: 100ms;
-  -o-transition-duration: 100ms;
-  transition-duration: 100ms;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 
 /* stcicky css */
@@ -515,7 +515,7 @@ p {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
 }
 
-.wellcome-heading {
+.welcome-heading {
   margin-bottom: 100px;
 }
 
@@ -530,7 +530,7 @@ p {
 
 .single-special > h4 {
   font-size: 22px;
-  color: #5b32b4;
+  color: #0076BC;
 }
 
 .single-icon {
@@ -539,7 +539,7 @@ p {
 
 .single-special > h4 {
   font-size: 22px;
-  color: #5b32b4;
+  color: #0076BC;
   margin-bottom: 15px;
 }
 
@@ -554,7 +554,7 @@ p {
 }
 
 .special_description_content > h2 {
-  color: #5b32b4;
+  color: #0076BC;
   font-size: 48px;
   margin-bottom: 30px;
 }
@@ -658,7 +658,7 @@ p {
 
 .single-feature > h5 {
   font-size: 22px;
-  color: #5b32b4;
+  color: #0076BC;
 }
 
 .single-feature > p {
@@ -836,7 +836,7 @@ p {
 }
 
 .single-price-plan .package-plan > h5 {
-  color: #5b32b4;
+  color: #0076BC;
   font-size: 18px;
 }
 
@@ -896,7 +896,7 @@ p {
 -------------------------- */
 
 .clients-feedback-area .client-name > h5 {
-  color: #5b32b4;
+  color: #0076BC;
   font-size: 22px;
   margin-top: 5px;
 }
@@ -1039,7 +1039,7 @@ p {
 }
 
 .get-started-button > a:hover {
-  background: #5b32b4;
+  background: #0076BC;
   color: #fff;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -1067,7 +1067,7 @@ p {
 
 .member-text > h4 {
   font-size: 22px;
-  color: #5b32b4;
+  color: #0076BC;
 }
 
 .member-text > p {
@@ -1144,7 +1144,7 @@ p {
 .address-text > p > span,
 .phone-text > p > span,
 .email-text > p > span {
-  color: #5b32b4;
+  color: #0076BC;
 }
 
 .footer-contact-area .line-shape {
@@ -1176,7 +1176,7 @@ p {
 }
 
 .btn.submit-btn {
-  background: #fb397d;
+  background: #0076BC;
   height: 48px;
   min-width: 185px;
   color: #ffffff;
@@ -1185,7 +1185,7 @@ p {
 }
 
 .btn.submit-btn:hover {
-  background: #5b32b4;
+  background: #0076BC;
   color: #fff;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -1205,15 +1205,15 @@ p {
 -------------------------- */
 
 .footer-text > h2 {
-  color: #5b32b4;
+  color: #0076BC;
   font-size: 72px;
   font-weight: 700;
 }
 
 .footer-social-icon > a > i {
-  background: #9b69e4;
+  background: #fff;
   font-size: 14px;
-  color: #ffffff;
+  color: #000;
   height: 40px;
   width: 40px;
   line-height: 40px;
@@ -1223,7 +1223,7 @@ p {
 }
 
 .footer-social-icon > a > i:hover {
-  background: #fb397d;
+  background: #0076BC;
   color: #fff;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -1250,7 +1250,7 @@ p {
 }
 
 .footer-social-icon > a .active {
-  background: #fb397d;
+  background: #0076BC;
 }
 
 .footer-menu ul li:last-child a {
@@ -1263,8 +1263,4 @@ p {
 
 .footer-menu {
   margin-bottom: 15px;
-}
-
-.copyright-text > p {
-  margin-bottom: 0;
 }
