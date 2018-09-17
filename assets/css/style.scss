@@ -359,9 +359,9 @@ p {
   background: #A1B11A;
   color: #fff;
   border-color: transparent;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
+  -webkit-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
 }
 
 /* stcicky css */
@@ -396,7 +396,7 @@ p {
 :: 3.0 Wellcome Area CSS
 -------------------------- */
 
-.wellcome_area {
+.welcome_area {
   background: #0076BC;
   height: 900px;
   position: relative;
@@ -405,7 +405,7 @@ p {
   background-size: cover;
 }
 
-.wellcome_area:after {
+.welcome_area:after {
   position: absolute;
   width: 100%;
   left: 0;
