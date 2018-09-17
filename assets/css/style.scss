@@ -328,7 +328,7 @@ p {
 }
 
 .menu_area #nav .nav-link {
-  color: #fff;
+  color: #000;
   display: block;
   font-size: 16px;
   font-weight: 500;
@@ -337,6 +337,13 @@ p {
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   padding: 35px 15px;
+}
+
+.menu_area button.navbar-toggler {
+  background-color: #0076BC;
+  position: absolute;
+  right: 15px;
+  top: 10px;
 }
 
 .menu_area nav ul li > a:hover {
