@@ -409,7 +409,7 @@ p {
 
 .welcome_area {
   background: #0076BC;
-  height: 900px;
+  height: 100px;
   position: relative;
   z-index: 1;
   background-position: bottom center;
@@ -434,8 +434,10 @@ p {
   }
 }
 
-.welcome_area img {
-  border-radius: 80px;box-shadow: 0px 0px 7px #ccc
+#campusapp img.app-icon {
+  border-radius: 80px;
+  box-shadow: 0px 0px 7px #ccc;
+  margin-bottom: 20px;
 }
 
 .white-welcome-box {
