@@ -1083,10 +1083,16 @@ p {
   border-radius: 30px;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .member-image img {
   border-radius: 30px;
+  max-height: 200px;
+}
+
+.member-text {
+  text-align: center;
 }
 
 .member-text > h4 {
