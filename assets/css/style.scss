@@ -1084,9 +1084,10 @@ p {
   position: relative;
   z-index: 1;
   text-align: center;
-  display:table-cell;
+  display: table;
   vertical-align:middle; 
   text-align:center;
+  margin: 0 auto;
 }
 
 .member-image img {
