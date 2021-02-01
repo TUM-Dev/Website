@@ -1084,6 +1084,9 @@ p {
   position: relative;
   z-index: 1;
   text-align: center;
+  display:table-cell;
+  vertical-align:middle; 
+  text-align:center;
 }
 
 .member-image img {
@@ -1108,7 +1111,6 @@ p {
 .team-hover-effects {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(105, 75, 228, 0.8);
