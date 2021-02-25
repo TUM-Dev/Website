@@ -169,9 +169,6 @@
     .special_description_content > h2 {
         font-size: 30px;
     }
-    .app-download-btn:first-child {
-        margin-right: 0;
-    }
     .app-download-area {
         display: block;
     }
