@@ -602,6 +602,8 @@ p {
   -ms-flex-preferred-size: 1;
   flex-basis: 1;
   margin-top: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .app-download-btn a {
@@ -647,10 +649,6 @@ p {
 .app-download-btn a p span {
   font-size: 12px;
   display: block;
-}
-
-.app-download-btn:first-child {
-  margin-right: 20px;
 }
 
 .app-download-btn a:hover i,
