@@ -222,6 +222,10 @@
     .cool_facts_area .col-12:last-of-type .single-cool-fact {
         margin-bottom: 0;
     }
+
+    .member-type {
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
