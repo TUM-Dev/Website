@@ -2,7 +2,7 @@
   <div class="navbar bg-base-300">
     <div class="flex-1">
       <a class="btn btn-ghost p-2">
-        <Logo/>
+        <AppLogo />
       </a>
     </div>
     <div class="flex-none">
@@ -14,7 +14,7 @@
           <details>
             <summary>Theme</summary>
             <ul class="p-2 bg-base-100">
-              <li v-for="col of colors" v-key="col">
+              <li v-for="col of colors" :key="col">
                 <a @click="colorMode.preference = col">{{ col }}</a>
               </li>
             </ul>
