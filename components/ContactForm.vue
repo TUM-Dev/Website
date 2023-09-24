@@ -7,10 +7,10 @@
         email to the address below.
       </p>
 
+      <p><b>E-Mail:</b> app(a)tum.de</p>
       <p>
-        <b>Adresse:</b> ITSZ - OpenSource@TUM, Arcisstraße 21, 80333 München
+        <b>Adresse:</b> <code>ITSZ - OpenSource@TUM, Arcisstraße 21, 80333 München</code>
       </p>
-      <p><b>E-Mail:</b> app@tum.de</p>
       <div class="sm:hidden px-3 divider">OR</div>
     </div>
     <form>

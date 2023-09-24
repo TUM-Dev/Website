@@ -7,10 +7,10 @@
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#join-us">Join us</a></li>
-        <li>
+        <li class="px-1"><a href="#projects">Projects</a></li>
+        <li class="px-1"><a href="#team">Team</a></li>
+        <li class="px-1"><a href="#join-us">Join us</a></li>
+        <li class="px-1">
           <details>
             <summary>Theme</summary>
             <ul class="p-2 bg-base-100">
