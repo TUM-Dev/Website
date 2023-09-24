@@ -1,9 +1,9 @@
 <template>
   <div class="navbar bg-base-300">
     <div class="flex-1">
-      <a class="btn btn-ghost p-2">
+      <NuxtLink to="/" class="btn btn-ghost p-2">
         <AppLogo />
-      </a>
+      </NuxtLink>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
@@ -11,9 +11,9 @@
         <li class="px-1"><NuxtLink to="/#team">Team</NuxtLink></li>
         <li class="px-1"><NuxtLink to="/#join-us">Join us</NuxtLink></li>
         <li class="px-1">
-          <details>
+          <details class="dropdown dropdown-end">
             <summary>Theme</summary>
-            <ul class="p-2 bg-base-100">
+            <ul class="bg-base-100 dropdown-content">
               <li v-for="col of colors" :key="col">
                 <a @click="colorMode.preference = col">{{ col }}</a>
               </li>
