@@ -33,14 +33,8 @@ useServerSeoMeta({
     </div>
   </div>
   <div class="container p-10">
-    <div id="projects">
-      <h1>Projects</h1>
-    </div>
-    <div id="team">
-      <LoremIpsum />
-    </div>
-    <div id="join-us">
-      <LoremIpsum />
-    </div>
+    <MainProjects id="projects"/>
+    <MainTeam id="team"/>
+    <MainJoinUs id="join-us"/>
   </div>
 </template>
