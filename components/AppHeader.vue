@@ -7,9 +7,9 @@
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
-        <li class="px-1"><a href="#projects">Projects</a></li>
-        <li class="px-1"><a href="#team">Team</a></li>
-        <li class="px-1"><a href="#join-us">Join us</a></li>
+        <li class="px-1"><NuxtLink to="/#projects">Projects</NuxtLink></li>
+        <li class="px-1"><NuxtLink to="/#team">Team</NuxtLink></li>
+        <li class="px-1"><NuxtLink to="/#join-us">Join us</NuxtLink></li>
         <li class="px-1">
           <details>
             <summary>Theme</summary>
