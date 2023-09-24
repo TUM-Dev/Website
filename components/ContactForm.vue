@@ -9,7 +9,8 @@
 
       <p><b>E-Mail:</b> app(a)tum.de</p>
       <p>
-        <b>Adresse:</b> <code>ITSZ - OpenSource@TUM, Arcisstraße 21, 80333 München</code>
+        <b>Adresse:</b>
+        <code>ITSZ - OpenSource@TUM, Arcisstraße 21, 80333 München</code>
       </p>
       <div class="sm:hidden px-3 divider">OR</div>
     </div>
