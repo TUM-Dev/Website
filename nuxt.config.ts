@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@vueuse/nuxt"],
   devtools: { enabled: true },
   colorMode: {
     preference: "system", // default theme
