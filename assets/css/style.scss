@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   background-color: #fff;
 }
 
@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   font-weight: 400;
   color: #000;
   line-height: 1.2;
@@ -31,6 +31,13 @@ h6 {
 .section_padding_100 {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  .section_padding_100 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .section_padding_100_50 {
@@ -170,11 +177,11 @@ ol {
 }
 
 #scrollUp {
-  bottom: 0;
+  bottom: 4px;
   font-size: 24px;
   right: 30px;
   width: 50px;
-  background-color: #0076BC;
+  background-color: #0076bc;
   color: #fff;
   text-align: center;
   height: 50px;
@@ -210,7 +217,7 @@ p {
 
 .section-heading > h2 {
   font-weight: 300;
-  color: #0076BC;
+  color: #0076bc;
   font-size: 48px;
   margin: 0;
 }
@@ -306,7 +313,7 @@ p {
   z-index: 99;
   top: 0;
   padding: 0 4%;
-  background-color: #0076BC;
+  background-color: #0076bc;
 }
 
 .menu_area .navbar-brand {
@@ -343,14 +350,14 @@ p {
 }
 
 .menu_area button.navbar-toggler {
-  background-color: #0076BC;
+  background-color: #0076bc;
   position: absolute;
   right: 15px;
   top: 10px;
 }
 
 .menu_area nav ul li > a:hover {
-  color: #A1B11A;
+  color: #a1b11a;
 }
 
 .sing-up-button {
@@ -358,7 +365,7 @@ p {
 }
 
 .sing-up-button > a {
-  color: #0076BC;
+  color: #0076bc;
   font-weight: 500;
   display: inline-block;
   border: 2px solid #fff;
@@ -371,7 +378,7 @@ p {
 }
 
 .sing-up-button > a:hover {
-  background: #A1B11A;
+  background: #a1b11a;
   color: #fff;
   border-color: transparent;
   -webkit-transition-duration: 200ms;
@@ -382,7 +389,7 @@ p {
 /* stcicky css */
 
 .header_area.sticky {
-  background-color: #0076BC;
+  background-color: #0076bc;
   -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   height: 70px;
@@ -408,11 +415,11 @@ p {
 }
 
 /* --------------------------
-:: 3.0 Wellcome Area CSS
+:: 3.0 Welcome Area CSS
 -------------------------- */
 
 .welcome_area {
-  background: #0076BC;
+  background: #0076bc;
   height: 100px;
   position: relative;
   z-index: 1;
@@ -426,7 +433,7 @@ p {
   left: 0;
   height: 2px;
   background-color: #fff;
-  content: '';
+  content: "";
   bottom: 0;
   z-index: 2;
 }
@@ -438,7 +445,7 @@ p {
   }
 }
 
-#campusapp img.app-icon {
+#club img.app-icon {
   border-radius: 80px;
   box-shadow: 0px 0px 7px #ccc;
   margin-bottom: 20px;
@@ -539,12 +546,20 @@ p {
   left: -12px;
   z-index: -1;
   color: #fff;
-  opacity: .1;
+  opacity: 0.1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
 }
 
 .welcome-heading {
   margin-bottom: 100px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 /* --------------------------
@@ -558,7 +573,7 @@ p {
 
 .single-special > h4 {
   font-size: 22px;
-  color: #0076BC;
+  color: #0076bc;
 }
 
 .single-icon {
@@ -567,7 +582,7 @@ p {
 
 .single-special > h4 {
   font-size: 22px;
-  color: #0076BC;
+  color: #0076bc;
   margin-bottom: 15px;
 }
 
@@ -582,7 +597,7 @@ p {
 }
 
 .special_description_content > h2 {
-  color: #0076BC;
+  color: #0076bc;
   font-size: 48px;
   margin-bottom: 30px;
 }
@@ -631,7 +646,7 @@ p {
 .app-download-btn.active a,
 .app-download-btn a:hover {
   border-color: transparent;
-  background-color: #0076BC;
+  background-color: #0076bc;
 }
 
 .app-download-btn a i {
@@ -685,7 +700,7 @@ p {
 
 .single-feature > h5 {
   font-size: 22px;
-  color: #0076BC;
+  color: #0076bc;
 }
 
 .single-feature > p {
@@ -755,7 +770,13 @@ p {
   background: #a865e1;
   background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
   background: -webkit-linear-gradient(right, #7873ed, #a865e1);
-  background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#7873ed),
+    to(#a865e1)
+  );
   background: -o-linear-gradient(right, #7873ed, #a865e1);
   background: linear-gradient(to left, #7873ed, #a865e1);
   padding: 180px 0 80px 0;
@@ -770,7 +791,7 @@ p {
   width: 100%;
   height: 100px;
   background-color: #fff;
-  content: ''
+  content: "";
 }
 
 .cool-facts-content > i {
@@ -810,7 +831,7 @@ p {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   -webkit-transform: scale(0.85);
   -ms-transform: scale(0.85);
-  transform: scale(0.85)
+  transform: scale(0.85);
 }
 
 .app_screenshots_slides .center .single-shot {
@@ -818,7 +839,7 @@ p {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .app-screenshots-area .owl-dot {
@@ -863,7 +884,7 @@ p {
 }
 
 .single-price-plan .package-plan > h5 {
-  color: #0076BC;
+  color: #0076bc;
   font-size: 18px;
 }
 
@@ -923,7 +944,7 @@ p {
 -------------------------- */
 
 .clients-feedback-area .client-name > h5 {
-  color: #0076BC;
+  color: #0076bc;
   font-size: 22px;
   margin-top: 5px;
 }
@@ -959,7 +980,7 @@ p {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .clients-feedback-area .slick-dots li button {
@@ -1038,7 +1059,13 @@ p {
   background: #a865e1;
   background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
   background: -webkit-linear-gradient(right, #7873ed, #a865e1);
-  background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#7873ed),
+    to(#a865e1)
+  );
   background: -o-linear-gradient(right, #7873ed, #a865e1);
   background: linear-gradient(to left, #7873ed, #a865e1);
 }
@@ -1066,7 +1093,7 @@ p {
 }
 
 .get-started-button > a:hover {
-  background: #0076BC;
+  background: #0076bc;
   color: #fff;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -1088,8 +1115,8 @@ p {
   z-index: 1;
   text-align: center;
   display: table;
-  vertical-align:middle; 
-  text-align:center;
+  vertical-align: middle;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -1105,7 +1132,7 @@ p {
 
 .member-text > h4 {
   font-size: 22px;
-  color: #0076BC;
+  color: #0076bc;
 }
 
 .member-text > p {
@@ -1114,7 +1141,7 @@ p {
 }
 
 .member-type {
-  color: #0076BC;
+  color: #0076bc;
   margin-bottom: 16px;
 }
 
@@ -1186,7 +1213,7 @@ p {
 .address-text > p > span,
 .phone-text > p > span,
 .email-text > p > span {
-  color: #0076BC;
+  color: #0076bc;
 }
 
 .footer-contact-area .line-shape {
@@ -1218,7 +1245,7 @@ p {
 }
 
 .btn.submit-btn {
-  background: #0076BC;
+  background: #0076bc;
   height: 48px;
   min-width: 185px;
   color: #ffffff;
@@ -1227,7 +1254,7 @@ p {
 }
 
 .btn.submit-btn:hover {
-  background: #0076BC;
+  background: #0076bc;
   color: #fff;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -1247,7 +1274,7 @@ p {
 -------------------------- */
 
 .footer-text > h2 {
-  color: #0076BC;
+  color: #0076bc;
   font-size: 72px;
   font-weight: 700;
 }
@@ -1265,7 +1292,7 @@ p {
 }
 
 .footer-social-icon > a > i:hover {
-  background: #0076BC;
+  background: #0076bc;
   color: #fff;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -1292,7 +1319,7 @@ p {
 }
 
 .footer-social-icon > a .active {
-  background: #0076BC;
+  background: #0076bc;
 }
 
 .footer-menu ul li:last-child a {
