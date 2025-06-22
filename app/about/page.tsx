@@ -6,6 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTheme } from "next-themes";
+import TUMLiveLogo from "@/public/icons/tum-live.svg";
+import NavigaTUMLogo from "@/public/icons/navigatum.svg";
 
 export default function AboutPage() {
     const { theme } = useTheme();
@@ -147,10 +149,8 @@ export default function AboutPage() {
             <section className="py-16 px-4 dark:bg-slate-800 bg-white">
                 <div className="container mx-auto max-w-6xl">
                     <div className="flex items-center justify-center mb-12">
-                        <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center mr-4">
-                            <Smartphone className="w-6 h-6 text-white" />
-                        </div>
-                        <h2 className="text-3xl font-bold dark:text-white text-gray-900">Die App</h2>
+                        <Image src="/icons/tca.png" alt="TUM Campus App Logo" height={60} width={60} className="rounded-lg flex items-center justify-center mr-4" />
+                        <h2 className="text-4xl font-bold dark:text-white text-gray-900">Campus App</h2>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-12">
@@ -209,10 +209,7 @@ export default function AboutPage() {
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-12">
                         <div className="flex items-center justify-center mb-6">
-                            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-4">
-                                <Wrench className="w-6 h-6 text-white" />
-                            </div>
-                            <h2 className="text-3xl font-bold dark:text-white text-gray-900">NavigaTUM</h2>
+                            <Image src={NavigaTUMLogo} alt="NavigaTUM Logo" height={60} />
                         </div>
                         <p className="text-xl dark:text-gray-300 text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
                             2021 wurde NavigaTUM ins Leben gerufen, um den in die Jahre gekommenen Roomfinder durch eine moderne Lösung zu ersetzen. Das von
@@ -277,10 +274,7 @@ export default function AboutPage() {
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-12">
                         <div className="flex items-center justify-center mb-6">
-                            <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-lg flex items-center justify-center mr-4">
-                                <Zap className="w-6 h-6 text-white" />
-                            </div>
-                            <h2 className="text-3xl font-bold dark:text-white text-gray-900">TUM.live</h2>
+                            <Image src={TUMLiveLogo} alt="TUM.live Logo" height={90} />
                         </div>
                         <p className="text-xl dark:text-gray-300 text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
                             Our livestreaming and video-on-demand service for lectures at the School of Computation, Information and Technology. Watch your
