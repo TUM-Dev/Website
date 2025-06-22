@@ -5,8 +5,11 @@ import { Award, Heart, History, Lightbulb, Mail, Smartphone, Target, TrendingUp,
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useTheme } from "next-themes";
 
 export default function AboutPage() {
+    const { theme } = useTheme();
+
     return (
         <div>
             <section className="py-20 px-4">
@@ -133,8 +136,8 @@ export default function AboutPage() {
                         <p className="text-lg dark:text-gray-300 text-gray-600 leading-relaxed text-center max-w-4xl mx-auto">
                             Heute ist die App mit über 20.000 aktiven Nutzern eine der
                             <b> erfolgreichsten Apps, die an deutschen Universitäten angeboten werden</b>. Viele weitere Ideen sind mittlerweile ein Teil von{" "}
-                            <b className="font-semibold dark:text-blue-400 text-blue-600">OpenSource @ TUM</b>. Im regen Austausch entwickeln wir neue
-                            Features für die <b>digitale Universität der Zukunft</b>.
+                            <b className="font-semibold dark:text-blue-400 text-blue-600">OpenSource @ TUM</b>. Im regen Austausch entwickeln wir neue Features
+                            für die <b>digitale Universität der Zukunft</b>.
                         </p>
                     </div>
                 </div>
@@ -187,6 +190,66 @@ export default function AboutPage() {
                                         <strong>Lernräume, Noten, Vorlesungen:</strong> Kollaborative Zusammenarbeit ab dem ersten Semester
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* NavigaTUM Section */}
+            <section className="py-16 px-4 dark:bg-gradient-to-br dark:from-slate-800 dark:to-slate-700 bg-gradient-to-br from-gray-50 to-slate-100">
+                <div className="container mx-auto max-w-6xl">
+                    <div className="text-center mb-12">
+                        <div className="flex items-center justify-center mb-6">
+                            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-4">
+                                <Wrench className="w-6 h-6 text-white" />
+                            </div>
+                            <h2 className="text-3xl font-bold dark:text-white text-gray-900">NavigaTUM</h2>
+                        </div>
+                        <p className="text-xl dark:text-gray-300 text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                            2021 wurde NavigaTUM ins Leben gerufen, um den in die Jahre gekommenen Roomfinder durch eine moderne Lösung zu ersetzen. Das von
+                            Studierenden für Studierende entwickelte Tool hilft dabei, sich an der{" "}
+                            <a href="https://tum.de" className="dark:text-blue-400 text-blue-600 hover:underline">
+                                TUM
+                            </a>{" "}
+                            zurechtzufinden.
+                        </p>
+                    </div>
+
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 className="text-2xl font-semibold dark:text-white text-gray-900 mb-6">Was NavigaTUM bietet</h3>
+                            <div className="space-y-4 dark:text-gray-300 text-gray-600 text-lg leading-relaxed">
+                                <p>
+                                    NavigaTUM bietet interaktive Campus-Karten mit einer schnellen, tippfehlertoleranten Raumsuche, unterstützt verschiedene
+                                    Raumcode-Formate sowie generische Bezeichnungen und stellt sämtliche Funktionen über eine offene API zur Verfügung. Die
+                                    Plattform ermöglicht präzise End-zu-End-Navigation mit Turn-by-Turn-Anweisungen und verfolgt das Ziel, die Orientierung auf
+                                    dem Campus für Studierende und Mitarbeitende zu verbessern.
+                                </p>
+                                <p>
+                                    Aktuell arbeiten wir an einem einfacheren Weg für Feedback und Datenkorrekturen sowie an der automatischen Kartenerstellung
+                                    aus CAD-Daten.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="relative">
+                            <div className="bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
+                                <div className="relative mb-4">
+                                    <Image
+                                        alt="NavigaTUM Navigation Screenshot"
+                                        className="w-full rounded-lg shadow-lg"
+                                        height={400}
+                                        width={600}
+                                        src={theme === "dark" ? "/screenshots/navigatum-nav-dark.png" : "/screenshots/navigatum-nav-light.png"}
+                                    />
+                                </div>
+                                <div className="text-center">
+                                    <h4 className="font-semibold dark:text-white text-gray-900 mb-2">Intuitive Navigation</h4>
+                                    <p className="text-sm dark:text-gray-300 text-gray-600">
+                                        Moderne Benutzeroberfläche für schnelle Orientierung auf dem Campus
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
