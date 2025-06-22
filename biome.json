@@ -9,7 +9,11 @@
 		}
 	},
 	"files": {
-		"includes": ["app", "public", "lib", "./*.{json,yaml,ts,mjs,md}"]
+		"includes": [
+			"{app,components,hooks,public,lib}/**/*.{tsx,json,yaml,ts,mjs,md}",
+			"{app,components,hooks,public,lib}/*.{tsx,json,yaml,ts,mjs,md}",
+			"./*.{json,yaml,ts,mjs,md}"
+		]
 	},
 	"linter": {
 		"domains": {
