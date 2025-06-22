@@ -60,6 +60,11 @@
 	},
 	"homepage": "https://tum.dev/",
 	"name": "tum-dev-website",
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"sharp"
+		]
+	},
 	"private": true,
 	"scripts": {
 		"build": "next build",
@@ -69,10 +74,5 @@
 		"lint-fix": "biome check --write",
 		"start": "serve out"
 	},
-	"version": "0.1.0",
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"sharp"
-		]
-	}
+	"version": "0.1.0"
 }
