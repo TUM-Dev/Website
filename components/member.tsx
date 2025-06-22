@@ -29,7 +29,7 @@ export const Member: React.FC<MemberProps> = ({
 							alt={name}
 							className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-blue-500"
 							height={96}
-							src={avatar || "/avatars/placeholder.jpg"}
+							src={avatar || "/avatars/placeholder.webp"}
 							width={96}
 						/>
 					</div>
@@ -77,7 +77,7 @@ export const Member: React.FC<MemberProps> = ({
 					alt={name}
 					className="w-20 h-20 rounded-full mx-auto object-cover border-2 border-gray-200 group-hover:border-blue-500 transition-colors"
 					height={80}
-					src={avatar || "/avatars/placeholder.jpg"}
+					src={avatar || "/avatars/placeholder.webp"}
 					width={80}
 				/>
 			</div>

@@ -1,21 +1,23 @@
 {
-	"assist": {
-		"actions": {
-			"source": {
-				"organizeImports": "on",
-				"useSortedAttributes": "on",
-				"useSortedKeys": "on"
-			}
-		}
-	},
-	"linter": {
-		"domains": {
-			"next": "recommended"
-		},
-		"rules": {
-			"correctness": {
-				"useExhaustiveDependencies": "off"
-			}
-		}
-	}
+    "includes": ["app", "public", "lib", "./*.{json,yaml,ts,mjs,md}"],
+    "assist": {
+        "actions": {
+            "source": {
+                "organizeImports": "on",
+                "useSortedAttributes": "on",
+                "useSortedKeys": "on"
+            }
+        }
+    },
+    "linter": {
+        "domains": {
+            "next": "recommended"
+        },
+        "rules": {
+            "correctness": {
+                "useExhaustiveDependencies": "off"
+            }
+        }
+    }
 }
+

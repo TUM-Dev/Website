@@ -30,7 +30,7 @@ import {
 export default function HomePage() {
 	const members: readonly MemberProps[] = [
 		{
-			avatar: "/avatars/jakob.jpg",
+			avatar: "/avatars/jakob.webp",
 			github: "jakobkoerber",
 			leads_project: "Campus App",
 			linkedin: "jakobkoerber",
@@ -38,7 +38,7 @@ export default function HomePage() {
 			role: "Mobile Lead",
 		},
 		{
-			avatar: "/avatars/joscha.jpg",
+			avatar: "/avatars/joscha.webp",
 			github: "joschahenningsen",
 			leads_project: "Tum.live & tum.sexy",
 			linkedin: "joscha-henningsen-27728417b",
@@ -46,44 +46,51 @@ export default function HomePage() {
 			role: "Backend Developer",
 		},
 		{
-			avatar: "/avatars/frank.jpg",
+			avatar: "/avatars/frank.webp",
 			github: "CommanderStorm",
 			leads_project: "NavigaTUM",
 			linkedin: "frankelsinga",
 			name: "Frank Elsinga",
-			role: "Geo Lead",
+			role: "GeoInformatics Lead",
 		},
 		{
-			avatar: "/avatars/florian.jpg",
+			avatar: "/avatars/florian.webp",
 			leads_project: "Vorstand",
 			name: "Florian Schmidt",
 			role: "Communication Lead",
 		},
 		{
-			avatar: "/avatars/fabian.jpg",
+			avatar: "/avatars/fabian.webp",
 			github: "com8",
 			leads_project: "Thesis template",
 			name: "Fabian Sauter",
 			role: "Latex Expert",
 		},
 		{
-			avatar: "/avatars/placeholder.jpg",
+			avatar: "/avatars/placeholder.webp",
 			name: "Rischab Garg",
 			role: "Backend Developer",
 		},
 		{
-			avatar: "/avatars/kordian.jpg",
+			avatar: "/avatars/kordian.webp",
 			github: "kordianbruck",
 			linkedin: "kordianbruck",
 			name: "Kordian Bruck",
 			role: "Lead & Sponsor",
 		},
 		{
-			avatar: "/avatars/benjamin.jpg",
+			avatar: "/avatars/benjamin.webp",
 			github: "Bentipa",
 			linkedin: "benjamin-pabst",
 			name: "Benjamin Pabst",
 			role: "Campus App",
+		},
+		{
+			avatar: "/avatars/gabriel.webp",
+			github: "Friendly-Banana",
+			leads_project: "Eat-api",
+			name: "Gabriel",
+			role: "Backend Developer",
 		},
 	];
 	const slideshow: readonly SlideShowItem[] = [
@@ -91,90 +98,115 @@ export default function HomePage() {
 			alt: "Monatliches Team Meeting",
 			caption:
 				"Einmal im monat machen wir ein Team Meeting, wo wir Ideen/Probleme besprechen und unseren Fortschritt präsentieren",
-			src: "/events/tunix25.jpg",
+			src: "/events/tunix25.webp",
 		},
 		//{
-		//    src: "/events/hackatum.jpg",
+		//    src: "/events/hackatum.webp",
 		//    alt: "Team bei einem Hackathon",
 		//    caption: "48h Hackathon - Intensive Coding-Sessions mit Pizza und viel Kaffee",
 		//},
 		{
 			alt: "Team beim Server-Aufbau",
 			caption: "Hands-on: Gemeinsamer Aufbau von neuen Live-Streaming Servern",
-			src: "/events/server-bau24.jpg",
+			src: "/events/server-bau24.webp",
 		},
 		{
 			alt: "Livestreaming setup für eine ",
 			caption:
 				"Hin und wieder machen wir LiveStreaming für andere Hochschulgruppen - Hier beispielsweise für den BayStuRa",
-			src: "/events/live-stream-baystura24.jpg",
+			src: "/events/live-stream-baystura24.webp",
 		},
 		{
 			alt: "Team auf einer Konferenz",
 			caption:
 				"Gemeinsam auf einer Open Source Konferenz - Networking und neue Ideen",
-			src: "/events/fossgis25.png",
+			src: "/events/fossgis25.webp",
 		},
 		{
 			alt: "Team Dinner",
 			caption: "Team Dinner - Auch abseits des Codes verstehen wir uns super",
-			src: "/events/mc-donalds24.jpg",
+			src: "/events/mc-donalds24.webp",
 		},
 		{
 			alt: "TUM-Projekt Präsentation",
 			caption:
 				"TUM-Präsentationen - Hin und wieder präsentieren wir IT-Projekte. Hier beispielsweise mit unserem CIO beim iPraktikum",
-			src: "/events/ipraktikum23.jpg",
+			src: "/events/ipraktikum23.webp",
 		},
 		{
 			alt: "Projekt Präsentation",
 			caption:
 				"Projekt-Präsentationen - Wir präsentieren regelmäßig unsere projekte bei diversen veranstaltungen. Hier die StudentClub Fair",
-			src: "/events/student-club-fair24.jpg",
+			src: "/events/student-club-fair24.webp",
 		},
 		{
 			alt: "Projekt Präsentation",
 			caption:
 				"Projekt-Präsentationen - Wir präsentieren regelmäßig unsere projekte bei diversen veranstaltungen. Hier die StudentClub Fair",
-			src: "/events/student-club-fair25.jpg",
+			src: "/events/student-club-fair25.webp",
 		},
 		{
 			alt: "Menschen vor einer Photobox, die sie gebaut haben",
 			caption:
 				"Neben code machen wir auch Veranstaltungen - hier haben wir beispielsweise die Photobox für die Unity gebaut",
-			src: "/events/photobox25.jpg",
+			src: "/events/photobox25.webp",
 		},
 	];
 	const projects: readonly ProjectProps[] = [
 		{
 			description: "Live-Streaming Platform für Vorlesungen",
+			link: "https://github.com/tum-dev/gocast",
 			name: "TUM Live",
-			tech: ["Go", "React", "Docker"],
+			tech: ["Go", "TypeScript", "Docker"],
 		},
 		{
 			description: "Mobile App für TUM Studierende",
+			link: "https://github.com/tum-dev/campus_flutter",
 			name: "Campus App",
-			tech: ["Flutter", "Dart", "API"],
+			tech: ["Flutter", "Go"],
 		},
 		{
 			description: "Raumsuche und Navigation am Campus",
-			name: "Roomfinder",
-			tech: ["Python", "Django", "Maps"],
+			link: "https://github.com/tum-dev/NavigaTUM",
+			name: "NavigaTUM",
+			tech: ["Rust", "Python", "Vue", "OpenStreetMap"],
 		},
 		{
 			description: "API für Mensapläne und Cafeterien",
+			link: "https://github.com/tum-dev/eat-api",
 			name: "Eat API",
-			tech: ["Node.js", "Express", "REST"],
+			tech: ["Python", "Github Actions"],
 		},
 		{
-			description: "Entwicklertools für TUM Services",
-			name: "TUM Dev Tools",
-			tech: ["TypeScript", "CLI", "Utils"],
+			description: "Shortlinks",
+			link: "https://github.com/tum-dev/TUM.sexy",
+			name: "TUM.sexy",
+			tech: ["Php"],
 		},
 		{
-			description: "Template für neue Open Source Projekte",
-			name: "Open Source Starter",
-			tech: ["Templates", "CI/CD", "Docs"],
+			description: "Templates für LaTeX-Abschlussarbeiten",
+			link: "https://github.com/tum-dev/tum-thesis-latex",
+			name: "tum-thesis-latex",
+			tech: ["LaTeX"],
+		},
+		{
+			description:
+				"A simple website allowing anonymous reports about security issues, harassment, illegal activities, safety concerns, whistleblowing and whatnot",
+			link: "https://github.com/tum-dev/Meldeplattform",
+			name: "Meldeplattform",
+			tech: ["Go"],
+		},
+		{
+			description:
+				"open-source live-streaming stack for recording and streaming lectures",
+			link: "https://github.com/tum-dev/LectureMix",
+			name: "LectureMix",
+			tech: ["Go"],
+		},
+		{
+			description: "",
+			name: "And many more",
+			tech: ["To", "Be", "Decided"],
 		},
 	];
 	return (
@@ -406,6 +438,7 @@ export default function HomePage() {
 							<Project
 								description={project.description}
 								key={project.name}
+								link={project.link}
 								name={project.name}
 								tech={project.tech}
 							/>

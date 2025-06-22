@@ -1,4 +1,4 @@
-import { Code, Github, Mail, MapPin, ShieldCheck } from "lucide-react";
+import { Code, FileText, Github, Mail, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export const Footer = () => {
@@ -35,7 +35,7 @@ export const Footer = () => {
 								app (at) tum.de
 							</div>
 							<Link className="flex items-center" href="/imprint">
-								<MapPin className="w-4 h-4 mr-2" />
+								<FileText className="w-4 h-4 mr-2" />
 								Impressum
 							</Link>
 						</div>

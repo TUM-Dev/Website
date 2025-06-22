@@ -12,6 +12,7 @@ import {
 	Zap,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -189,7 +190,7 @@ export default function AboutPage() {
 					</div>
 
 					<div className="bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
-						<p className="text-lg dark:text-gray-300 text-gray-600 leading-relaxed text-center max-w-4xl mx-auto">
+						<p className="text-lg dark:text-gray-200 text-gray-600 leading-relaxed text-center max-w-4xl mx-auto">
 							Heute ist die App mit über 20.000 aktiven Nutzern eine der
 							<b>
 								{" "}
@@ -215,7 +216,7 @@ export default function AboutPage() {
 							alt="TUM Campus App Logo"
 							className="rounded-lg flex items-center justify-center mr-4"
 							height={60}
-							src="/icons/tca.png"
+							src="/icons/tca.webp"
 							width={60}
 						/>
 						<h2 className="text-4xl font-bold dark:text-white text-gray-900">
@@ -245,12 +246,12 @@ export default function AboutPage() {
 							<div className="mt-6">
 								<p className="text-sm dark:text-gray-400 text-gray-500">
 									Questions or technical support? Contact us at{" "}
-									<a
+									<Link
 										className="dark:text-blue-400 text-blue-600 hover:underline"
 										href="mailto:app (at) tum.de"
 									>
 										app (at) tum.de
-									</a>
+									</Link>
 								</p>
 							</div>
 						</div>
@@ -306,12 +307,12 @@ export default function AboutPage() {
 							gekommenen Roomfinder durch eine moderne Lösung zu ersetzen. Das
 							von Studierenden für Studierende entwickelte Tool hilft dabei,
 							sich an der{" "}
-							<a
+							<Link
 								className="dark:text-blue-400 text-blue-600 hover:underline"
 								href="https://tum.de"
 							>
 								TUM
-							</a>{" "}
+							</Link>{" "}
 							zurechtzufinden.
 						</p>
 					</div>
@@ -341,12 +342,12 @@ export default function AboutPage() {
 							<div className="mt-6">
 								<p className="text-sm dark:text-gray-400 text-gray-500">
 									Questions or technical support? Contact us at{" "}
-									<a
+									<Link
 										className="dark:text-blue-400 text-blue-600 hover:underline"
 										href="mailto:navigatum (at) tum.de"
 									>
 										navigatum (at) tum.de
-									</a>
+									</Link>
 								</p>
 							</div>
 						</div>
@@ -358,7 +359,7 @@ export default function AboutPage() {
 										alt="NavigaTUM Navigation Screenshot"
 										className="w-full rounded-lg shadow-lg"
 										height={400}
-										src={`/screenshots/navigatum-nav-${theme}.png`}
+										src={`/screenshots/navigatum-nav-${theme}.webp`}
 										width={600}
 									/>
 								</div>
@@ -414,12 +415,12 @@ export default function AboutPage() {
 							<div className="mt-6">
 								<p className="text-sm dark:text-gray-400 text-gray-500">
 									Questions or technical support? Contact us at{" "}
-									<a
+									<Link
 										className="dark:text-blue-400 text-blue-600 hover:underline"
 										href="mailto:live (at) rbg.tum.de"
 									>
 										live (at) rbg.tum.de
-									</a>
+									</Link>
 								</p>
 							</div>
 						</div>
@@ -431,7 +432,7 @@ export default function AboutPage() {
 										alt="TUM.live Landing Page Screenshot"
 										className="w-full rounded-lg shadow-lg"
 										height={400}
-										src={`/screenshots/tum-live-landing-page-${theme}.png`}
+										src={`/screenshots/tum-live-landing-page-${theme}.webp`}
 										width={600}
 									/>
 								</div>
@@ -470,7 +471,7 @@ export default function AboutPage() {
 										alt="bild von Professor Dr. Uwe Baumgarten"
 										className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-blue-500"
 										height={96}
-										src="/avatars/baumgarten.jpg"
+										src="/avatars/baumgarten.webp"
 										width={96}
 									/>
 								</div>
@@ -523,19 +524,18 @@ export default function AboutPage() {
 						<p className="text-xl dark:text-gray-300 text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
 							Wir freuen uns, auch in Zukunft weiter an der App arbeiten zu
 							dürfen und die digitale Transformation der Universität
-							mitzugestalten. Wenn du auch dabei sein willst, dann schreib uns
-							doch über das Kontaktformular.
+							mitzugestalten.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<Button
-								className="bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+								className="font-semibold text-white bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 								size="lg"
 							>
 								<Users className="w-5 h-5 mr-2" />
 								Jetzt mitmachen
 							</Button>
 							<Button
-								className="dark:border-slate-600 dark:text-gray-300 dark:hover:bg-slate-700"
+								className=" font-semibold *:dark:border-slate-600 dark:text-gray-300 dark:hover:bg-slate-700"
 								size="lg"
 								variant="outline"
 							>
