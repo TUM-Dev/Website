@@ -166,6 +166,14 @@ export default function AboutPage() {
                                     bewegt, das Konzept, wie die Campus App funktionieren soll, immer wieder zu modifizieren.
                                 </p>
                             </div>
+                            <div className="mt-6">
+                                <p className="text-sm dark:text-gray-400 text-gray-500">
+                                    Questions or technical support? Contact us at{" "}
+                                    <a href="mailto:app (at) tum.de" className="dark:text-blue-400 text-blue-600 hover:underline">
+                                        app (at) tum.de
+                                    </a>
+                                </p>
+                            </div>
                         </div>
 
                         <div className="space-y-6">
@@ -231,6 +239,14 @@ export default function AboutPage() {
                                     aus CAD-Daten.
                                 </p>
                             </div>
+                            <div className="mt-6">
+                                <p className="text-sm dark:text-gray-400 text-gray-500">
+                                    Questions or technical support? Contact us at{" "}
+                                    <a href="mailto:navigatum (at) tum.de" className="dark:text-blue-400 text-blue-600 hover:underline">
+                                        navigatum (at) tum.de
+                                    </a>
+                                </p>
+                            </div>
                         </div>
 
                         <div className="relative">
@@ -249,6 +265,67 @@ export default function AboutPage() {
                                     <p className="text-sm dark:text-gray-300 text-gray-600">
                                         Moderne Benutzeroberfläche für schnelle Orientierung auf dem Campus
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* TUM.live Section */}
+            <section className="py-16 px-4 dark:bg-slate-800 bg-white">
+                <div className="container mx-auto max-w-6xl">
+                    <div className="text-center mb-12">
+                        <div className="flex items-center justify-center mb-6">
+                            <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-lg flex items-center justify-center mr-4">
+                                <Zap className="w-6 h-6 text-white" />
+                            </div>
+                            <h2 className="text-3xl font-bold dark:text-white text-gray-900">TUM.live</h2>
+                        </div>
+                        <p className="text-xl dark:text-gray-300 text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                            Our livestreaming and video-on-demand service for lectures at the School of Computation, Information and Technology. Watch your
+                            lectures live or as recordings from the comfort of your home.
+                        </p>
+                    </div>
+
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 className="text-2xl font-semibold dark:text-white text-gray-900 mb-6">Features & Coverage</h3>
+                            <div className="space-y-4 dark:text-gray-300 text-gray-600 text-lg leading-relaxed">
+                                <p>
+                                    TUM.live automatically records and streams lectures in equipped rooms across campus, including MW0001, MW2001, MI HS 1-3,
+                                    Audimax, and various seminar rooms. Lecturers receive notifications before each semester to configure streaming preferences
+                                    and the rest works automatically.
+                                </p>
+                                <p>
+                                    For events in other locations, instructors can stream directly using software like OBS or Zoom. All content is available
+                                    both live and on-demand, making lectures accessible anytime, anywhere.
+                                </p>
+                            </div>
+                            <div className="mt-6">
+                                <p className="text-sm dark:text-gray-400 text-gray-500">
+                                    Questions or technical support? Contact us at{" "}
+                                    <a href="mailto:live (at) rbg.tum.de" className="dark:text-blue-400 text-blue-600 hover:underline">
+                                        live (at) rbg.tum.de
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="relative">
+                            <div className="bg-gradient-to-r dark:from-red-900 dark:to-pink-900 from-red-50 to-pink-50 rounded-2xl p-8">
+                                <div className="relative mb-4">
+                                    <Image
+                                        alt="TUM.live Landing Page Screenshot"
+                                        className="w-full rounded-lg shadow-lg"
+                                        height={400}
+                                        width={600}
+                                        src={theme === "dark" ? "/screenshots/tum-live-landing-page-dark.png" : "/screenshots/tum-live-landing-page-light.png"}
+                                    />
+                                </div>
+                                <div className="text-center">
+                                    <h4 className="font-semibold dark:text-white text-gray-900 mb-2">Lecture Streaming Platform</h4>
+                                    <p className="text-sm dark:text-gray-300 text-gray-600">Access live and recorded lectures from anywhere</p>
                                 </div>
                             </div>
                         </div>
