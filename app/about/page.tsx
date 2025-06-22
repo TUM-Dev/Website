@@ -94,7 +94,7 @@ export default function AboutPage() {
 										<div className="text-3xl font-bold dark:text-white text-gray-900 mb-2">
 											2011
 										</div>
-										<div className="text-sm dark:text-gray-400 text-gray-500">
+										<div className="text-sm dark:text-gray-300 text-gray-500">
 											Projektstart
 										</div>
 									</div>
@@ -102,7 +102,7 @@ export default function AboutPage() {
 										<div className="text-3xl font-bold dark:text-white text-gray-900 mb-2">
 											40k+
 										</div>
-										<div className="text-sm dark:text-gray-400 text-gray-500">
+										<div className="text-sm dark:text-gray-300 text-gray-500">
 											Studierende
 										</div>
 									</div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
 										<div className="text-3xl font-bold dark:text-white text-gray-900 mb-2">
 											10k+
 										</div>
-										<div className="text-sm dark:text-gray-400 text-gray-500">
+										<div className="text-sm dark:text-gray-300 text-gray-500">
 											Mitarbeitende
 										</div>
 									</div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
 										<div className="text-3xl font-bold dark:text-white text-gray-900 mb-2">
 											20k+
 										</div>
-										<div className="text-sm dark:text-gray-400 text-gray-500">
+										<div className="text-sm dark:text-gray-300 text-gray-500">
 											Aktive Nutzer
 										</div>
 									</div>
@@ -244,7 +244,7 @@ export default function AboutPage() {
 								</p>
 							</div>
 							<div className="mt-6">
-								<p className="text-sm dark:text-gray-400 text-gray-500">
+								<p className="text-sm dark:text-gray-300 text-gray-500">
 									Questions or technical support? Contact us at{" "}
 									<Link
 										className="dark:text-blue-400 text-blue-600 hover:underline"
@@ -340,7 +340,7 @@ export default function AboutPage() {
 								</p>
 							</div>
 							<div className="mt-6">
-								<p className="text-sm dark:text-gray-400 text-gray-500">
+								<p className="text-sm dark:text-gray-300 text-gray-500">
 									Questions or technical support? Contact us at{" "}
 									<Link
 										className="dark:text-blue-400 text-blue-600 hover:underline"
@@ -413,7 +413,7 @@ export default function AboutPage() {
 								</p>
 							</div>
 							<div className="mt-6">
-								<p className="text-sm dark:text-gray-400 text-gray-500">
+								<p className="text-sm dark:text-gray-300 text-gray-500">
 									Questions or technical support? Contact us at{" "}
 									<Link
 										className="dark:text-blue-400 text-blue-600 hover:underline"

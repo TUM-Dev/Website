@@ -97,7 +97,7 @@ export const Event: React.FC<EventProps> = ({
 							<h4 className="font-semibold dark:text-white text-gray-900">
 								{title}
 							</h4>
-							<p className="text-sm dark:text-gray-400 text-gray-500">{date}</p>
+							<p className="text-sm dark:text-gray-300 text-gray-500">{date}</p>
 						</div>
 					</div>
 					<Badge

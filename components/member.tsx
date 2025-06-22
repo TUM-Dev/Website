@@ -22,7 +22,7 @@ export const Member: React.FC<MemberProps> = ({
 }) => {
 	if (leads_project) {
 		return (
-			<Card className="dark:bg-slate-700 dark:border-slate-600 bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+			<Card className="dark:bg-slate-800 dark:border-slate-600 bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300">
 				<CardContent className="p-6 text-center">
 					<div className="relative mb-4">
 						<Image
@@ -36,7 +36,7 @@ export const Member: React.FC<MemberProps> = ({
 					<h4 className="font-semibold text-lg dark:text-white text-gray-900 mb-1">
 						{name}
 					</h4>
-					<p className="text-sm font-medium dark:text-blue-400 text-blue-600 mb-1">
+					<p className="text-sm font-medium dark:text-blue-200 text-blue-600 mb-1">
 						{role}
 					</p>
 					<p className="text-xs dark:text-gray-400 text-gray-500 mb-3">
