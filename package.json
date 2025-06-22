@@ -69,5 +69,10 @@
 		"lint-fix": "biome check --write",
 		"start": "serve out"
 	},
-	"version": "0.1.0"
+	"version": "0.1.0",
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"sharp"
+		]
+	}
 }
