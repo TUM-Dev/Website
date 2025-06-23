@@ -235,11 +235,14 @@ export default function HomePage() {
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Button
+							asChild
 							className="dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 							size="lg"
 						>
-							<Users className="w-5 h-5 mr-2" />
-							Jetzt mitmachen
+							<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+								<Users className="w-5 h-5 mr-2" />
+								Jetzt mitmachen
+							</Link>
 						</Button>
 						<Button
 							asChild
@@ -518,16 +521,25 @@ export default function HomePage() {
 								uns findest du spannende Projekte und ein tolles Team.
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
-								<Button className="bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700">
-									<Users className="w-4 h-4 mr-2" />
-									Team beitreten
-								</Button>
 								<Button
+									asChild
+									className="bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+								>
+									<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+										<Users className="w-4 h-4 mr-2" />
+										Team beitreten
+									</Link>
+								</Button>
+
+								<Button
+									asChild
 									className="dark:hover:bg-slate-600 dark:hover:text-gray-50 dark:text-gray-100 dark:bg-slate-700 bg-black text-white hover:text-gray-50 hover:bg-gray-900"
 									variant="secondary"
 								>
-									<Github className="w-4 h-4 mr-2" />
-									Projekte ansehen
+									<Link href="#projects">
+										<Github className="w-4 h-4 mr-2" />
+										Projekte ansehen
+									</Link>
 								</Button>
 							</div>
 						</div>

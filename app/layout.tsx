@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import { Toaster } from "sonner";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 
@@ -23,6 +24,7 @@ export default async function RootLayout({
 					<Header />
 					{children}
 					<Footer />
+					<Toaster />
 				</ThemeProvider>
 			</body>
 		</html>
