@@ -528,19 +528,26 @@ export default function AboutPage() {
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<Button
+								asChild
 								className="font-semibold text-white bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 								size="lg"
 							>
-								<Users className="w-5 h-5 mr-2" />
-								Jetzt mitmachen
+								<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+									<Users className="w-5 h-5 mr-2" />
+									Jetzt mitmachen
+								</Link>
 							</Button>
 							<Button
+								asChild
 								className=" font-semibold *:dark:border-slate-600 dark:text-gray-300 dark:hover:bg-slate-700"
 								size="lg"
 								variant="outline"
 							>
-								<Mail className="w-5 h-5 mr-2" />
-								Kontakt aufnehmen
+								<Link href="/contact">
+									{" "}
+									<Mail className="w-5 h-5 mr-2" />
+									Kontakt aufnehmen
+								</Link>
 							</Button>
 						</div>
 					</div>
