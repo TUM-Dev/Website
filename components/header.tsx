@@ -49,7 +49,7 @@ export const Header = () => {
 						<ThemeToggle />
 						<Button
 							asChild
-							className="bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 hidden lg:flex"
+							className="bg-gradient-to-r text-white dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 hidden lg:flex"
 						>
 							<Link href="/contact">
 								<Mail className="w-4 h-4 mr-2" />

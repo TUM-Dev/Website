@@ -236,7 +236,7 @@ export default function HomePage() {
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Button
 							asChild
-							className="dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+							className="dark:from-blue-600 dark:to-blue-700 text-white dark:hover:from-blue-700 dark:hover:to-blue-800 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 							size="lg"
 						>
 							<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
@@ -405,7 +405,7 @@ export default function HomePage() {
 								verpassen.
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
-								<Button className="bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700">
+								<Button className="bg-gradient-to-r text-white dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700">
 									<Mail className="w-4 h-4 mr-2" />
 									Event-Updates erhalten
 								</Button>
