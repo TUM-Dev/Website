@@ -463,30 +463,11 @@ export default function AboutPage() {
 						</p>
 					</div>
 
-					<div className="grid md:grid-cols-2 gap-8">
-						<Card className="border-0 shadow-lg dark:bg-slate-700 dark:border-slate-600 bg-white">
-							<CardContent className="p-8 text-center">
-								<div className="relative mb-4">
-									<Image
-										alt="bild von Professor Dr. Uwe Baumgarten"
-										className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-blue-500"
-										height={96}
-										src="/avatars/baumgarten.webp"
-										width={96}
-									/>
-								</div>
-								<h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-3">
-									Professor Dr. Uwe Baumgarten
-								</h3>
-								<p className="dark:text-gray-300 text-gray-600 leading-relaxed">
-									Hat das Projekt maßgeblich vorangetrieben und unterstützt.
-									Ohne seine Vision und Förderung wäre TUM-Dev nicht zu dem
-									geworden, was es heute ist.
-								</p>
-							</CardContent>
-						</Card>
-
-						<Card className="border-0 shadow-lg dark:bg-slate-700 dark:border-slate-600 bg-white">
+					<div className="grid gap-8">
+						<Card
+							className="border-0 shadow-lg dark:bg-slate-700 dark:border-slate-600 bg-white"
+							style={{ margin: "0 auto", width: "50%" }}
+						>
 							<CardContent className="p-8 text-center">
 								<div className="relative mb-4">
 									<Image
