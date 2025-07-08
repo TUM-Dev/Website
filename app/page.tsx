@@ -230,27 +230,27 @@ export default function HomePage() {
 		{
 			description:
 				"We will do a coding night at TUMs IT Management (5. floor) with free food as usual.",
-			endTimestamp: Date.parse("2025-07-08T19:00:00"),
-			location: "Karlstraße 45 - 5016",
-			startTimestamp: Date.parse("2025-06-08T22:00:00"),
+			endTimestamp: Date.parse("2025-07-08T22:00:00"),
+			location: "5016 - Karlstraße 45",
+			startTimestamp: Date.parse("2025-06-08T19:00:00"),
 			title: "Coding night",
 			type: "coding",
 		} as EventProps,
 		{
 			description:
 				"Wir machen unser Status Meeting diesen Monat bei Garnix in Garching.",
-			endTimestamp: Date.parse("2025-07-01T19:00:00"),
+			endTimestamp: Date.parse("2025-07-01T22:00:00"),
 			location: "GarNix - Garching",
-			startTimestamp: Date.parse("2025-07-08T22:00:00"),
+			startTimestamp: Date.parse("2025-07-01T19:00:00"),
 			title: "Garnix Status Meeting",
 			type: "event",
 		} as EventProps,
 		{
 			description:
 				"Wie auf Discord besprochen, treffen wir uns nächste Woche für ein gemeinsames Team-Event beim TUNIX-Festival! Kommt vorbei auf ein Getränk, gute Gespräche und ein bisschen OpenSource-Vibes außerhalb des Bildschirms.",
-			endTimestamp: Date.parse("2025-06-08T19:00:00"),
-			location: "TUNIX Festival, Königsplatz, München",
-			startTimestamp: Date.parse("2025-06-08T22:00:00"),
+			endTimestamp: Date.parse("2025-06-08T22:00:00"),
+			location: "TUNIX - Königsplatz",
+			startTimestamp: Date.parse("2025-06-08T19:00:00"),
 			title: "Tunix Team Event",
 			type: "meeting",
 		} as EventProps,

@@ -51,7 +51,17 @@ export const Event: React.FC<EventProps> = ({
 	}
 
 	const start = new Date(startTimestamp);
+	const startTime = start.toLocaleTimeString("de-DE").substring(0, 5);
+	const startDate = start.toISOString().split("T")[0];
 	const end = new Date(endTimestamp);
+	const endTime = end.toLocaleTimeString("de-DE").substring(0, 5);
+	const endDate = end.toISOString().split("T")[0];
+
+	if (startTimestamp > endTimestamp) {
+		throw new Error(
+			`Start time cannot be after end time for event ${title} on ${startDate}`,
+		);
+	}
 
 	return (
 		<Card
@@ -115,19 +125,19 @@ export const Event: React.FC<EventProps> = ({
 					attendee="leads@tum.dev"
 					availability="busy"
 					buttonStyle="default"
-					endDate={end.toISOString().split("T")[0]}
-					endTime={end.toISOString().split("T")[1]}
+					endDate={endDate}
+					endTime={endTime}
 					hideBranding={true}
 					hideButton={true}
-					label={`${start.toLocaleTimeString("de-DE").substring(0, 5)} - ${end.toLocaleTimeString("de-DE").substring(0, 5)} • ${location}`}
+					label={`${startTime} - ${endTime} • ${location}`}
 					lightMode="bodyScheme"
 					location={location}
 					name={title}
 					options={["iCal", "Apple", "Google"]}
 					organizer="TUM-Dev Leads|leads@tum.dev"
 					size="4"
-					startDate={start.toISOString().split("T")[0]}
-					startTime={start.toISOString().split("T")[1]}
+					startDate={startDate}
+					startTime={startTime}
 					status="CONFIRMED"
 					timeZone="Europe/Berlin"
 				></AddToCalendarButton>
