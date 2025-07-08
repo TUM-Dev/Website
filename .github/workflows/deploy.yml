@@ -20,18 +20,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v4
         with:
-          node-version: "20"
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          # version is in package.json
-          run_install: true
-
+          run_install: true # package manager version is in package.json
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
@@ -39,7 +30,6 @@ jobs:
 
       - name: Build with Next.js
         run: pnpm run build
-
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
 

@@ -16,6 +16,14 @@ jobs:
           version: latest
       - name: Run Biome
         run: biome ci .
+
+  type-safe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: true # package manager version is in package.json
       - name: Run type-checking
         run: npm run type-check
   build:
@@ -25,7 +33,6 @@ jobs:
         uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
         with:
-            # version is in package.json
-            run_install: true
+          run_install: true # package manager version is in package.json
       - name: Run Build
         run: pnpm run build
