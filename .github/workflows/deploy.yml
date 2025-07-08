@@ -30,8 +30,20 @@ jobs:
 
       - name: Build with Next.js
         run: pnpm run build
+
+      - name: Verify build output
+        run: |
+          echo "Contents of current directory:"
+          ls -la
+          echo "Contents of out directory:"
+          ls -la out/ || echo "out directory does not exist"
+
       - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+        run: |
+          mkdir -p ./out
+          touch ./out/.nojekyll
+          echo "Created .nojekyll file"
+          ls -la ./out/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
