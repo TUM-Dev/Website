@@ -1,0 +1,28 @@
+{
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on",
+				"useSortedAttributes": "on",
+				"useSortedKeys": "on"
+			}
+		}
+	},
+	"files": {
+		"includes": [
+			"{app,components,hooks,public,lib}/**/*.{tsx,json,yaml,ts,mjs,md}",
+			"{app,components,hooks,public,lib}/*.{tsx,json,yaml,ts,mjs,md}",
+			"./*.{json,yaml,ts,mjs,md}"
+		]
+	},
+	"linter": {
+		"domains": {
+			"next": "recommended"
+		},
+		"rules": {
+			"correctness": {
+				"useExhaustiveDependencies": "off"
+			}
+		}
+	}
+}
