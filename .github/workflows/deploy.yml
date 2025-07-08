@@ -38,13 +38,6 @@ jobs:
           echo "Contents of out directory:"
           ls -la out/ || echo "out directory does not exist"
 
-      - name: Add .nojekyll file
-        run: |
-          mkdir -p ./out
-          touch ./out/.nojekyll
-          echo "Created .nojekyll file"
-          ls -la ./out/
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
