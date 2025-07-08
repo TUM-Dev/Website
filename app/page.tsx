@@ -55,7 +55,9 @@ export default function HomePage() {
 		},
 		{
 			avatar: "/avatars/florian.webp",
+			github: "FlorianDev",
 			leads_project: "Vorstand",
+			linkedin: "florian-schmidt-1965721b2",
 			name: "Florian Schmidt",
 			role: "Communication Lead",
 		},
