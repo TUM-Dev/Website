@@ -73,7 +73,8 @@
 		"format": "biome format --write && biome check --formatter-enabled=false --linter-enabled=false --write",
 		"lint": "biome check --error-on-warnings",
 		"lint-fix": "biome check --write",
-		"start": "serve out"
+		"start": "serve out",
+		"type-check": "tsc --noEmit"
 	},
 	"version": "0.1.0"
 }

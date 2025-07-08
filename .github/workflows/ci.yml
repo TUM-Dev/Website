@@ -16,6 +16,8 @@ jobs:
           version: latest
       - name: Run Biome
         run: biome ci .
+      - name: Run type-checking
+        run: npm run type-check
   build:
     runs-on: ubuntu-latest
     steps:
