@@ -14,9 +14,8 @@ export type EventType =
 export interface EventProps {
 	title: string;
 	description: string;
-	startTime: string;
-	endTime: string;
-	date: string;
+	endTimestamp: number;
+	startTimestamp: number;
 	location: string;
 	type: EventType;
 }
@@ -24,9 +23,8 @@ export interface EventProps {
 export const Event: React.FC<EventProps> = ({
 	title,
 	description,
-	startTime,
-	endTime,
-	date,
+	endTimestamp,
+	startTimestamp,
 	location,
 	type,
 }) => {
@@ -51,6 +49,9 @@ export const Event: React.FC<EventProps> = ({
 			color = "red";
 			break;
 	}
+
+	const start = new Date(startTimestamp);
+	const end = new Date(endTimestamp);
 
 	return (
 		<Card
@@ -97,7 +98,7 @@ export const Event: React.FC<EventProps> = ({
 							<h4 className="font-semibold dark:text-white text-gray-900">
 								{title}
 							</h4>
-							<p className="text-sm dark:text-gray-300 text-gray-500">{date}</p>
+							<p className="text-sm dark:text-gray-300 text-gray-500">{}</p>
 						</div>
 					</div>
 					<Badge
@@ -114,19 +115,19 @@ export const Event: React.FC<EventProps> = ({
 					attendee="leads@tum.dev"
 					availability="busy"
 					buttonStyle="default"
-					endDate={date}
-					endTime={endTime}
+					endDate={end.toISOString().split("T")[0]}
+					endTime={end.toISOString().split("T")[1]}
 					hideBranding={true}
 					hideButton={true}
-					label={`${startTime} - ${endTime} • ${location}`}
+					label={`${start.toLocaleTimeString("de-DE").substring(0, 5)} - ${end.toLocaleTimeString("de-DE").substring(0, 5)} • ${location}`}
 					lightMode="bodyScheme"
 					location={location}
 					name={title}
 					options={["iCal", "Apple", "Google"]}
 					organizer="TUM-Dev Leads|leads@tum.dev"
 					size="4"
-					startDate={date}
-					startTime={startTime}
+					startDate={start.toISOString().split("T")[0]}
+					startTime={start.toISOString().split("T")[1]}
 					status="CONFIRMED"
 					timeZone="Europe/Berlin"
 				></AddToCalendarButton>

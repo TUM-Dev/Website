@@ -12,7 +12,7 @@ import {
 	Users2,
 } from "lucide-react";
 import Link from "next/link";
-import { Event } from "@/components/event";
+import { Event, type EventProps } from "@/components/event";
 import type { MemberProps } from "@/components/member";
 import { Member } from "@/components/member";
 import { Project, type ProjectProps } from "@/components/project";
@@ -226,6 +226,37 @@ export default function HomePage() {
 			tech: ["To", "Be", "Decided"],
 		},
 	];
+	const events: readonly EventProps[] = [
+		{
+			description:
+				"We will do a coding night at TUMs IT Management (5. floor) with free food as usual.",
+			endTimestamp: Date.parse("2025-07-08T19:00:00"),
+			location: "Karlstraße 45 - 5016",
+			startTimestamp: Date.parse("2025-06-08T22:00:00"),
+			title: "Coding night",
+			type: "coding",
+		} as EventProps,
+		{
+			description:
+				"Wir machen unser Status Meeting diesen Monat bei Garnix in Garching.",
+			endTimestamp: Date.parse("2025-07-01T19:00:00"),
+			location: "GarNix - Garching",
+			startTimestamp: Date.parse("2025-07-08T22:00:00"),
+			title: "Garnix Status Meeting",
+			type: "event",
+		} as EventProps,
+		{
+			description:
+				"Wie auf Discord besprochen, treffen wir uns nächste Woche für ein gemeinsames Team-Event beim TUNIX-Festival! Kommt vorbei auf ein Getränk, gute Gespräche und ein bisschen OpenSource-Vibes außerhalb des Bildschirms.",
+			endTimestamp: Date.parse("2025-06-08T19:00:00"),
+			location: "TUNIX Festival, Königsplatz, München",
+			startTimestamp: Date.parse("2025-06-08T22:00:00"),
+			title: "Tunix Team Event",
+			type: "meeting",
+		} as EventProps,
+	].sort((a, b) => a.startTimestamp - b.startTimestamp);
+
+	const today = new Date();
 	return (
 		<div>
 			<section className="py-20 px-4">
@@ -347,63 +378,39 @@ export default function HomePage() {
 			>
 				<div className="container mx-auto max-w-6xl">
 					<div className="text-center mb-12">
-						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">Termine</h2>
+						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">
+							Termine
+						</h2>
 						<p className="dark:text-gray-300 text-gray-600">
 							Verpasse keine unserer Veranstaltungen und Treffen
 						</p>
 					</div>
 
 					<div className="grid lg:grid-cols-2 gap-8">
-						{/* Regular Meetings */}
+						{/* Past Events */}
 						<div className="space-y-4">
 							<h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
 								<Users2 className="w-5 h-5 mr-2 dark:text-blue-400 text-blue-500" />
 								Vergangene Treffen
 							</h3>
-							<Event
-								date="2024-01-01"
-								description="Jeden Donnerstag besprechen wir aktuelle Projekte und planen neue Initiativen."
-								endTime="16:00"
-								location="Raum MI 00.13.009A"
-								startTime="14:00"
-								title="Git & GitHub Workshop"
-								type="meeting"
-							></Event>
+							{events
+								.filter((event) => new Date(event.endTimestamp) < today)
+								.map((event) => (
+									<Event key={event.title + event.startTimestamp} {...event} />
+								))}
 						</div>
 
-						{/* Upcoming Events */}
+						{/* Future Events */}
 						<div className="space-y-4">
 							<h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
 								<CalendarIcon className="w-5 h-5 mr-2 text-blue-400" />
 								Kommende Events
 							</h3>
-							<Event
-								date="2024-01-01"
-								description="Lerne die Grundlagen von Git und GitHub für Open Source Projekte."
-								endTime="16:00"
-								location="Raum MI 00.13.009A"
-								startTime="14:00"
-								title="Git & GitHub Workshop"
-								type="workshop"
-							></Event>
-							<Event
-								date="2024-01-01"
-								description="48h Hackathon mit Fokus auf studentische Open Source Projekte."
-								endTime="16:00"
-								location="TUM Garching"
-								startTime="14:00"
-								title="TUM Open Source Hackathon"
-								type="coding"
-							></Event>
-							<Event
-								date="2024-01-01"
-								description="Lockeres Treffen zum Austausch über Open Source Trends und Projekte."
-								endTime="16:00"
-								location="Mensa Garching"
-								startTime="14:00"
-								title="Open Source Coffee Chat"
-								type="chat"
-							></Event>
+							{events
+								.filter((event) => new Date(event.endTimestamp) >= today)
+								.map((event) => (
+									<Event key={event.title + event.startTimestamp} {...event} />
+								))}
 						</div>
 					</div>
 
