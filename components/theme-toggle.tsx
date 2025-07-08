@@ -18,6 +18,7 @@ export function ThemeToggle() {
 			className="text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-slate-700"
 			onClick={toggleTheme}
 			size="sm"
+			suppressHydrationWarning
 			title={
 				theme === "dark"
 					? "Dunkel - Klicken für Hell"
@@ -26,9 +27,9 @@ export function ThemeToggle() {
 			variant="ghost"
 		>
 			{theme === "dark" ? (
-				<Moon className="w-4 h-4" />
+				<Moon className="w-4 h-4" suppressHydrationWarning />
 			) : (
-				<Sun className="w-4 h-4" />
+				<Sun className="w-4 h-4" suppressHydrationWarning />
 			)}
 		</Button>
 	);

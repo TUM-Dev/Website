@@ -23,6 +23,7 @@ export const Header = () => {
 							height={50}
 							priority
 							src={theme === "dark" ? LogoDarkIcon : LogoLightIcon}
+							suppressHydrationWarning
 							title="Open Source @ TUM"
 						/>
 					</Link>
