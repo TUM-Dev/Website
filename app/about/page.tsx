@@ -14,6 +14,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import { NavigaTUMLogo } from "@/components/logos/navigatum";
+import { TUMLiveLogo } from "@/components/logos/tum-live";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,8 +25,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import NavigaTUMLogo from "@/public/icons/navigatum.svg";
-import TUMLiveLogo from "@/public/icons/tum-live.svg";
 
 export default function AboutPage() {
 	const { theme } = useTheme();
@@ -300,7 +300,7 @@ export default function AboutPage() {
 				<div className="container mx-auto max-w-6xl">
 					<div className="text-center mb-12">
 						<div className="flex items-center justify-center mb-6">
-							<Image alt="NavigaTUM Logo" height={60} src={NavigaTUMLogo} />
+							<NavigaTUMLogo height={60} />
 						</div>
 						<p className="text-xl dark:text-gray-300 text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
 							2021 wurde NavigaTUM ins Leben gerufen, um den in die Jahre
@@ -383,7 +383,7 @@ export default function AboutPage() {
 				<div className="container mx-auto max-w-6xl">
 					<div className="text-center mb-12">
 						<div className="flex items-center justify-center mb-6">
-							<Image alt="TUM.live Logo" height={90} src={TUMLiveLogo} />
+							<TUMLiveLogo height={90} />
 						</div>
 						<p className="text-xl dark:text-gray-300 text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
 							Our livestreaming and video-on-demand service for lectures at the

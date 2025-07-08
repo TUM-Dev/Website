@@ -1,31 +1,20 @@
 "use client";
 
 import { Mail } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import LogoDarkIcon from "../public/icons/logo-dark.svg";
-import LogoLightIcon from "../public/icons/logo-light.svg";
+import { Logo } from "./logos/logo";
 import { ThemeToggle } from "./theme-toggle";
 
 export const Header = () => {
-	const { theme } = useTheme();
 	const pathName = usePathname();
 	return (
 		<header className="border-b sticky top-0 z-50 dark:bg-slate-900/90 dark:backdrop-blur-sm dark:border-slate-700 bg-white/80 backdrop-blur-sm">
 			<div className="container mx-auto px-4 py-4">
 				<div className="flex items-center justify-between">
 					<Link className="flex items-center space-x-3" href="/">
-						<Image
-							alt="Logo von Open Source @ TUM"
-							height={50}
-							priority
-							src={theme === "dark" ? LogoDarkIcon : LogoLightIcon}
-							suppressHydrationWarning
-							title="Open Source @ TUM"
-						/>
+						<Logo height={50} />
 					</Link>
 					<div className="flex items-center space-x-3">
 						{pathName !== "/about" ? (
