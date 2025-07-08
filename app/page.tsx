@@ -100,6 +100,12 @@ export default function HomePage() {
 				"Einmal im monat machen wir ein Team Meeting, wo wir Ideen/Probleme besprechen und unseren Fortschritt präsentieren",
 			src: "/events/tunix25.webp",
 		},
+		{
+			alt: "Team Events",
+			caption:
+				"Hin und wieder treffen wir uns für gemeinsame Aktivitäten - hier beispielsweise beim GarNix",
+			src: "/events/garnix25.webp",
+		},
 		//{
 		//    src: "/events/hackatum.webp",
 		//    alt: "Team bei einem Hackathon",
@@ -150,6 +156,16 @@ export default function HomePage() {
 			caption:
 				"Neben code machen wir auch Veranstaltungen - hier haben wir beispielsweise die Photobox für die Unity gebaut",
 			src: "/events/photobox25.webp",
+		},
+		{
+			alt: "Sticker die wir haben",
+			caption: "Und natürlich auch Sticker",
+			src: "/events/stickers2.webp",
+		},
+		{
+			alt: "Sticker die wir haben",
+			caption: "Und mehr Sticker",
+			src: "/events/sticker.webp",
 		},
 	];
 	const projects: readonly ProjectProps[] = [
@@ -331,9 +347,7 @@ export default function HomePage() {
 			>
 				<div className="container mx-auto max-w-6xl">
 					<div className="text-center mb-12">
-						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">
-							Kommende Termine
-						</h2>
+						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">Termine</h2>
 						<p className="dark:text-gray-300 text-gray-600">
 							Verpasse keine unserer Veranstaltungen und Treffen
 						</p>
@@ -344,7 +358,7 @@ export default function HomePage() {
 						<div className="space-y-4">
 							<h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
 								<Users2 className="w-5 h-5 mr-2 dark:text-blue-400 text-blue-500" />
-								Regelmäßige Treffen
+								Vergangene Treffen
 							</h3>
 							<Event
 								date="2024-01-01"
@@ -405,16 +419,14 @@ export default function HomePage() {
 								verpassen.
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
-								<Button className="bg-gradient-to-r text-white dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700">
-									<Mail className="w-4 h-4 mr-2" />
-									Event-Updates erhalten
-								</Button>
 								<Button
-									className="dark:hover:bg-slate-600 dark:hover:text-gray-50 dark:text-gray-100 dark:bg-slate-700"
-									variant="secondary"
+									asChild
+									className="bg-gradient-to-r text-white dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 								>
-									<CalendarIcon className="w-4 h-4 mr-2" />
-									Kalender abonnieren
+									<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+										<Mail className="w-4 h-4 mr-2" />
+										Event-Updates erhalten
+									</Link>
 								</Button>
 							</div>
 						</div>
