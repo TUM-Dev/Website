@@ -275,10 +275,12 @@ export default function DataProtection() {
 								</span>
 								Änderungen der Datenschutzerklärung
 							</h2>
-							<p className="ml-11">
-								Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu
-								aktualisieren.
-							</p>
+							<div className="ml-11 space-y-4">
+								<p className="text-gray-700">
+									Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu
+									aktualisieren.
+								</p>
+							</div>
 						</section>
 					</div>
 				</div>
