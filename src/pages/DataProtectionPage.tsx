@@ -106,9 +106,9 @@ export default function DataProtection() {
 											technischen Betriebs, zur Fehleranalyse und zur
 											Verbesserung der App.
 										</p>
-										<div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+										<div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-sm">
 											<div className="flex">
-												<AlertCircle className="w-5 h-5 text-yellow-600 mr-2 flex-shrink-0 mt-0.5" />
+												<AlertCircle className="w-5 h-5 text-yellow-600 mr-2 shrink-0 mt-0.5" />
 												<div>
 													<p className="text-sm text-yellow-800">
 														<strong>Hinweis:</strong> Auch Google (als Betreiber
@@ -151,7 +151,7 @@ export default function DataProtection() {
 											Zur Analyse von App-Abstürzen verwenden wir{" "}
 											<strong>Firebase Crashlytics</strong>, einen Dienst von:
 										</p>
-										<div className="bg-gray-50 p-3 rounded border">
+										<div className="bg-gray-50 p-3 rounded-sm border">
 											<address className="text-gray-700 not-italic text-sm">
 												<div className="space-y-1">
 													<p className="font-medium">Google Ireland Ltd.</p>

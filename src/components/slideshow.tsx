@@ -78,7 +78,7 @@ export function Slideshow({ images }: SlideshowProps) {
 				{/* Play/Pause Button */}
 				<Button
 					aria-label="pausiert die Slideshow"
-					className="absolute top-4 right-4 bg-black/20 hover:bg-black/40 text-white border-0 backdrop-blur-sm"
+					className="absolute top-4 right-4 bg-black/20 hover:bg-black/40 text-white border-0 backdrop-blur-xs"
 					onClick={togglePlayPause}
 					size="sm"
 					title="Slideshow pausieren"
@@ -94,7 +94,7 @@ export function Slideshow({ images }: SlideshowProps) {
 				{/* Navigation Buttons */}
 				<Button
 					aria-label="zeigt vorheriges Bild an"
-					className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white border-0 backdrop-blur-sm"
+					className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white border-0 backdrop-blur-xs"
 					onClick={goToPrevious}
 					size="sm"
 					title="vorheriges Bild anzeigen"
@@ -105,7 +105,7 @@ export function Slideshow({ images }: SlideshowProps) {
 
 				<Button
 					aria-label="zeigt nächstes Bild an"
-					className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white border-0 backdrop-blur-sm"
+					className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white border-0 backdrop-blur-xs"
 					onClick={goToNext}
 					size="sm"
 					title="nächstes Bild anzeigen"
@@ -119,7 +119,7 @@ export function Slideshow({ images }: SlideshowProps) {
 			<div className="flex justify-center mt-4 space-x-2 overflow-x-auto pb-2">
 				{images.map((image, index) => (
 					<button
-						className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+						className={`shrink-0 cursor-pointer w-16 h-12 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
 							index === currentSlide
 								? theme === "dark"
 									? "border-blue-400"
