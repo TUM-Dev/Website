@@ -597,12 +597,15 @@ export default function HomePage() {
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Button
+							asChild
 							className="bg-white dark:text-blue-800 text-blue-600 hover:bg-gray-100"
 							size="lg"
 							variant="secondary"
 						>
-							<Mail className="w-5 h-5 mr-2" />
-							app (at) tum.de
+							<a href="mailto:app (at) tum.de">
+								<Mail className="w-5 h-5 mr-2" />
+								Kontakt aufnehmen
+							</a>
 						</Button>
 						<Button
 							className="border-white text-slate-900 dark:text-slate-50 hover:bg-white/10"
