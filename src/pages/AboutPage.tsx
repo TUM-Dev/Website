@@ -1,5 +1,3 @@
-"use client";
-
 import {
 	Award,
 	Heart,
@@ -11,8 +9,7 @@ import {
 	Users,
 	Zap,
 } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { useTheme } from "next-themes";
 import { NavigaTUMLogo } from "@/components/logos/navigatum";
 import { TUMLiveLogo } from "@/components/logos/tum-live";
@@ -212,7 +209,7 @@ export default function AboutPage() {
 			<section className="py-16 px-4 dark:bg-slate-800 bg-white">
 				<div className="container mx-auto max-w-6xl">
 					<div className="flex items-center justify-center mb-12">
-						<Image
+						<img
 							alt="TUM Campus App Logo"
 							className="rounded-lg flex items-center justify-center mr-4"
 							height={60}
@@ -246,12 +243,12 @@ export default function AboutPage() {
 							<div className="mt-6">
 								<p className="text-sm dark:text-gray-300 text-gray-500">
 									Questions or technical support? Contact us at{" "}
-									<Link
+									<a
 										className="dark:text-blue-400 text-blue-600 hover:underline"
 										href="mailto:app (at) tum.de"
 									>
 										app (at) tum.de
-									</Link>
+									</a>
 								</p>
 							</div>
 						</div>
@@ -307,12 +304,12 @@ export default function AboutPage() {
 							gekommenen Roomfinder durch eine moderne Lösung zu ersetzen. Das
 							von Studierenden für Studierende entwickelte Tool hilft dabei,
 							sich an der{" "}
-							<Link
+							<a
 								className="dark:text-blue-400 text-blue-600 hover:underline"
 								href="https://tum.de"
 							>
 								TUM
-							</Link>{" "}
+							</a>{" "}
 							zurechtzufinden.
 						</p>
 					</div>
@@ -342,12 +339,12 @@ export default function AboutPage() {
 							<div className="mt-6">
 								<p className="text-sm dark:text-gray-300 text-gray-500">
 									Questions or technical support? Contact us at{" "}
-									<Link
+									<a
 										className="dark:text-blue-400 text-blue-600 hover:underline"
 										href="mailto:navigatum (at) tum.de"
 									>
 										navigatum (at) tum.de
-									</Link>
+									</a>
 								</p>
 							</div>
 						</div>
@@ -355,7 +352,7 @@ export default function AboutPage() {
 						<div className="relative">
 							<div className="bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
 								<div className="relative mb-4">
-									<Image
+									<img
 										alt="NavigaTUM Navigation Screenshot"
 										className="w-full rounded-lg shadow-lg"
 										height={400}
@@ -415,12 +412,12 @@ export default function AboutPage() {
 							<div className="mt-6">
 								<p className="text-sm dark:text-gray-300 text-gray-500">
 									Questions or technical support? Contact us at{" "}
-									<Link
+									<a
 										className="dark:text-blue-400 text-blue-600 hover:underline"
 										href="mailto:live (at) rbg.tum.de"
 									>
 										live (at) rbg.tum.de
-									</Link>
+									</a>
 								</p>
 							</div>
 						</div>
@@ -428,7 +425,7 @@ export default function AboutPage() {
 						<div className="relative">
 							<div className="bg-gradient-to-r dark:from-red-900 dark:to-pink-900 from-red-50 to-pink-50 rounded-2xl p-8">
 								<div className="relative mb-4">
-									<Image
+									<img
 										alt="TUM.live Landing Page Screenshot"
 										className="w-full rounded-lg shadow-lg"
 										height={400}
@@ -470,7 +467,7 @@ export default function AboutPage() {
 						>
 							<CardContent className="p-8 text-center">
 								<div className="relative mb-4">
-									<Image
+									<img
 										alt="Bild von Dr.-Ing. Alexander Braun"
 										className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-blue-500"
 										height={96}
@@ -513,10 +510,10 @@ export default function AboutPage() {
 								className="font-semibold text-white bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 								size="lg"
 							>
-								<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+								<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
 									<Users className="w-5 h-5 mr-2" />
 									Jetzt mitmachen
-								</Link>
+								</a>
 							</Button>
 							<Button
 								asChild
@@ -524,7 +521,7 @@ export default function AboutPage() {
 								size="lg"
 								variant="outline"
 							>
-								<Link href="/contact">
+								<Link to="/contact">
 									{" "}
 									<Mail className="w-5 h-5 mr-2" />
 									Kontakt aufnehmen

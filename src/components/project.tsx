@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { Badge } from "./ui/badge";
 import {
 	Card,
@@ -21,8 +21,10 @@ export const Project: React.FC<ProjectProps> = ({
 	description,
 	link,
 	tech,
-}) => (
-	<Link className="group cursor-pointer" href={link || "#"}>
+}) => {
+	const isExternal = link && (link.startsWith('http') || link.startsWith('https'));
+
+	const CardComponent = (
 		<Card className="border-0 shadow-md group-hover:shadow-lg transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white group-hover:bg-slate-50 group-hover:dark:bg-slate-800">
 			<CardHeader>
 				<CardTitle className="flex items-center justify-between dark:text-white text-gray-900">
@@ -49,5 +51,24 @@ export const Project: React.FC<ProjectProps> = ({
 				</div>
 			</CardContent>
 		</Card>
-	</Link>
-);
+	);
+
+	if (isExternal) {
+		return (
+			<a
+				className="group cursor-pointer"
+				href={link}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				{CardComponent}
+			</a>
+		);
+	}
+
+	return (
+		<Link className="group cursor-pointer" to={link || "#"}>
+			{CardComponent}
+		</Link>
+	);
+};

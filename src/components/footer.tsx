@@ -1,5 +1,5 @@
 import { Code, FileText, Github, Mail, ShieldCheck } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
 	return (
@@ -17,12 +17,14 @@ export const Footer = () => {
 								Open Source @ TUM e.V.
 							</span>
 						</div>
-						<Link
+						<a
 							className="dark:text-gray-500 text-gray-400"
 							href="https://www.sv.tum.de/sv/hochschulgruppen/"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							Hochschulgruppe an der Technischen Universität München
-						</Link>
+						</a>
 					</div>
 
 					<div>
@@ -30,16 +32,16 @@ export const Footer = () => {
 							Kontakt
 						</h3>
 						<div className={`space-y-2 dark:text-gray-500 text-gray-400`}>
-							<Link
+							<a
 								className="dark:text-gray-500 text-gray-400 hover:dark:text-gray-300 hover:underline underline-offset-2 flex items-center transition-colors"
 								href="mailto:app (at) tum.de"
 							>
 								<Mail className="w-4 h-4 mr-2" />
 								app (at) tum.de
-							</Link>
+							</a>
 							<Link
 								className="dark:text-gray-500 text-gray-400 hover:dark:text-gray-300 hover:underline underline-offset-2 flex items-center transition-colors"
-								href="/imprint"
+								to="/imprint"
 							>
 								<FileText className="w-4 h-4 mr-2" />
 								Impressum
@@ -52,16 +54,18 @@ export const Footer = () => {
 							Links
 						</h3>
 						<div className="space-y-2">
-							<Link
+							<a
 								className="dark:text-gray-500 text-gray-400 hover:dark:text-gray-300 hover:underline underline-offset-2 flex items-center transition-colors"
 								href="https://github.com/tum-dev"
+								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<Github className="w-4 h-4 mr-2" />
 								GitHub
-							</Link>
+							</a>
 							<Link
 								className="dark:text-gray-500 text-gray-400 hover:dark:text-gray-300 hover:underline underline-offset-2 flex items-center transition-colors"
-								href="/data_protection"
+								to="/data_protection"
 							>
 								<ShieldCheck className="w-4 h-4 mr-2" />
 								Datenschutz

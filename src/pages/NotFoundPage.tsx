@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { NotFoundIcon } from "@/components/logos/404";
 import { Button } from "@/components/ui/button";
 
@@ -19,7 +19,7 @@ export default function Custom404() {
 					className="dark:from-blue-600 dark:text-white dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 					size="lg"
 				>
-					<Link href="/">Zur Startseite</Link>
+					<Link to="/">Zur Startseite</Link>
 				</Button>
 				<Button
 					className="bg-white dark:text-blue-800 border-1 text-blue-600 hover:bg-gray-100"

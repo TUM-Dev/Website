@@ -1,5 +1,3 @@
-"use client";
-
 import {
 	AlertCircle,
 	Database,
@@ -8,7 +6,7 @@ import {
 	Shield,
 	User,
 } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 
 export default function DataProtection() {
@@ -117,12 +115,12 @@ export default function DataProtection() {
 														des Play Store) kann unabhängig von uns Daten im
 														Rahmen der App-Installation und -Nutzung erheben.
 														Bitte beachten Sie hierzu die{" "}
-														<Link
+														<a
 															className="text-yellow-900 hover:text-yellow-700 underline font-medium"
 															href="https://policies.google.com/privacy?hl=de"
 														>
 															Datenschutzbestimmungen von Google
-														</Link>
+														</a>
 														.
 													</p>
 												</div>

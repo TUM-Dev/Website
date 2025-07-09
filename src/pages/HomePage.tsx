@@ -1,5 +1,3 @@
-"use client";
-
 import {
 	Calendar,
 	CalendarIcon,
@@ -11,7 +9,7 @@ import {
 	Users,
 	Users2,
 } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { Event, type EventProps } from "@/components/event";
 import type { MemberProps } from "@/components/member";
 import { Member } from "@/components/member";
@@ -263,7 +261,7 @@ export default function HomePage() {
 		<div>
 			<section className="py-20 px-4">
 				<div className="container mx-auto text-center max-w-4xl">
-					<Link href="https://www.sv.tum.de/sv/hochschulgruppen/">
+					<a href="https://www.sv.tum.de/sv/hochschulgruppen/" target="_blank" rel="noopener noreferrer">
 						<Badge
 							className="mb-6 px-4 py-2 dark:bg-slate-700 dark:text-gray-300 dark:hover:text-gray-900"
 							variant="secondary"
@@ -271,7 +269,7 @@ export default function HomePage() {
 							<MapPin className="w-4 h-4 mr-2" />
 							Hochschulgruppe an der Technischen Universität München
 						</Badge>
-					</Link>
+					</a>
 					<h1 className="text-5xl md:text-6xl font-bold font-sans dark:text-white text-gray-900 mb-6 leading-tight">
 						Open Source
 						<span className="bg-gradient-to-r dark:from-blue-400 dark:to-blue-500 from-blue-500 to-blue-600 bg-clip-text text-transparent">
@@ -288,10 +286,10 @@ export default function HomePage() {
 							className="dark:from-blue-600 dark:to-blue-700 text-white dark:hover:from-blue-700 dark:hover:to-blue-800 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 							size="lg"
 						>
-							<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+							<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about" target="_blank" rel="noopener noreferrer">
 								<Users className="w-5 h-5 mr-2" />
 								Jetzt mitmachen
-							</Link>
+							</a>
 						</Button>
 						<Button
 							asChild
@@ -299,10 +297,10 @@ export default function HomePage() {
 							size="lg"
 							variant="outline"
 						>
-							<Link href="#projects">
+							<a href="#projects">
 								<Github className="w-5 h-5 mr-2" />
 								Unsere Projekte
-							</Link>
+							</a>
 						</Button>
 					</div>
 				</div>
@@ -432,10 +430,10 @@ export default function HomePage() {
 									asChild
 									className="bg-gradient-to-r text-white dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 								>
-									<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+									<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about" target="_blank" rel="noopener noreferrer">
 										<Mail className="w-4 h-4 mr-2" />
 										Event-Updates erhalten
-									</Link>
+									</a>
 								</Button>
 							</div>
 						</div>
@@ -546,10 +544,10 @@ export default function HomePage() {
 									asChild
 									className="bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 								>
-									<Link href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+									<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about" target="_blank" rel="noopener noreferrer">
 										<Users className="w-4 h-4 mr-2" />
 										Team beitreten
-									</Link>
+									</a>
 								</Button>
 
 								<Button
@@ -557,10 +555,10 @@ export default function HomePage() {
 									className="dark:hover:bg-slate-600 dark:hover:text-gray-50 dark:text-gray-100 dark:bg-slate-700 bg-black text-white hover:text-gray-50 hover:bg-gray-900"
 									variant="secondary"
 								>
-									<Link href="#projects">
+									<a href="#projects">
 										<Github className="w-4 h-4 mr-2" />
 										Projekte ansehen
-									</Link>
+									</a>
 								</Button>
 							</div>
 						</div>

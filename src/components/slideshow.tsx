@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
-import Image from "next/image";
+
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -59,11 +59,9 @@ export function Slideshow({ images }: SlideshowProps) {
 		<div className="relative w-full max-w-4xl mx-auto">
 			{/* Main Image Container */}
 			<div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
-				<Image
+				<img
 					alt={images[currentSlide].alt}
 					className="w-full h-full object-cover transition-opacity duration-500"
-					fill
-					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					src={images[currentSlide].src}
 				/>
 
@@ -132,12 +130,10 @@ export function Slideshow({ images }: SlideshowProps) {
 						onClick={() => goToSlide(index)}
 						type="button"
 					>
-						<Image
+						<img
 							alt={image.alt}
 							className="w-full h-full object-cover"
-							height={48}
 							src={image.src}
-							width={64}
 						/>
 					</button>
 				))}

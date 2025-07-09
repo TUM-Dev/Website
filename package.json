@@ -36,44 +36,48 @@
 		"date-fns": "4.1.0",
 		"embla-carousel-react": "8.6.0",
 		"lucide-react": "^0.518.0",
-		"next": "15.3.4",
 		"next-themes": "^0.4.4",
 		"react": "^19",
 		"react-dom": "^19",
-		"react-hook-form": "^7.54.1",
+		"react-hook-form": "^7.60.0",
 		"react-resizable-panels": "^3.0.3",
+		"react-router-dom": "^7.6.3",
 		"sonner": "^2.0.5",
 		"tailwind-merge": "^3.3.1",
 		"tailwindcss-animate": "^1.0.7",
 		"vaul": "^1.1.2",
-		"zod": "^3.24.1"
+		"zod": "^3.25.76"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.0.0",
 		"@types/node": "^24",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"@vitejs/plugin-react": "^4.6.0",
 		"postcss": "^8.5",
 		"serve": "^14.2.4",
 		"tailwindcss": "^3",
-		"typescript": "^5"
+		"typescript": "^5",
+		"vite": "^7.0.3"
 	},
 	"homepage": "https://tum.dev/",
 	"name": "tum-dev-website",
 	"packageManager": "pnpm@10.12.4",
 	"pnpm": {
 		"onlyBuiltDependencies": [
+			"esbuild",
 			"sharp"
 		]
 	},
 	"private": true,
 	"scripts": {
-		"build": "next build",
-		"dev": "next dev",
+		"build": "vite build",
+		"dev": "vite",
 		"format": "biome format --write && biome check --formatter-enabled=false --linter-enabled=false --write",
 		"lint": "biome check --error-on-warnings",
 		"lint-fix": "biome check --write",
-		"start": "serve out",
+		"preview": "vite preview",
+		"start": "serve dist",
 		"type-check": "tsc --noEmit"
 	},
 	"version": "0.1.0"

@@ -1,8 +1,6 @@
-"use client";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Heart, Mail, MessageSquare, Send, User } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -336,13 +334,13 @@ export default function Contact() {
 								</h2>
 								<div className="ml-11 text-gray-700 space-y-3">
 									<p>Du können uns auch direkt eine E-Mail schreiben:</p>
-									<Link className="group" href="mailto:app at tum.de">
+									<a className="group" href="mailto:app at tum.de">
 										<div className="bg-white p-4 rounded-lg border-l-4 border-purple-600 group-hover:shadow-lg group-hover:bg-purple-50">
 											<p className="font-semibold text-purple-800">
 												app at tum dot de
 											</p>
 										</div>
-									</Link>
+									</a>
 								</div>
 							</section>
 
@@ -354,7 +352,7 @@ export default function Contact() {
 									Werde Teil unserer Community
 								</h2>
 								<div className="ml-11 text-gray-700 space-y-2 grid gap-y-1">
-									<Link className="group" href="https://github.com/TUM-Dev">
+									<a className="group" href="https://github.com/TUM-Dev">
 										<div className="bg-white p-3 rounded-lg group-hover:shadow-lg group-hover:bg-gray-100">
 											<p className="font-medium">GitHub</p>
 											<p className="text-sm text-gray-600">
@@ -362,8 +360,8 @@ export default function Contact() {
 												verbessern
 											</p>
 										</div>
-									</Link>
-									<Link className="group" href="/about">
+									</a>
+									<Link className="group" to="/about">
 										<div className="bg-white p-3 rounded-lg group-hover:shadow-lg group-hover:bg-gray-100">
 											<p className="font-medium">Open Source @ TUM e.V.</p>
 											<p className="text-sm text-gray-600">

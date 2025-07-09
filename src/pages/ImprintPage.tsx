@@ -1,5 +1,3 @@
-"use client";
-
 import {
 	FileText,
 	GraduationCap,
@@ -9,7 +7,7 @@ import {
 	Smartphone,
 	Users,
 } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 
 export default function Imprint() {
@@ -77,20 +75,20 @@ export default function Imprint() {
 								</p>
 								<p>
 									Für alle Anliegen erreichen Sie den Support unter:
-									<Link href="mailto:app at tum.de">app at tum dot de</Link>
+									<a href="mailto:app at tum.de">app at tum dot de</a>
 								</p>
 								<p>
 									Aktuelle Projektleitung erfolgt durch Jakob Körber. Die
 									Entwicklung erfolgt primär durch Freiwillige und wird
 									öffentlich auf
-									<Link
+									<a
 										className="text-blue-600 hover:text-blue-800 font-medium mx-1 underline"
 										href="https://github.com/TUM-Dev"
 										rel="noopener noreferrer"
 										target="_blank"
 									>
 										GitHub
-									</Link>
+									</a>
 									durchgeführt, wo auch der Quelltext für alle Projekte zur
 									Einsicht bereit liegt.
 								</p>
