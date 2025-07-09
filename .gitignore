@@ -24,3 +24,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# other package managers
+deno.lock
+package-lock.json
+yarn.lock
+
+# IDEs
+/.vscode/*
+/.idea/*
+/.DS_Store
