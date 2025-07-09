@@ -598,14 +598,13 @@ export default function HomePage() {
 						Wende dich dafür einfach an uns - wir freuen uns auf dich!
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
-						<Button
-							className="bg-white dark:text-blue-800 text-blue-600 hover:bg-gray-100"
-							size="lg"
-							variant="secondary"
+						<a
+							href="mailto:app (at) tum.de"
+							className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white dark:text-blue-800 text-blue-600 hover:bg-gray-100 h-11 px-8"
 						>
 							<Mail className="w-5 h-5 mr-2" />
-							app (at) tum.de
-						</Button>
+							Kontakt aufnehmen
+						</a>
 						<Button
 							className="border-white text-slate-900 dark:text-slate-50 hover:bg-white/10"
 							size="lg"
