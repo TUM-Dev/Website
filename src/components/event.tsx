@@ -56,6 +56,7 @@ export const Event: React.FC<EventProps> = ({
 	const end = new Date(endTimestamp);
 	const endTime = end.toLocaleTimeString("de-DE").substring(0, 5);
 	const endDate = end.toISOString().split("T")[0];
+	const oneDayEvent = start.getDate() === end.getDate() && start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear() ;
 
 	if (startTimestamp > endTimestamp) {
 		throw new Error(
@@ -108,7 +109,7 @@ export const Event: React.FC<EventProps> = ({
 							<h4 className="font-semibold dark:text-white text-gray-900">
 								{title}
 							</h4>
-							<p className="text-sm dark:text-gray-300 text-gray-500">{}</p>
+							<p className="text-sm dark:text-gray-300 text-gray-500">{oneDayEvent ? start.toLocaleDateString("de-DE") : `${start.toLocaleDateString("de-DE")} - ${end.toLocaleDateString("de-DE")}`}</p>
 						</div>
 					</div>
 					<Badge
