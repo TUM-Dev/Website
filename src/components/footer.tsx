@@ -65,7 +65,7 @@ export const Footer = () => {
 							</a>
 							<Link
 								className="dark:text-gray-500 text-gray-400 hover:dark:text-gray-300 hover:underline underline-offset-2 flex items-center transition-colors"
-								to="/data_protection"
+								to="/privacy"
 							>
 								<ShieldCheck className="w-4 h-4 mr-2" />
 								Datenschutz

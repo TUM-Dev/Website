@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/data_protection" element={<DataProtectionPage />} />
+        <Route path="/privacy" element={<DataProtectionPage />} />
         <Route path="/imprint" element={<ImprintPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
