@@ -24,6 +24,7 @@ export const Member: React.FC<MemberProps> = ({
 				<CardContent className="p-6 text-center">
 					<div className="relative mb-4">
 						<img
+						  loading="lazy"
 							alt={name}
 							className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-blue-500"
 							src={avatar || "/avatars/placeholder.webp"}

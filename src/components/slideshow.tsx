@@ -60,6 +60,7 @@ export function Slideshow({ images }: SlideshowProps) {
 			{/* Main Image Container */}
 			<div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
 				<img
+					loading="lazy"
 					alt={images[currentSlide].alt}
 					className="w-full h-full object-cover transition-opacity duration-500"
 					src={images[currentSlide].src}
@@ -131,6 +132,8 @@ export function Slideshow({ images }: SlideshowProps) {
 						type="button"
 					>
 						<img
+						  loading="lazy"
+							fetchPriority="low"
 							alt={image.alt}
 							className="w-full h-full object-cover"
 							src={image.src}
