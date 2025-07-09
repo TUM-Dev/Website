@@ -3,9 +3,8 @@
 # dependencies
 /node_modules
 
-# next.js
-/.next/
-/out/
+# vite
+/dist/
 
 # production
 /build
