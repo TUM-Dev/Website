@@ -155,7 +155,7 @@ importers:
         version: 2.1.1
       '@types/node':
         specifier: ^24
-        version: 24.0.12
+        version: 24.0.13
       '@types/react':
         specifier: ^19
         version: 19.1.8
@@ -164,7 +164,7 @@ importers:
         version: 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react':
         specifier: ^4.6.0
-        version: 4.6.0(vite@7.0.3(@types/node@24.0.12)(jiti@1.21.7)(yaml@2.8.0))
+        version: 4.6.0(vite@7.0.3(@types/node@24.0.13)(jiti@1.21.7)(yaml@2.8.0))
       postcss:
         specifier: ^8.5
         version: 8.5.6
@@ -179,7 +179,7 @@ importers:
         version: 5.8.3
       vite:
         specifier: ^7.0.3
-        version: 7.0.3(@types/node@24.0.12)(jiti@1.21.7)(yaml@2.8.0)
+        version: 7.0.3(@types/node@24.0.13)(jiti@1.21.7)(yaml@2.8.0)
 
 packages:
 
@@ -1293,8 +1293,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/node@24.0.12':
-    resolution: {integrity: sha512-LtOrbvDf5ndC9Xi+4QZjVL0woFymF/xSTKZKPgrrl7H7XoeDvnD+E2IclKVDyaK9UM756W/3BXqSU+JEHopA9g==}
+  '@types/node@24.0.13':
+    resolution: {integrity: sha512-Qm9OYVOFHFYg3wJoTSrz80hoec5Lia/dPp84do3X7dZvLikQvM1YpmvTBEdIr/e+U8HTkFjLHLnl78K/qjf+jQ==}
 
   '@types/react-dom@19.1.6':
     resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
@@ -3356,7 +3356,7 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/node@24.0.12':
+  '@types/node@24.0.13':
     dependencies:
       undici-types: 7.8.0
 
@@ -3368,7 +3368,7 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
-  '@vitejs/plugin-react@4.6.0(vite@7.0.3(@types/node@24.0.12)(jiti@1.21.7)(yaml@2.8.0))':
+  '@vitejs/plugin-react@4.6.0(vite@7.0.3(@types/node@24.0.13)(jiti@1.21.7)(yaml@2.8.0))':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.0)
@@ -3376,7 +3376,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.19
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.0.3(@types/node@24.0.12)(jiti@1.21.7)(yaml@2.8.0)
+      vite: 7.0.3(@types/node@24.0.13)(jiti@1.21.7)(yaml@2.8.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -4254,7 +4254,7 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
 
-  vite@7.0.3(@types/node@24.0.12)(jiti@1.21.7)(yaml@2.8.0):
+  vite@7.0.3(@types/node@24.0.13)(jiti@1.21.7)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.6
       fdir: 6.4.6(picomatch@4.0.2)
@@ -4263,7 +4263,7 @@ snapshots:
       rollup: 4.44.2
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 24.0.12
+      '@types/node': 24.0.13
       fsevents: 2.3.3
       jiti: 1.21.7
       yaml: 2.8.0
