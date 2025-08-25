@@ -7,7 +7,7 @@ import { ThemeToggle } from "./theme-toggle";
 export const Header = () => {
 	const location = useLocation();
 	return (
-		<header className="border-b sticky top-0 z-50 dark:bg-slate-900/90 dark:backdrop-blur-sm dark:border-slate-700 bg-white/80 backdrop-blur-sm">
+		<header className="border-b sticky top-0 z-50 dark:bg-slate-900/90 dark:backdrop-blur-xs dark:border-slate-700 bg-white/80 backdrop-blur-xs">
 			<div className="container mx-auto px-4 py-4">
 				<div className="flex items-center justify-between">
 					<Link className="flex items-center space-x-3" to="/">
