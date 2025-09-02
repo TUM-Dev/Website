@@ -1,0 +1,46 @@
+name: Fetch Discord Events (Node.js)
+
+on:
+  schedule:
+    # Run every 4 hours
+    - cron: '0 8,12,16,20 * * *'
+  workflow_dispatch: # Allows for a manual run
+
+jobs:
+  fetch_and_dump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up a Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x' # Or any version you prefer
+
+      # Step 3: Install Node.js dependencies
+      - name: Install dependencies
+        run: npm install
+	working-directory: 'automation'
+
+      # Step 4: Run the Node.js script to fetch events and save to a file
+      - name: Fetch and save events
+        run: node get_events.js > ../scheduled_events.json
+        working-directory: 'automation'
+        env:
+          # Use the GitHub Secret we created to pass the token
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+
+      # Step 5: Commit the new JSON file back to the repository
+      - name: Commit and push changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add scheduled_events.json
+          git commit -m "chore(scheduled-events): Update scheduled events from Discord API" || echo "No changes to commit"
+          git push
