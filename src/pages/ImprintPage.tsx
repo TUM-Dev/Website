@@ -110,10 +110,7 @@ export default function Imprint() {
 								</ul>
 							</div>
 							<div className="ml-11 text-gray-700">
-								<p className="font-semibold text-purple-800 mb-2">
-									TUM Informatik F13
-								</p>
-								<p className="mb-1">Lehrstuhl/Fachgebiet für Betriebssysteme</p>
+								<p className="mb-1">TUM Informatik F13 - Lehrstuhl/Fachgebiet für Betriebssysteme</p>
 								<ul className="list-disc list-inside space-y-1 ml-4">
 									<li>Prof. Dr. Uwe Baumgarten (Emeritus)</li>
 									<li>Prof. Dr. Peter Paul Spies (Emeritus)</li>

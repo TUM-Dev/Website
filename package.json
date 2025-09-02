@@ -70,7 +70,7 @@
 		]
 	},
 	"private": true,
-	"scripts": { 
+	"scripts": {
 		"build": "vite build && mkdir dist/about && cp dist/index.html dist/about && mkdir dist/contact && cp dist/index.html dist/contact && mkdir dist/privacy && cp dist/index.html dist/privacy && mkdir dist/imprint && cp dist/index.html dist/imprint  && cp dist/index.html dist/404.html",
 		"dev": "vite",
 		"format": "biome format --write && biome check --formatter-enabled=false --linter-enabled=false --write",
