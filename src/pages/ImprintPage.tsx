@@ -129,7 +129,7 @@ export default function Imprint() {
 							<div className="ml-11 text-gray-700 space-y-4">
 								<p>
 									Falls Sie mit uns in Verbindung treten möchten, können Sie das
-									Kontaktformular verwenden oder eine E-Mail an <a href="mailto:leads@tum.dev">leads@tum.dev</a>.
+									Kontaktformular verwenden oder eine E-Mail an leads (at) tum.dev.
 								</p>
 
 								<div className="bg-white p-4 rounded-lg border-l-4 border-indigo-600">
