@@ -43,4 +43,5 @@ jobs:
           git config user.email github-actions@github.com
           git add scheduled_events.json
           git commit -m "chore(scheduled-events): Update scheduled events from Discord API" || echo "No changes to commit"
-          git push
+          git push origin HEAD:event-data --force
+
