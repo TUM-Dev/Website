@@ -1,1 +1,40 @@
-
+[
+  {
+    "id": "1412502015065723020",
+    "guild_id": "780140656597008387",
+    "name": "Team Meeting",
+    "description": "",
+    "channel_id": null,
+    "creator_id": "239148502096150528",
+    "creator": {
+      "id": "239148502096150528",
+      "username": "joscher",
+      "avatar": "6cdca3e2dbbdf83384c85c732e9e96cf",
+      "discriminator": "0",
+      "public_flags": 0,
+      "flags": 0,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "Joscha",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "image": null,
+    "scheduled_start_time": "2025-10-02T16:00:00+00:00",
+    "scheduled_end_time": "2025-10-02T20:00:00+00:00",
+    "status": 1,
+    "entity_type": 3,
+    "entity_id": null,
+    "recurrence_rule": null,
+    "privacy_level": 2,
+    "sku_ids": [],
+    "guild_scheduled_event_exceptions": [],
+    "entity_metadata": {
+      "location": "Karlstr. 45, 80333 München"
+    }
+  }
+]
