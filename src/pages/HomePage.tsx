@@ -68,7 +68,7 @@ export default function HomePage() {
 		},
 		{
 			avatar: "/avatars/placeholder.webp",
-			name: "Rischab Garg",
+			name: "Rishab Garg",
 			role: "Backend Developer",
 		},
 		{
