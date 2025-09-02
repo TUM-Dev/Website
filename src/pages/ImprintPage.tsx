@@ -104,6 +104,12 @@ export default function Imprint() {
 								Schirmherr
 							</h2>
 							<div className="ml-11 text-gray-700">
+								<p className="mb-1">Senior Vice President Digitalization and IT Systems</p>
+								<ul className="list-disc list-inside space-y-1 ml-4">
+									<li>Dr.-Ing. Alexander Braun</li>
+								</ul>
+							</div>
+							<div className="ml-11 text-gray-700">
 								<p className="font-semibold text-purple-800 mb-2">
 									TUM Informatik F13
 								</p>
@@ -114,41 +120,6 @@ export default function Imprint() {
 								</ul>
 							</div>
 						</section>
-
-						{/* Addresses Section */}
-						<div className="grid md:grid-cols-2 gap-8">
-							<section className="bg-orange-50 p-6 rounded-lg">
-								<h2 className="text-2xl font-semibold text-orange-900 mb-4 flex items-center">
-									<span className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
-										<Mail className="w-4 h-4" />
-									</span>
-									Postadresse
-								</h2>
-								<address className="ml-11 text-gray-700 not-italic">
-									<div className="space-y-1">
-										<p>Boltzmannstr. 3</p>
-										<p>85748 Garching</p>
-										<p>Deutschland</p>
-									</div>
-								</address>
-							</section>
-
-							<section className="bg-red-50 p-6 rounded-lg">
-								<h2 className="text-2xl font-semibold text-red-900 mb-4 flex items-center">
-									<span className="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
-										<MapPin className="w-4 h-4" />
-									</span>
-									Besucheradresse
-								</h2>
-								<address className="ml-11 text-gray-700 not-italic">
-									<div className="space-y-1">
-										<p>Parkring 37</p>
-										<p>85748 Garching</p>
-										<p>Deutschland</p>
-									</div>
-								</address>
-							</section>
-						</div>
 
 						{/* Contact Section */}
 						<section className="bg-indigo-50 p-6 rounded-lg">
@@ -161,27 +132,17 @@ export default function Imprint() {
 							<div className="ml-11 text-gray-700 space-y-4">
 								<p>
 									Falls Sie mit uns in Verbindung treten möchten, können Sie das
-									Kontaktformular verwenden oder eine E-Mail an die unten
-									stehende Adresse schicken.
+									Kontaktformular verwenden oder eine E-Mail an <a href="mailto:leads@tum.dev">leads@tum.dev</a>.
 								</p>
 
 								<div className="bg-white p-4 rounded-lg border-l-4 border-indigo-600">
 									<p className="font-semibold text-indigo-800 mb-2">
-										Open Source @ TUM e.V.
+										Open Source @ TUM e.V.<br />
+										c/o Florian Schmidt<br />
+										Richard Wagner Straße 1<br />
+										80333 München<br />
+										Deutschland
 									</p>
-									<address className="text-gray-700 not-italic">
-										<div className="space-y-1">
-											<p>
-												<span className="font-medium">Adresse:</span>{" "}
-												Arcisstraße 21
-											</p>
-											<p>80333 München</p>
-											<p>
-												<span className="font-medium">E-Mail:</span> app at tum
-												dot de
-											</p>
-										</div>
-									</address>
 								</div>
 							</div>
 						</section>
