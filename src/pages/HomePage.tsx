@@ -18,6 +18,7 @@ import type { SlideShowItem } from "@/components/slideshow";
 import { Slideshow } from "@/components/slideshow";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 import {
 	Card,
 	CardDescription,
@@ -26,6 +27,14 @@ import {
 } from "@/components/ui/card";
 
 export default function HomePage() {
+	// Define the URL for the JSON data
+	const eventsUrl = "https://raw.githubusercontent.com/TUM-Dev/Website/refs/heads/event-data/scheduled_events.json";
+
+	// Use state to manage the events data and a loading state
+	const [events, setEvents] = useState([]);
+	const [isLoading, setIsLoading] = useState(true);
+	const [error, setError] = useState(null);
+
 	const members: readonly MemberProps[] = [
 		{
 			avatar: "/avatars/jakob.webp",
@@ -226,37 +235,64 @@ export default function HomePage() {
 			tech: ["To", "Be", "Decided"],
 		},
 	];
-	const events: readonly EventProps[] = [
-		{
-			description:
-				"We will do a coding night at TUMs IT Management (5. floor) with free food as usual.",
-			endTimestamp: Date.parse("2025-07-08T22:00:00"),
-			location: "5016 - Karlstraße 45",
-			startTimestamp: Date.parse("2025-06-08T19:00:00"),
-			title: "Coding night",
-			type: "coding",
-		} as EventProps,
-		{
-			description:
-				"Wir machen unser Status Meeting diesen Monat bei Garnix in Garching.",
-			endTimestamp: Date.parse("2025-07-01T22:00:00"),
-			location: "GarNix - Garching",
-			startTimestamp: Date.parse("2025-07-01T19:00:00"),
-			title: "Garnix Status Meeting",
-			type: "event",
-		} as EventProps,
-		{
-			description:
-				"Wie auf Discord besprochen, treffen wir uns nächste Woche für ein gemeinsames Team-Event beim TUNIX-Festival! Kommt vorbei auf ein Getränk, gute Gespräche und ein bisschen OpenSource-Vibes außerhalb des Bildschirms.",
-			endTimestamp: Date.parse("2025-06-08T22:00:00"),
-			location: "TUNIX - Königsplatz",
-			startTimestamp: Date.parse("2025-06-08T19:00:00"),
-			title: "Tunix Team Event",
-			type: "meeting",
-		} as EventProps,
-	].sort((a, b) => a.startTimestamp - b.startTimestamp);
+	
+	
+	// Use the useEffect hook to fetch data when the component mounts
+	useEffect(() => {
+		const fetchEvents = async () => {
+		    try {
+			// Fetch the JSON data from the URL
+			const response = await fetch(eventsUrl);
+			if (!response.ok) {
+			    throw new Error(`HTTP error! status: ${response.status}`);
+			}
+			const data = await response.json();
+
+			// Convert timestamps from string to Date objects
+			const formattedEvents = data.map(event => ({
+			    ...event,
+			    title: event.name,
+			    description: event.description,
+			    location: event.entity_metadata?.location || "Online", // Use optional chaining for safety
+			    startTimestamp: new Date(event.scheduled_start_time),
+			    endTimestamp: new Date(event.scheduled_end_time),
+			    // Derive the type based on the name
+			    type: event.name.toLowerCase().includes("coding") ? "coding" :
+				  event.name.toLowerCase().includes("meeting") ? "meeting" :
+				  "event"
+			}));
+
+			// Set the events state with the fetched data, sorted by start time
+			setEvents(formattedEvents.sort((a, b) => a.scheduled_start_time - b.scheduled_start_time));
+		    } catch (e) {
+			// Set the error state if fetching fails
+			setError(e.message);
+		    } finally {
+			// Set loading to false once the request is complete
+			setIsLoading(false);
+		    }
+		};
+
+		fetchEvents();
+	}, []); // The empty array ensures this effect runs only once
 
 	const today = new Date();
+	
+	// Conditional rendering for loading, error, and no events
+	if (isLoading) {
+		return <div className="text-center py-20">Loading events...</div>;
+	}
+
+	if (error) {
+		return <div className="text-center py-20 text-red-500">Error: Could not load events.</div>;
+	}
+
+	if (events.length === 0) {
+		// You might want to handle this case more gracefully
+		// For example, by showing a "No upcoming events" message
+		return <div className="text-center py-20 dark:text-gray-300">No scheduled events found.</div>;
+	}
+	
 	return (
 		<div>
 			<section className="py-20 px-4">
@@ -377,67 +413,42 @@ export default function HomePage() {
 				id="events"
 			>
 				<div className="container mx-auto max-w-6xl">
-					<div className="text-center mb-12">
-						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">
-							Termine
-						</h2>
-						<p className="dark:text-gray-300 text-gray-600">
-							Verpasse keine unserer Veranstaltungen und Treffen
-						</p>
+				    <div className="text-center mb-12">
+					<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">
+					    Termine
+					</h2>
+					<p className="dark:text-gray-300 text-gray-600">
+					    Verpasse keine unserer Veranstaltungen und Treffen
+					</p>
+				    </div>
+
+				    <div className="grid lg:grid-cols-2 gap-8">
+					{/* Past Events */}
+					<div className="space-y-4">
+					    <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
+						<Users2 className="w-5 h-5 mr-2 dark:text-blue-400 text-blue-500" />
+						Vergangene Treffen
+					    </h3>
+					    {events
+						.filter((event) => new Date(event.endTimestamp) < today)
+						.map((event) => (
+						    <Event key={event.name + event.startTimestamp} {...event} />
+						))}
 					</div>
 
-					<div className="grid lg:grid-cols-2 gap-8">
-						{/* Past Events */}
-						<div className="space-y-4">
-							<h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
-								<Users2 className="w-5 h-5 mr-2 dark:text-blue-400 text-blue-500" />
-								Vergangene Treffen
-							</h3>
-							{events
-								.filter((event) => new Date(event.endTimestamp) < today)
-								.map((event) => (
-									<Event key={event.title + event.startTimestamp} {...event} />
-								))}
-						</div>
-
-						{/* Future Events */}
-						<div className="space-y-4">
-							<h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
-								<CalendarIcon className="w-5 h-5 mr-2 text-blue-400" />
-								Kommende Events
-							</h3>
-							{events
-								.filter((event) => new Date(event.endTimestamp) >= today)
-								.map((event) => (
-									<Event key={event.title + event.startTimestamp} {...event} />
-								))}
-						</div>
+					{/* Future Events */}
+					<div className="space-y-4">
+					    <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
+						<CalendarIcon className="w-5 h-5 mr-2 text-blue-400" />
+						Kommende Events
+					    </h3>
+					    {events
+						.filter((event) => new Date(event.endTimestamp) >= today)
+						.map((event) => (
+						    <Event key={event.name + event.startTimestamp} {...event} />
+						))}
 					</div>
-
-					{/* Call to Action for Events */}
-					<div className="mt-12 text-center">
-						<div className="bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
-							<h3 className="text-2xl font-bold dark:text-white text-gray-900 mb-4">
-								Interesse an unseren Events?
-							</h3>
-							<p className="dark:text-gray-300 text-gray-600 mb-6 max-w-2xl mx-auto">
-								Melde dich bei uns, um über kommende Veranstaltungen informiert
-								zu werden und keine spannenden Workshops oder Hackathons zu
-								verpassen.
-							</p>
-							<div className="flex flex-col sm:flex-row gap-4 justify-center">
-								<Button
-									asChild
-									className="bg-gradient-to-r text-white dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
-								>
-									<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about" target="_blank" rel="noopener noreferrer">
-										<Mail className="w-4 h-4 mr-2" />
-										Event-Updates erhalten
-									</a>
-								</Button>
-							</div>
-						</div>
-					</div>
+				    </div>
 				</div>
 			</section>
 

@@ -109,7 +109,7 @@ export const Event: React.FC<EventProps> = ({
 							<h4 className="font-semibold dark:text-white text-gray-900">
 								{title}
 							</h4>
-							<p className="text-sm dark:text-gray-300 text-gray-500">{oneDayEvent ? start.toLocaleDateString("de-DE") : `${start.toLocaleDateString("de-DE")} - ${end.toLocaleDateString("de-DE")}`}</p>
+							<p className="text-sm dark:text-gray-300 text-gray-500">{oneDayEvent ? start.toLocaleDateString("de-DE",{ year: "numeric", month: "2-digit", day: "2-digit"}) : `${start.toLocaleDateString("de-DE",{ year: "numeric", month: "2-digit", day: "2-digit"})} - ${end.toLocaleDateString("de-DE",{ year: "numeric", month: "2-digit", day: "2-digit"})}`}</p>
 						</div>
 					</div>
 					<Badge
