@@ -31,9 +31,9 @@ export default function HomePage() {
 	const eventsUrl = "https://raw.githubusercontent.com/TUM-Dev/Website/refs/heads/event-data/scheduled_events.json";
 
 	// Use state to manage the events data and a loading state
-	const [events, setEvents] = useState([]);
+	const [events, setEvents] = useState<EventProps[]>([]);
 	const [isLoading, setIsLoading] = useState(true);
-	const [error, setError] = useState(null);
+	const [error, setError] = useState<string | null>(null);
 
 	const members: readonly MemberProps[] = [
 		{
@@ -249,7 +249,7 @@ export default function HomePage() {
 			const data = await response.json();
 
 			// Convert timestamps from string to Date objects
-			const formattedEvents = data.map(event => ({
+			const formattedEvents: EventProps[] = data.map((event: any) => ({
 			    ...event,
 			    title: event.name,
 			    description: event.description,
@@ -263,10 +263,12 @@ export default function HomePage() {
 			}));
 
 			// Set the events state with the fetched data, sorted by start time
-			setEvents(formattedEvents.sort((a, b) => a.scheduled_start_time - b.scheduled_start_time));
+			setEvents(formattedEvents.sort((a, b) => a.startTimestamp.getTime() - b.startTimestamp.getTime()));
 		    } catch (e) {
 			// Set the error state if fetching fails
-			setError(e.message);
+			if (e instanceof Error) {
+				setError(e.message);
+			}
 		    } finally {
 			// Set loading to false once the request is complete
 			setIsLoading(false);
