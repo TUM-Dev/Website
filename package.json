@@ -62,7 +62,7 @@
 	},
 	"homepage": "https://tum.dev/",
 	"name": "tum-dev-website",
-	"packageManager": "pnpm@10.12.4",
+	"packageManager": "pnpm@10.15.1",
 	"pnpm": {
 		"onlyBuiltDependencies": [
 			"esbuild",
