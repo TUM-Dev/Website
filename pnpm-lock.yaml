@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^5.1.1
-        version: 5.2.0(react-hook-form@7.60.0(react@19.1.0))
+        version: 5.2.0(react-hook-form@7.62.0(react@19.1.0))
       '@radix-ui/react-accordion':
         specifier: 1.2.11
         version: 1.2.11(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -127,7 +127,7 @@ importers:
         version: 19.1.0(react@19.1.0)
       react-hook-form:
         specifier: ^7.60.0
-        version: 7.60.0(react@19.1.0)
+        version: 7.62.0(react@19.1.0)
       react-resizable-panels:
         specifier: ^3.0.3
         version: 3.0.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -1933,8 +1933,8 @@ packages:
     peerDependencies:
       react: ^19.1.0
 
-  react-hook-form@7.60.0:
-    resolution: {integrity: sha512-SBrYOvMbDB7cV8ZfNpaiLcgjH/a1c7aK0lK+aNigpf4xWLO8q+o4tcvVurv3c4EOyzn/3dCsYt4GKD42VvJ/+A==}
+  react-hook-form@7.62.0:
+    resolution: {integrity: sha512-7KWFejc98xqG/F4bAxpL41NB3o1nnvQO1RWZT3TqRZYL8RryQETGfEdVnJN2fy1crCiBLLjkRBVK05j24FxJGA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -2540,10 +2540,10 @@ snapshots:
 
   '@floating-ui/utils@0.2.9': {}
 
-  '@hookform/resolvers@5.2.0(react-hook-form@7.60.0(react@19.1.0))':
+  '@hookform/resolvers@5.2.0(react-hook-form@7.62.0(react@19.1.0))':
     dependencies:
       '@standard-schema/utils': 0.3.0
-      react-hook-form: 7.60.0(react@19.1.0)
+      react-hook-form: 7.62.0(react@19.1.0)
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -3941,7 +3941,7 @@ snapshots:
       react: 19.1.0
       scheduler: 0.26.0
 
-  react-hook-form@7.60.0(react@19.1.0):
+  react-hook-form@7.62.0(react@19.1.0):
     dependencies:
       react: 19.1.0
 
