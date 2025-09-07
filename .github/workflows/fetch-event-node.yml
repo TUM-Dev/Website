@@ -2,8 +2,8 @@ name: Fetch Discord Events (Node.js)
 
 on:
   schedule:
-    # Run every 4 hours
-    - cron: '0 8,12,16,20 * * *'
+    # Run once a day at 20:00
+    - cron: '0 20 * * *'
   workflow_dispatch: # Allows for a manual run
 
 jobs:
