@@ -254,8 +254,8 @@ export default function HomePage() {
 			    title: event.name,
 			    description: event.description,
 			    location: event.entity_metadata?.location || "Online", // Use optional chaining for safety
-			    startTimestamp: new Date(event.scheduled_start_time),
-			    endTimestamp: new Date(event.scheduled_end_time),
+			    startTimestamp: new Date(event.scheduled_start_time).getTime(),
+			    endTimestamp: new Date(event.scheduled_end_time).getTime(),
 			    // Derive the type based on the name
 			    type: event.name.toLowerCase().includes("coding") ? "coding" :
 				  event.name.toLowerCase().includes("meeting") ? "meeting" :
@@ -263,7 +263,7 @@ export default function HomePage() {
 			}));
 
 			// Set the events state with the fetched data, sorted by start time
-			setEvents(formattedEvents.sort((a, b) => a.startTimestamp.getTime() - b.startTimestamp.getTime()));
+			setEvents(formattedEvents.sort((a, b) => a.startTimestamp - b.startTimestamp));
 		    } catch (e) {
 			// Set the error state if fetching fails
 			if (e instanceof Error) {
@@ -432,9 +432,9 @@ export default function HomePage() {
 						Vergangene Treffen
 					    </h3>
 					    {events
-						.filter((event) => new Date(event.endTimestamp) < today)
+						.filter((event) => event.endTimestamp < today.getTime())
 						.map((event) => (
-						    <Event key={event.name + event.startTimestamp} {...event} />
+						    <Event key={event.title + event.startTimestamp} {...event} />
 						))}
 					</div>
 
@@ -445,9 +445,9 @@ export default function HomePage() {
 						Kommende Events
 					    </h3>
 					    {events
-						.filter((event) => new Date(event.endTimestamp) >= today)
+						.filter((event) => event.endTimestamp >= today.getTime())
 						.map((event) => (
-						    <Event key={event.name + event.startTimestamp} {...event} />
+						    <Event key={event.title + event.startTimestamp} {...event} />
 						))}
 					</div>
 				    </div>
