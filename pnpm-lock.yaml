@@ -94,7 +94,7 @@ importers:
         version: 1.2.8(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       add-to-calendar-button-react:
         specifier: ^2.11.2
-        version: 2.11.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        version: 2.11.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -1306,15 +1306,15 @@ packages:
   '@zeit/schemas@2.36.0':
     resolution: {integrity: sha512-7kjMwcChYEzMKjeex9ZFXkt1AyNov9R5HZtjBKVsmVpw7pa7ZtlCGvCBC2vnnXctaYN+aRI61HjIqeetZW5ROg==}
 
-  add-to-calendar-button-react@2.11.2:
-    resolution: {integrity: sha512-KROMy+GPEQpjuY/sOxZfsWpQVV9yXSnwrlV5a2RfikeOR5dxJ7Z6B434NGDPbhbeg6upQfcotcPUdu7VmdA79A==}
+  add-to-calendar-button-react@2.11.4:
+    resolution: {integrity: sha512-BtX1ok/cluNOZzcfkba7iVge339UQ9ixqSwg77c1M2zzSnyO1GtR2V/d7kNGkGF8RjrFS2WmLmVReO74QmLoMA==}
     engines: {node: '>=18.17.0', npm: '>=9.6.7'}
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
 
-  add-to-calendar-button@2.11.2:
-    resolution: {integrity: sha512-fMU8nBCMx6UfbZrxMLs4ZbQStva+3Ltt+I9bGax2hA4wfx2pMlOoJZ0MOg5Md3SoClox5yqmLg0J8jrhmx1xzw==}
+  add-to-calendar-button@2.11.4:
+    resolution: {integrity: sha512-sOafnbslURDpY+g3lajBn1xeO8y4t2UaFuyp3YMFT07LH2pjGrjqpxLq8Acoe7GP2RNV5q9AR/h/CaBLj+VLwg==}
     engines: {node: '>=18.17.0', npm: '>=9.6.7'}
 
   ajv@8.12.0:
@@ -3355,13 +3355,13 @@ snapshots:
 
   '@zeit/schemas@2.36.0': {}
 
-  add-to-calendar-button-react@2.11.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  add-to-calendar-button-react@2.11.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
-      add-to-calendar-button: 2.11.2
+      add-to-calendar-button: 2.11.4
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
 
-  add-to-calendar-button@2.11.2:
+  add-to-calendar-button@2.11.4:
     dependencies:
       timezones-ical-library: 1.10.0
 
