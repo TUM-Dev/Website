@@ -22,6 +22,7 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: '22.x' # Or any version you prefer
+          cache: pnpm
 
       # Step 3: Install Node.js dependencies
       - name: Install dependencies
