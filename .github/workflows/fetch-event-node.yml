@@ -16,8 +16,10 @@ jobs:
       # Step 1: Check out the repository code
       - name: Checkout repository
         uses: actions/checkout@v5
-
       # Step 2: Set up a Node.js environment
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: true
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
