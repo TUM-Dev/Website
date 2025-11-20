@@ -23,7 +23,7 @@ export default function DataProtection() {
 					</Badge>
 					<h1 className="text-5xl md:text-6xl font-bold dark:text-white text-gray-900 mb-6 leading-tight">
 						Datenschutz
-						<span className="dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-500 bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
+						<span className="dark:bg-linear-to-r dark:from-blue-400 dark:to-blue-500 bg-linear-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
 							erklärung
 						</span>
 					</h1>
@@ -108,7 +108,7 @@ export default function DataProtection() {
 										</p>
 										<div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
 											<div className="flex">
-												<AlertCircle className="w-5 h-5 text-yellow-600 mr-2 flex-shrink-0 mt-0.5" />
+												<AlertCircle className="w-5 h-5 text-yellow-600 mr-2 shrink-0 mt-0.5" />
 												<div>
 													<p className="text-sm text-yellow-800">
 														<strong>Hinweis:</strong> Auch Google (als Betreiber

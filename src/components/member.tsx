@@ -43,7 +43,7 @@ export const Member: React.FC<MemberProps> = ({
 						{github && (
 							<a
 								aria-label={`GitHub profile of ${name}`}
-								className="dark:text-gray-400 text-gray-500 hover:dark:text-blue-400 transition-colors"
+								className="dark:text-gray-400 text-gray-500 dark:hover:text-blue-400 transition-colors"
 								href={`https://github.com/${github}`}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -54,7 +54,7 @@ export const Member: React.FC<MemberProps> = ({
 						{linkedin && (
 							<a
 								aria-label={`LinkedIn profile of ${name}`}
-								className="dark:text-gray-400 text-gray-500 hover:dark:text-blue-400 transition-colors"
+								className="dark:text-gray-400 text-gray-500 dark:hover:text-blue-400 transition-colors"
 								href={`https://linkedin.com/in/${linkedin}`}
 								target="_blank"
 								rel="noopener noreferrer"

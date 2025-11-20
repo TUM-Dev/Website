@@ -16,13 +16,13 @@ export default function Custom404() {
 			<div className="flex flex-row gap-4">
 				<Button
 					asChild
-					className="dark:from-blue-600 dark:text-white dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+					className="dark:from-blue-600 dark:text-white dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 					size="lg"
 				>
 					<Link to="/">Zur Startseite</Link>
 				</Button>
 				<Button
-					className="bg-white dark:text-blue-800 border-1 text-blue-600 hover:bg-gray-100"
+					className="bg-white dark:text-blue-800 border text-blue-600 hover:bg-gray-100"
 					size="lg"
 					variant="secondary"
 				>
