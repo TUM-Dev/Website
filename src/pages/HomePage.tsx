@@ -621,14 +621,15 @@ export default function HomePage() {
 							</a>
 						</Button>
 						<Button
+							asChild
 							className="border-white text-slate-900 dark:text-slate-50 hover:bg-white/10"
 							size="lg"
 							variant="outline"
 						>
-                            <a href="https://web.meinverein.de/profile/94918/member-request-application">
-                                <Users className="w-5 h-5 mr-2" />
-                                Jetzt Mitglied werden
-                            </a>
+							<a href="https://web.meinverein.de/profile/94918/member-request-application">
+								<Users className="w-5 h-5 mr-2" />
+								Jetzt Mitglied werden
+							</a>
 						</Button>
 					</div>
 				</div>
