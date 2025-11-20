@@ -625,8 +625,10 @@ export default function HomePage() {
 							size="lg"
 							variant="outline"
 						>
-							<Users className="w-5 h-5 mr-2" />
-							Zu unseren Treffen
+                            <a href="https://web.meinverein.de/profile/94918/member-request-application">
+                                <Users className="w-5 h-5 mr-2" />
+                                Jetzt Mitglied im Verein werden
+                            </a>
 						</Button>
 					</div>
 				</div>

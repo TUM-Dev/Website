@@ -233,18 +233,18 @@ export default function Contact() {
 											<p className="font-medium">GitHub</p>
 											<p className="text-sm text-gray-600">
 												Schaue dir sich unseren Code an und hilf mit ihn zu
-												verbessern
+												verbessern!
 											</p>
 										</div>
 									</a>
-									<Link className="group" to="/about">
+									<a className="group" href="https://web.meinverein.de/profile/94918/member-request-application">
 										<div className="bg-white p-3 rounded-lg group-hover:shadow-lg group-hover:bg-gray-100">
 											<p className="font-medium">Open Source @ TUM e.V.</p>
 											<p className="text-sm text-gray-600">
-												Unser Verein für alle TUM-Studierenden
+												Jetzt Mitglied im Verein werden!
 											</p>
 										</div>
-									</Link>
+									</a>
 								</div>
 							</section>
 						</div>
