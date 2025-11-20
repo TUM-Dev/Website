@@ -33,7 +33,7 @@ jobs:
 
       # Step 4: Run the Node.js script to fetch events and save to a file
       - name: Fetch and save events
-        run: node get_events.js > ../scheduled_events.json
+        run: node get_events.js
         working-directory: 'automation'
         env:
           # Use the GitHub Secret we created to pass the token

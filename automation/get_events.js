@@ -1,5 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
+const path = require('path');
 
 // Get your Discord bot token from an environment variable
 const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
@@ -9,6 +10,9 @@ const GUILD_ID = '780140656597008387'; // e.g., '780140656597008387'
 
 // The Discord API endpoint for scheduled events
 const API_ENDPOINT = `https://discord.com/api/v10/guilds/${GUILD_ID}/scheduled-events`;
+
+// Path to the scheduled_events.json file
+const EVENTS_FILE_PATH = path.join(__dirname, '..', 'scheduled_events.json');
 
 // Function to fetch scheduled events
 async function getScheduledEvents() {
@@ -30,8 +34,29 @@ async function getScheduledEvents() {
       },
     });
 
-    // Log the JSON data to standard output
-    console.log(JSON.stringify(response.data, null, 2));
+    const newEvents = response.data;
+
+    // Read existing events
+    let existingEvents = [];
+    if (fs.existsSync(EVENTS_FILE_PATH)) {
+      const existingEventsData = fs.readFileSync(EVENTS_FILE_PATH, 'utf-8');
+      existingEvents = JSON.parse(existingEventsData);
+    }
+
+    // Merge new events with existing events, avoiding duplicates
+    const existingEventIds = new Set(existingEvents.map((e) => e.id));
+    const mergedEvents = [...existingEvents];
+
+    for (const newEvent of newEvents) {
+      if (!existingEventIds.has(newEvent.id)) {
+        mergedEvents.push(newEvent);
+      }
+    }
+
+    // Write the merged events back to the file
+    fs.writeFileSync(EVENTS_FILE_PATH, JSON.stringify(mergedEvents, null, 2));
+
+    console.log(`Successfully fetched and merged ${newEvents.length} events.`);
   } catch (error) {
     if (error.response) {
       // The request was made and the server responded with a status code
