@@ -39,7 +39,7 @@ export default function AboutPage() {
 					</Badge>
 					<h1 className="text-5xl md:text-6xl font-bold dark:text-white text-gray-900 mb-6 leading-tight">
 						Über
-						<span className="dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-500 bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
+						<span className="dark:bg-linear-to-r dark:from-blue-400 dark:to-blue-500 bg-linear-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
 							{" "}
 							uns{" "}
 						</span>
@@ -58,7 +58,7 @@ export default function AboutPage() {
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
 						<div>
 							<div className="flex items-center mb-6">
-								<div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-4">
+								<div className="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-4">
 									<Target className="w-6 h-6 text-white" />
 								</div>
 								<h2 className="text-3xl font-bold dark:text-white text-gray-900">
@@ -85,7 +85,7 @@ export default function AboutPage() {
 							</div>
 						</div>
 						<div className="relative">
-							<div className="bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
+							<div className="bg-linear-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
 								<div className="grid grid-cols-2 gap-6">
 									<div className="text-center">
 										<div className="text-3xl font-bold dark:text-white text-gray-900 mb-2">
@@ -127,11 +127,11 @@ export default function AboutPage() {
 			</section>
 
 			{/* Success Story Section */}
-			<section className="py-16 px-4 dark:bg-gradient-to-br dark:from-slate-800 dark:to-slate-700 bg-gradient-to-br from-gray-50 to-slate-100">
+			<section className="py-16 px-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-slate-700 bg-linear-to-br from-gray-50 to-slate-100">
 				<div className="container mx-auto max-w-6xl">
 					<div className="text-center mb-12">
 						<div className="flex items-center justify-center mb-6">
-							<div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mr-4">
+							<div className="w-12 h-12 bg-linear-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mr-4">
 								<Award className="w-6 h-6 text-white" />
 							</div>
 							<h2 className="text-3xl font-bold dark:text-white text-gray-900">
@@ -143,7 +143,7 @@ export default function AboutPage() {
 					<div className="grid md:grid-cols-3 gap-8 mb-12">
 						<Card className="border-0 shadow-lg dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader className="text-center">
-								<div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+								<div className="w-16 h-16 bg-linear-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
 									<TrendingUp className="w-8 h-8 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -157,7 +157,7 @@ export default function AboutPage() {
 
 						<Card className="border-0 shadow-lg dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader className="text-center">
-								<div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+								<div className="w-16 h-16 bg-linear-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
 									<Zap className="w-8 h-8 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -172,7 +172,7 @@ export default function AboutPage() {
 
 						<Card className="border-0 shadow-lg dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader className="text-center">
-								<div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+								<div className="w-16 h-16 bg-linear-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
 									<Heart className="w-8 h-8 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -186,7 +186,7 @@ export default function AboutPage() {
 						</Card>
 					</div>
 
-					<div className="bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
+					<div className="bg-linear-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
 						<p className="text-lg dark:text-gray-200 text-gray-600 leading-relaxed text-center max-w-4xl mx-auto">
 							Heute ist die App mit über 20.000 aktiven Nutzern eine der
 							<b>
@@ -293,7 +293,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* NavigaTUM Section */}
-			<section className="py-16 px-4 dark:bg-gradient-to-br dark:from-slate-800 dark:to-slate-700 bg-gradient-to-br from-gray-50 to-slate-100">
+			<section className="py-16 px-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-slate-700 bg-linear-to-br from-gray-50 to-slate-100">
 				<div className="container mx-auto max-w-6xl">
 					<div className="text-center mb-12">
 						<div className="flex items-center justify-center mb-6">
@@ -350,7 +350,7 @@ export default function AboutPage() {
 						</div>
 
 						<div className="relative">
-							<div className="bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
+							<div className="bg-linear-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
 								<div className="relative mb-4">
 									<img
 										alt="NavigaTUM Navigation Screenshot"
@@ -423,7 +423,7 @@ export default function AboutPage() {
 						</div>
 
 						<div className="relative">
-							<div className="bg-gradient-to-r dark:from-red-900 dark:to-pink-900 from-red-50 to-pink-50 rounded-2xl p-8">
+							<div className="bg-linear-to-r dark:from-red-900 dark:to-pink-900 from-red-50 to-pink-50 rounded-2xl p-8">
 								<div className="relative mb-4">
 									<img
 										alt="TUM.live Landing Page Screenshot"
@@ -448,7 +448,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* Acknowledgments Section */}
-			<section className="py-16 px-4 dark:bg-gradient-to-br dark:from-slate-800 dark:to-slate-700 bg-gradient-to-br from-gray-50 to-slate-100">
+			<section className="py-16 px-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-slate-700 bg-linear-to-br from-gray-50 to-slate-100">
 				<div className="container mx-auto max-w-6xl">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">
@@ -492,8 +492,8 @@ export default function AboutPage() {
 			{/* Future Vision Section */}
 			<section className="py-16 px-4 dark:bg-slate-800 bg-white">
 				<div className="container mx-auto max-w-6xl text-center">
-					<div className="bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-12">
-						<div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+					<div className="bg-linear-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-12">
+						<div className="w-16 h-16 bg-linear-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
 							<Lightbulb className="w-8 h-8 text-white" />
 						</div>
 						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-6">
@@ -507,7 +507,7 @@ export default function AboutPage() {
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<Button
 								asChild
-								className="font-semibold text-white bg-gradient-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+								className="font-semibold text-white bg-linear-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
 								size="lg"
 							>
 								<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
@@ -517,7 +517,7 @@ export default function AboutPage() {
 							</Button>
 							<Button
 								asChild
-								className=" font-semibold *:dark:border-slate-600 dark:text-gray-300 dark:hover:bg-slate-700"
+								className=" font-semibold dark:*:border-slate-600 dark:text-gray-300 dark:hover:bg-slate-700"
 								size="lg"
 								variant="outline"
 							>

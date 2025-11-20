@@ -25,7 +25,7 @@ export const Project: React.FC<ProjectProps> = ({
 	const isExternal = link && (link.startsWith('http') || link.startsWith('https'));
 
 	const CardComponent = (
-		<Card className="border-0 shadow-md group-hover:shadow-lg transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white group-hover:bg-slate-50 group-hover:dark:bg-slate-800">
+		<Card className="border-0 shadow-md group-hover:shadow-lg transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white group-hover:bg-slate-50 dark:group-hover:bg-slate-800">
 			<CardHeader>
 				<CardTitle className="flex items-center justify-between dark:text-white text-gray-900">
 					{name}
