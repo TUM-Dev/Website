@@ -49,11 +49,11 @@ function eventsSection(isLoading: boolean, error: string | null, events: EventPr
 				<Users2 className="w-5 h-5 mr-2 dark:text-blue-400 text-blue-500" />
 				Vergangene Treffen
 			</h3>
-			{events.length !== 0 ? events
+			{events
 				.filter((event) => event.endTimestamp < today.getTime())
 				.map((event) => (
 					<Event key={event.title + event.startTimestamp} {...event} />
-				)) : <div className="text-center py-20 dark:text-gray-300">No scheduled events found.</div>}
+				))}
 		</div>
 
 		{/* Future Events */}
@@ -62,11 +62,11 @@ function eventsSection(isLoading: boolean, error: string | null, events: EventPr
 				<CalendarIcon className="w-5 h-5 mr-2 text-blue-400" />
 				Kommende Events
 			</h3>
-			{events.length !== 0 ? events
+			{events
 				.filter((event) => event.endTimestamp >= today.getTime())
 				.map((event) => (
 					<Event key={event.title + event.startTimestamp} {...event} />
-				)) : <div className="text-center py-20 dark:text-gray-300">No scheduled events found.</div>}
+				))}
 		</div>
 	</>
 }
