@@ -26,6 +26,51 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 
+function eventsSection(isLoading: boolean, error: string | null, events: EventProps[]): React.ReactElement {
+	const today = new Date();
+
+	// Conditional rendering for loading, error, and no events
+	if (isLoading) {
+		return <div className="text-center py-20">Loading events...</div>;
+	}
+
+	if (error) {
+		return <div className="text-center py-20 text-red-500">Error: Could not load events.</div>;
+	}
+
+	if (events.length === 0) {
+		return <div className="text-center py-20 dark:text-gray-300">No scheduled events found.</div>;
+	}
+
+	return <>
+		{/* Past Events */}
+		<div className="space-y-4">
+			<h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
+				<Users2 className="w-5 h-5 mr-2 dark:text-blue-400 text-blue-500" />
+				Vergangene Treffen
+			</h3>
+			{events
+				.filter((event) => event.endTimestamp < today.getTime())
+				.map((event) => (
+					<Event key={event.title + event.startTimestamp} {...event} />
+				))}
+		</div>
+
+		{/* Future Events */}
+		<div className="space-y-4">
+			<h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
+				<CalendarIcon className="w-5 h-5 mr-2 text-blue-400" />
+				Kommende Events
+			</h3>
+			{events
+				.filter((event) => event.endTimestamp >= today.getTime())
+				.map((event) => (
+					<Event key={event.title + event.startTimestamp} {...event} />
+				))}
+		</div>
+	</>
+}
+
 export default function HomePage() {
 	// Define the URL for the JSON data
 	const eventsUrl = "https://raw.githubusercontent.com/TUM-Dev/Website/refs/heads/event-data/scheduled_events.json";
@@ -235,66 +280,49 @@ export default function HomePage() {
 			tech: ["To", "Be", "Decided"],
 		},
 	];
-	
-	
+
+
 	// Use the useEffect hook to fetch data when the component mounts
 	useEffect(() => {
 		const fetchEvents = async () => {
-		    try {
-			// Fetch the JSON data from the URL
-			const response = await fetch(eventsUrl);
-			if (!response.ok) {
-			    throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const data = await response.json();
+			try {
+				// Fetch the JSON data from the URL
+				const response = await fetch(eventsUrl);
+				if (!response.ok) {
+					throw new Error(`HTTP error! status: ${response.status}`);
+				}
+				const data = await response.json();
 
-			// Convert timestamps from string to Date objects
-			const formattedEvents: EventProps[] = data.map((event: any) => ({
-			    ...event,
-			    title: event.name,
-			    description: event.description,
-			    location: event.entity_metadata?.location || "Online", // Use optional chaining for safety
-			    startTimestamp: new Date(event.scheduled_start_time).getTime(),
-			    endTimestamp: new Date(event.scheduled_end_time).getTime(),
-			    // Derive the type based on the name
-			    type: event.name.toLowerCase().includes("coding") ? "coding" :
-				  event.name.toLowerCase().includes("meeting") ? "meeting" :
-				  "event"
-			}));
+				// Convert timestamps from string to Date objects
+				const formattedEvents: EventProps[] = data.map((event: any) => ({
+					...event,
+					title: event.name,
+					description: event.description,
+					location: event.entity_metadata?.location || "Online", // Use optional chaining for safety
+					startTimestamp: new Date(event.scheduled_start_time).getTime(),
+					endTimestamp: new Date(event.scheduled_end_time).getTime(),
+					// Derive the type based on the name
+					type: event.name.toLowerCase().includes("coding") ? "coding" :
+						event.name.toLowerCase().includes("meeting") ? "meeting" :
+							"event"
+				}));
 
-			// Set the events state with the fetched data, sorted by start time
-			setEvents(formattedEvents.sort((a, b) => a.startTimestamp - b.startTimestamp));
-		    } catch (e) {
-			// Set the error state if fetching fails
-			if (e instanceof Error) {
-				setError(e.message);
+				// Set the events state with the fetched data, sorted by start time
+				setEvents(formattedEvents.sort((a, b) => a.startTimestamp - b.startTimestamp));
+			} catch (e) {
+				// Set the error state if fetching fails
+				if (e instanceof Error) {
+					setError(e.message);
+				}
+			} finally {
+				// Set loading to false once the request is complete
+				setIsLoading(false);
 			}
-		    } finally {
-			// Set loading to false once the request is complete
-			setIsLoading(false);
-		    }
 		};
 
 		fetchEvents();
 	}, []); // The empty array ensures this effect runs only once
 
-	const today = new Date();
-	
-	// Conditional rendering for loading, error, and no events
-	if (isLoading) {
-		return <div className="text-center py-20">Loading events...</div>;
-	}
-
-	if (error) {
-		return <div className="text-center py-20 text-red-500">Error: Could not load events.</div>;
-	}
-
-	if (events.length === 0) {
-		// You might want to handle this case more gracefully
-		// For example, by showing a "No upcoming events" message
-		return <div className="text-center py-20 dark:text-gray-300">No scheduled events found.</div>;
-	}
-	
 	return (
 		<div>
 			<section className="py-20 px-4">
@@ -415,42 +443,18 @@ export default function HomePage() {
 				id="events"
 			>
 				<div className="container mx-auto max-w-6xl">
-				    <div className="text-center mb-12">
-					<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">
-					    Termine
-					</h2>
-					<p className="dark:text-gray-300 text-gray-600">
-					    Verpasse keine unserer Veranstaltungen und Treffen
-					</p>
-				    </div>
-
-				    <div className="grid lg:grid-cols-2 gap-8">
-					{/* Past Events */}
-					<div className="space-y-4">
-					    <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
-						<Users2 className="w-5 h-5 mr-2 dark:text-blue-400 text-blue-500" />
-						Vergangene Treffen
-					    </h3>
-					    {events
-						.filter((event) => event.endTimestamp < today.getTime())
-						.map((event) => (
-						    <Event key={event.title + event.startTimestamp} {...event} />
-						))}
+					<div className="text-center mb-12">
+						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">
+							Termine
+						</h2>
+						<p className="dark:text-gray-300 text-gray-600">
+							Verpasse keine unserer Veranstaltungen und Treffen
+						</p>
 					</div>
 
-					{/* Future Events */}
-					<div className="space-y-4">
-					    <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4 flex items-center">
-						<CalendarIcon className="w-5 h-5 mr-2 text-blue-400" />
-						Kommende Events
-					    </h3>
-					    {events
-						.filter((event) => event.endTimestamp >= today.getTime())
-						.map((event) => (
-						    <Event key={event.title + event.startTimestamp} {...event} />
-						))}
+					<div className="grid lg:grid-cols-2 gap-8">
+						{ eventsSection(isLoading, error, events) }
 					</div>
-				    </div>
 				</div>
 			</section>
 
