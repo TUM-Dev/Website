@@ -406,7 +406,7 @@ export default function HomePage() {
 
 						<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader>
-								<div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+								<div className="w-12 h-12 bg-sky-500 rounded-lg flex items-center justify-center mb-4">
 									<Calendar className="w-6 h-6 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -421,7 +421,7 @@ export default function HomePage() {
 
 						<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader>
-								<div className="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center mb-4">
+								<div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
 									<Lightbulb className="w-6 h-6 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
