@@ -10,7 +10,7 @@ import NotFoundPage from '@/pages/NotFoundPage'
 
 function App() {
   return (
-    <div className="min-h-screen dark:bg-linear-to-br dark:from-slate-900 dark:to-slate-800 bg-linear-to-br from-slate-50 to-gray-100">
+    <div className="min-h-screen dark:bg-slate-900 bg-slate-50">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />

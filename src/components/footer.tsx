@@ -8,11 +8,11 @@ export const Footer = () => {
 				<div className="grid md:grid-cols-3 gap-8">
 					<div>
 						<div className="flex items-center space-x-3 mb-4">
-							<div className="w-8 h-8 dark:bg-linear-to-br dark:from-blue-600 dark:to-blue-700 bg-linear-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+							<div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
 								<Code className="w-5 h-5 text-white" />
 							</div>
 							<span
-								className={`text-lg font-bold dark:text-gray-300 text-white`}
+								className="text-lg font-bold dark:text-gray-300 text-white"
 							>
 								Open Source @ TUM e.V.
 							</span>
@@ -28,10 +28,10 @@ export const Footer = () => {
 					</div>
 
 					<div>
-						<h3 className={`font-semibold mb-4 dark:text-gray-300 text-white`}>
+						<h3 className="font-semibold mb-4 dark:text-gray-300 text-white">
 							Kontakt
 						</h3>
-						<div className={`space-y-2 dark:text-gray-500 text-gray-400`}>
+						<div className="space-y-2 dark:text-gray-500 text-gray-400">
 							<a
 								className="dark:text-gray-500 text-gray-400 dark:hover:text-gray-300 hover:underline underline-offset-2 flex items-center transition-colors"
 								href="mailto:app (at) tum.de"
@@ -50,7 +50,7 @@ export const Footer = () => {
 					</div>
 
 					<div>
-						<h3 className={`font-semibold mb-4 dark:text-gray-300 text-white`}>
+						<h3 className="font-semibold mb-4 dark:text-gray-300 text-white">
 							Links
 						</h3>
 						<div className="space-y-2">

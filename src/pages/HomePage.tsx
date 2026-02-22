@@ -338,7 +338,7 @@ export default function HomePage() {
 					</a>
 					<h1 className="text-5xl md:text-6xl font-bold font-sans dark:text-white text-gray-900 mb-6 leading-tight">
 						Open Source
-						<span className="bg-linear-to-r dark:from-blue-400 dark:to-blue-500 from-blue-500 to-blue-600 bg-clip-text text-transparent">
+						<span className="dark:bg-linear-to-r dark:from-blue-400 dark:to-blue-500 bg-linear-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
 							{" @ TUM"}
 						</span>
 					</h1>
@@ -349,7 +349,7 @@ export default function HomePage() {
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Button
 							asChild
-							className="dark:from-blue-600 dark:to-blue-700 text-white dark:hover:from-blue-700 dark:hover:to-blue-800 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+							className="dark:bg-blue-600 dark:hover:bg-blue-700 text-white bg-blue-600 hover:bg-blue-700"
 							size="lg"
 						>
 							<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about" target="_blank" rel="noopener noreferrer">
@@ -374,7 +374,7 @@ export default function HomePage() {
 
 			{/* Features Section */}
 			<section
-				className="py-16 px-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-slate-700 bg-linear-to-br from-gray-50 to-slate-100"
+				className="py-16 px-4 dark:bg-slate-800 bg-gray-50"
 				id="wir-machen"
 			>
 				<div className="container mx-auto max-w-6xl">
@@ -391,7 +391,7 @@ export default function HomePage() {
 					<div className="grid md:grid-cols-3 gap-8">
 						<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader>
-								<div className="w-12 h-12 bg-linear-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
+								<div className="w-12 h-12 bg-sky-600 rounded-lg flex items-center justify-center mb-4">
 									<Code className="w-6 h-6 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -406,7 +406,7 @@ export default function HomePage() {
 
 						<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader>
-								<div className="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
+								<div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
 									<Calendar className="w-6 h-6 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -421,7 +421,7 @@ export default function HomePage() {
 
 						<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader>
-								<div className="w-12 h-12 bg-linear-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4">
+								<div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
 									<Lightbulb className="w-6 h-6 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -439,7 +439,7 @@ export default function HomePage() {
 
 			{/* Upcoming Events Section */}
 			<section
-				className="py-16 px-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-slate-700 bg-linear-to-br from-gray-50 to-slate-100"
+				className="py-16 px-4 dark:bg-slate-800 bg-gray-50"
 				id="events"
 			>
 				<div className="container mx-auto max-w-6xl">
@@ -460,7 +460,7 @@ export default function HomePage() {
 
 			{/* Projects Section */}
 			<section
-				className="py-16 px-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-slate-700 bg-linear-to-br from-gray-50 to-slate-100"
+				className="py-16 px-4 dark:bg-slate-800 bg-gray-50"
 				id="projects"
 			>
 				<div className="container mx-auto max-w-6xl">
@@ -489,7 +489,7 @@ export default function HomePage() {
 
 			{/* Team Section */}
 			<section
-				className="py-16 px-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-slate-700 bg-linear-to-br from-gray-50 to-slate-100"
+				className="py-16 px-4 dark:bg-slate-800 bg-gray-50"
 				id="team"
 			>
 				<div className="container mx-auto max-w-6xl">
@@ -547,7 +547,7 @@ export default function HomePage() {
 					</div>
 					{/* Join Team CTA */}
 					<div className="mt-16 text-center" id="join">
-						<div className="bg-linear-to-r dark:from-blue-900 dark:to-indigo-900 from-blue-50 to-indigo-50 rounded-2xl p-8">
+						<div className="dark:bg-blue-900 bg-blue-50 rounded-lg p-8">
 							<h3 className="text-2xl font-bold dark:text-white text-gray-900 mb-4">
 								Werde Teil unseres Teams!
 							</h3>
@@ -559,7 +559,7 @@ export default function HomePage() {
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
 								<Button
 									asChild
-									className="bg-linear-to-r dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-700 dark:hover:to-blue-800 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+									className="dark:bg-blue-600 dark:hover:bg-blue-700 bg-blue-600 hover:bg-blue-700 text-white"
 								>
 									<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about" target="_blank" rel="noopener noreferrer">
 										<Users className="w-4 h-4 mr-2" />
@@ -600,7 +600,7 @@ export default function HomePage() {
 
 			{/* CTA Section */}
 			<section
-				className="py-20 px-4 bg-linear-to-r dark:from-blue-800 dark:to-blue-900 from-blue-500 to-blue-600"
+				className="py-20 px-4 dark:bg-blue-900 bg-blue-600"
 				id="cta"
 			>
 				<div className="container mx-auto text-center max-w-4xl">

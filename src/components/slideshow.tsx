@@ -58,7 +58,7 @@ export function Slideshow({ images }: SlideshowProps) {
 	return (
 		<div className="relative w-full max-w-4xl mx-auto">
 			{/* Main Image Container */}
-			<div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+			<div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
 				<img
 					loading="lazy"
 					alt={images[currentSlide].alt}
