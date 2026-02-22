@@ -406,7 +406,7 @@ export default function HomePage() {
 
 						<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader>
-								<div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+								<div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
 									<Calendar className="w-6 h-6 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -421,7 +421,7 @@ export default function HomePage() {
 
 						<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow dark:bg-slate-700 dark:border-slate-600 bg-white">
 							<CardHeader>
-								<div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+								<div className="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center mb-4">
 									<Lightbulb className="w-6 h-6 text-white" />
 								</div>
 								<CardTitle className="dark:text-white text-gray-900">
@@ -547,7 +547,7 @@ export default function HomePage() {
 					</div>
 					{/* Join Team CTA */}
 					<div className="mt-16 text-center" id="join">
-						<div className="dark:bg-blue-900 bg-blue-50 rounded-2xl p-8">
+						<div className="dark:bg-blue-900 bg-blue-50 rounded-lg p-8">
 							<h3 className="text-2xl font-bold dark:text-white text-gray-900 mb-4">
 								Werde Teil unseres Teams!
 							</h3>

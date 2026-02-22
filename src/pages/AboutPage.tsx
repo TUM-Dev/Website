@@ -85,7 +85,7 @@ export default function AboutPage() {
 							</div>
 						</div>
 						<div className="relative">
-							<div className="dark:bg-blue-900 bg-blue-50 rounded-2xl p-8">
+							<div className="dark:bg-blue-900 bg-blue-50 rounded-lg p-8">
 								<div className="grid grid-cols-2 gap-6">
 									<div className="text-center">
 										<div className="text-3xl font-bold dark:text-white text-gray-900 mb-2">
@@ -186,7 +186,7 @@ export default function AboutPage() {
 						</Card>
 					</div>
 
-					<div className="dark:bg-blue-900 bg-blue-50 rounded-2xl p-8">
+					<div className="dark:bg-blue-900 bg-blue-50 rounded-lg p-8">
 						<p className="text-lg dark:text-gray-200 text-gray-600 leading-relaxed text-center max-w-4xl mx-auto">
 							Heute ist die App mit über 20.000 aktiven Nutzern eine der
 							<b>
@@ -350,7 +350,7 @@ export default function AboutPage() {
 						</div>
 
 						<div className="relative">
-							<div className="dark:bg-blue-900 bg-blue-50 rounded-2xl p-8">
+							<div className="dark:bg-blue-900 bg-blue-50 rounded-lg p-8">
 								<div className="relative mb-4">
 									<img
 										alt="NavigaTUM Navigation Screenshot"
@@ -423,7 +423,7 @@ export default function AboutPage() {
 						</div>
 
 						<div className="relative">
-							<div className="dark:bg-red-900 bg-red-50 rounded-2xl p-8">
+							<div className="dark:bg-red-900 bg-red-50 rounded-lg p-8">
 								<div className="relative mb-4">
 									<img
 										alt="TUM.live Landing Page Screenshot"
@@ -492,7 +492,7 @@ export default function AboutPage() {
 			{/* Future Vision Section */}
 			<section className="py-16 px-4 dark:bg-slate-800 bg-white">
 				<div className="container mx-auto max-w-6xl text-center">
-					<div className="dark:bg-blue-900 bg-blue-50 rounded-2xl p-12">
+					<div className="dark:bg-blue-900 bg-blue-50 rounded-lg p-12">
 						<div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
 							<Lightbulb className="w-8 h-8 text-white" />
 						</div>
