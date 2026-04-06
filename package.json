@@ -59,7 +59,7 @@
 		"serve": "^14.2.5",
 		"tailwindcss": "^4.1.17",
 		"typescript": "^5.9.2",
-		"vite": "^7.1.11"
+		"vite": "^7.3.2"
 	},
 	"homepage": "https://tum.dev/",
 	"name": "tum-dev-website",
