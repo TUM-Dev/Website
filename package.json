@@ -54,7 +54,7 @@
 		"@types/node": "^24.3.1",
 		"@types/react": "^19.1.12",
 		"@types/react-dom": "^19.1.9",
-		"@vitejs/plugin-react": "^5.0.0",
+		"@vitejs/plugin-react": "^6.0.0",
 		"postcss": "^8.5.6",
 		"serve": "^14.2.5",
 		"tailwindcss": "^4.1.17",
