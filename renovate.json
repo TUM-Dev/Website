@@ -1,10 +1,12 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:recommended"],
-	"schedule": ["* 0-3 1 * *"],
-	"packageRules": [{
-		 "groupName": "Mend: high confidence minor and patch dependency updates",
-		 "matchUpdateTypes": ["minor", "patch"],
-		 "automerge": true
-	 }]
+	"packageRules": [
+		{
+			"automerge": true,
+			"groupName": "Mend: high confidence minor and patch dependency updates",
+			"matchUpdateTypes": ["minor", "patch"]
+		}
+	],
+	"schedule": ["* 0-3 1 * *"]
 }
