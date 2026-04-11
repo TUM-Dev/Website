@@ -5,6 +5,7 @@
 	"packageRules": [{
 		 "groupName": "Mend: high confidence minor and patch dependency updates",
 		 "matchUpdateTypes": ["minor", "patch"],
-		 "matchConfidence": ["very high", "high"]
+		 "matchConfidence": ["very high", "high"],
+		 "automerge": true
 	 }]
 }
