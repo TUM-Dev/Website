@@ -26,12 +26,18 @@ jobs:
           node-version: '24.x' # Or any version you prefer
           cache: pnpm
 
-      # Step 3: Install Node.js dependencies
+      # Step 3: Restore existing events from the event-data branch so past events are preserved
+      - name: Restore existing events
+        run: |
+          git fetch origin event-data || true
+          git checkout origin/event-data -- scheduled_events.json || true
+
+      # Step 4: Install Node.js dependencies
       - name: Install dependencies
         run: pnpm install
         working-directory: 'automation'
 
-      # Step 4: Run the Node.js script to fetch events and save to a file
+      # Step 5: Run the Node.js script to fetch events and save to a file
       - name: Fetch and save events
         run: node get_events.js
         working-directory: 'automation'
@@ -39,7 +45,7 @@ jobs:
           # Use the GitHub Secret we created to pass the token
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
 
-      # Step 5: Commit the new JSON file back to the repository
+      # Step 6: Commit the new JSON file back to the repository
       - name: Commit and push changes
         run: |
           git config user.name github-actions
