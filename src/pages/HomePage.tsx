@@ -2,7 +2,6 @@ import {
 	Calendar,
 	CalendarIcon,
 	Code,
-	Github,
 	Lightbulb,
 	Mail,
 	MapPin,
@@ -10,6 +9,7 @@ import {
 	Users2,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { GithubIcon } from "@/components/ui/github-icon";
 import { Event, type EventProps } from "@/components/event";
 import type { MemberProps } from "@/components/member";
 import { Member } from "@/components/member";
@@ -364,7 +364,7 @@ export default function HomePage() {
 							variant="outline"
 						>
 							<a href="#projects">
-								<Github className="w-5 h-5 mr-2" />
+								<GithubIcon className="w-5 h-5 mr-2" />
 								Unsere Projekte
 							</a>
 						</Button>
@@ -573,7 +573,7 @@ export default function HomePage() {
 									variant="secondary"
 								>
 									<a href="#projects">
-										<Github className="w-4 h-4 mr-2" />
+										<GithubIcon className="w-4 h-4 mr-2" />
 										Projekte ansehen
 									</a>
 								</Button>

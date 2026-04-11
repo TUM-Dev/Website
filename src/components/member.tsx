@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { GithubIcon } from "./ui/github-icon";
 import { Card, CardContent } from "./ui/card";
 
 export interface MemberProps {
@@ -48,7 +48,7 @@ export const Member: React.FC<MemberProps> = ({
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<Github className="w-4 h-4" />
+								<GithubIcon className="w-4 h-4" />
 							</a>
 						)}
 						{linkedin && (

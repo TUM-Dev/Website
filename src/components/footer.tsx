@@ -1,4 +1,5 @@
-import { Code, FileText, Github, Mail, ShieldCheck } from "lucide-react";
+import { Code, FileText, Mail, ShieldCheck } from "lucide-react";
+import { GithubIcon } from "./ui/github-icon";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -60,7 +61,7 @@ export const Footer = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<Github className="w-4 h-4 mr-2" />
+								<GithubIcon className="w-4 h-4 mr-2" />
 								GitHub
 							</a>
 							<Link
