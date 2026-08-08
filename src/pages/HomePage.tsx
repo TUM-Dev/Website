@@ -2,7 +2,6 @@ import {
 	Calendar,
 	CalendarIcon,
 	Code,
-	Github,
 	HeartHandshake,
 	Lightbulb,
 	Mail,

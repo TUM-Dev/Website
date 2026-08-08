@@ -1,10 +1,11 @@
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
-import { HeartHandshake, RefreshCw, Github } from "lucide-react";
+import { HeartHandshake, RefreshCw } from "lucide-react";
 import { useEffect, useState } from "react";
 import { RepoCard, type RepoProps } from "@/components/repo-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { GithubIcon } from "@/components/ui/github-icon";
 
 interface RepoData {
 	generatedAt: string;
@@ -94,7 +95,7 @@ export default function HelpNeededPage() {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<Github className="w-4 h-4 mr-2" />
+									<GithubIcon className="w-4 h-4 mr-2" />
 									Zu GitHub
 								</a>
 							</Button>
