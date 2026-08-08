@@ -210,10 +210,10 @@ export default function Contact() {
 								</h2>
 								<div className="ml-11 text-gray-700 space-y-3">
 									<p>Du können uns auch direkt eine E-Mail schreiben:</p>
-									<a className="group" href="mailto:app at tum.de">
+									<a className="group" href="mailto:app@tum.de">
 										<div className="bg-white p-4 rounded-lg border-l-4 border-purple-600 group-hover:shadow-lg group-hover:bg-purple-50">
 											<p className="font-semibold text-purple-800">
-												app at tum dot de
+												app@tum.de
 											</p>
 										</div>
 									</a>
@@ -237,14 +237,14 @@ export default function Contact() {
 											</p>
 										</div>
 									</a>
-									<a className="group" href="https://web.meinverein.de/profile/94918/member-request-application">
+									<Link className="group" to="/verein-beitreten">
 										<div className="bg-white p-3 rounded-lg group-hover:shadow-lg group-hover:bg-gray-100">
 											<p className="font-medium">Open Source @ TUM e.V.</p>
 											<p className="text-sm text-gray-600">
 												Jetzt Mitglied im Verein werden!
 											</p>
 										</div>
-									</a>
+									</Link>
 								</div>
 							</section>
 						</div>

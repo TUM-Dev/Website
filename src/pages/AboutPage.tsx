@@ -245,9 +245,9 @@ export default function AboutPage() {
 									Questions or technical support? Contact us at{" "}
 									<a
 										className="dark:text-blue-400 text-blue-600 hover:underline"
-										href="mailto:app (at) tum.de"
+										href="mailto:app@tum.de"
 									>
-										app (at) tum.de
+										app@tum.de
 									</a>
 								</p>
 							</div>
@@ -341,9 +341,9 @@ export default function AboutPage() {
 									Questions or technical support? Contact us at{" "}
 									<a
 										className="dark:text-blue-400 text-blue-600 hover:underline"
-										href="mailto:navigatum (at) tum.de"
+										href="mailto:navigatum@tum.de"
 									>
-										navigatum (at) tum.de
+										navigatum@tum.de
 									</a>
 								</p>
 							</div>
@@ -414,9 +414,9 @@ export default function AboutPage() {
 									Questions or technical support? Contact us at{" "}
 									<a
 										className="dark:text-blue-400 text-blue-600 hover:underline"
-										href="mailto:live (at) rbg.tum.de"
+										href="mailto:live@rbg.tum.de"
 									>
-										live (at) rbg.tum.de
+										live@rbg.tum.de
 									</a>
 								</p>
 							</div>
@@ -510,9 +510,13 @@ export default function AboutPage() {
 								className="font-semibold text-white dark:bg-blue-600 dark:hover:bg-blue-700 bg-blue-600 hover:bg-blue-700"
 								size="lg"
 							>
-								<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about">
+								<a
+									href="https://groups.google.com/u/0/a/tum.dev/g/announce/about"
+									rel="noopener noreferrer"
+									target="_blank"
+								>
 									<Users className="w-5 h-5 mr-2" />
-									Jetzt mitmachen
+									Für Newsletter Anmelden
 								</a>
 							</Button>
 							<Button

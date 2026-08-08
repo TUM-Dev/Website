@@ -331,7 +331,7 @@ export default function HomePage() {
 						>
 							<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about" target="_blank" rel="noopener noreferrer">
 								<Users className="w-5 h-5 mr-2" />
-								Jetzt mitmachen
+								Für Newsletter Anmelden
 							</a>
 						</Button>
 						<Button
@@ -511,19 +511,8 @@ export default function HomePage() {
 								>
 									<a href="https://groups.google.com/u/0/a/tum.dev/g/announce/about" target="_blank" rel="noopener noreferrer">
 										<Users className="w-4 h-4 mr-2" />
-										Team beitreten
+										Auf dem laufenden bleiben
 									</a>
-								</Button>
-
-								<Button
-									asChild
-									className="dark:hover:bg-slate-600 dark:hover:text-gray-50 dark:text-gray-100 dark:bg-slate-700 bg-black text-white hover:text-gray-50 hover:bg-gray-900"
-									variant="secondary"
-								>
-									<Link to="/mitmachen">
-										<GithubIcon className="w-4 h-4 mr-2" />
-										Projekte ansehen
-									</Link>
 								</Button>
 
 								<Button
@@ -578,7 +567,7 @@ export default function HomePage() {
 							size="lg"
 							variant="secondary"
 						>
-							<a href="mailto:app (at) tum.de">
+							<a href="mailto:app@tum.de">
 								<Mail className="w-5 h-5 mr-2" />
 								Kontakt aufnehmen
 							</a>
@@ -589,10 +578,10 @@ export default function HomePage() {
 							size="lg"
 							variant="outline"
 						>
-							<a href="https://web.meinverein.de/profile/94918/member-request-application">
+							<Link to="/verein-beitreten">
 								<Users className="w-5 h-5 mr-2" />
 								Jetzt Mitglied werden
-							</a>
+							</Link>
 						</Button>
 					</div>
 				</div>

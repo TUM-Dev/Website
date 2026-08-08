@@ -53,6 +53,14 @@ export const Header = () => {
 						>
 							<Link to="/mitmachen">Mitmachen</Link>
 						</Button>
+						<Button
+							asChild
+							className={cn(navLinkClassName(location.pathname === "/verein-beitreten"), "hidden sm:flex")}
+							size="sm"
+							variant="ghost"
+						>
+							<Link to="/verein-beitreten">Verein beitreten</Link>
+						</Button>
 						<ThemeToggle />
 						<Button
 							asChild

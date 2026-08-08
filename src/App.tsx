@@ -8,6 +8,7 @@ import DataProtectionPage from '@/pages/DataProtectionPage'
 import ImprintPage from '@/pages/ImprintPage'
 import HelpNeededPage from '@/pages/HelpNeededPage'
 import AppsPage from '@/pages/AppsPage'
+import MembershipPage from '@/pages/MembershipPage'
 import NotFoundPage from '@/pages/NotFoundPage'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/imprint" element={<ImprintPage />} />
         <Route path="/mitmachen" element={<HelpNeededPage />} />
         <Route path="/apps" element={<AppsPage />} />
+        <Route path="/verein-beitreten" element={<MembershipPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
