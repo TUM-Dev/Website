@@ -29,7 +29,7 @@ export default function HelpNeededPage() {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}
 				const data: RepoData = await response.json();
-				setRepos(data.repos);
+				setRepos(data.repos.filter((repo) => repo.stars > 3));
 				setGeneratedAt(data.generatedAt);
 			} catch (e) {
 				if (e instanceof Error) {

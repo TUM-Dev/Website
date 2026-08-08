@@ -14,7 +14,6 @@ import { GithubIcon } from "@/components/ui/github-icon";
 import { Event, type EventProps } from "@/components/event";
 import type { MemberProps } from "@/components/member";
 import { Member } from "@/components/member";
-import { Project, type ProjectProps } from "@/components/project";
 import type { SlideShowItem } from "@/components/slideshow";
 import { Slideshow } from "@/components/slideshow";
 import { Badge } from "@/components/ui/badge";
@@ -223,66 +222,6 @@ export default function HomePage() {
 			src: "/events/sticker.webp",
 		},
 	];
-	const projects: readonly ProjectProps[] = [
-		{
-			description: "Live-Streaming Platform für Vorlesungen",
-			link: "https://github.com/tum-dev/gocast",
-			name: "TUM Live",
-			tech: ["Go", "TypeScript", "Docker"],
-		},
-		{
-			description: "Mobile App für TUM Studierende",
-			link: "https://github.com/tum-dev/campus_flutter",
-			name: "Campus App",
-			tech: ["Flutter", "Go"],
-		},
-		{
-			description: "Raumsuche und Navigation am Campus",
-			link: "https://github.com/tum-dev/NavigaTUM",
-			name: "NavigaTUM",
-			tech: ["Rust", "Python", "Vue", "OpenStreetMap"],
-		},
-		{
-			description: "API für Mensapläne und Cafeterien",
-			link: "https://github.com/tum-dev/eat-api",
-			name: "Eat API",
-			tech: ["Python", "Github Actions"],
-		},
-		{
-			description: "Shortlinks",
-			link: "https://github.com/tum-dev/TUM.sexy",
-			name: "TUM.sexy",
-			tech: ["Php"],
-		},
-		{
-			description: "Templates für LaTeX-Abschlussarbeiten",
-			link: "https://github.com/tum-dev/tum-thesis-latex",
-			name: "tum-thesis-latex",
-			tech: ["LaTeX"],
-		},
-		{
-			description:
-				"A simple website allowing anonymous reports about security issues, harassment, illegal activities, safety concerns, whistleblowing and whatnot",
-			link: "https://github.com/tum-dev/Meldeplattform",
-			name: "Meldeplattform",
-			tech: ["Go"],
-		},
-		{
-			description:
-				"open-source live-streaming stack for recording and streaming lectures",
-			link: "https://github.com/tum-dev/LectureMix",
-			name: "LectureMix",
-			tech: ["Go"],
-		},
-		{
-			description: "",
-			link: "#join",
-			name: "And many more",
-			tech: ["To", "Be", "Decided"],
-		},
-	];
-
-
 	// Use the useEffect hook to fetch data when the component mounts
 	useEffect(() => {
 		const fetchEvents = async () => {
@@ -364,10 +303,10 @@ export default function HomePage() {
 							size="lg"
 							variant="outline"
 						>
-							<a href="#projects">
+							<Link to="/mitmachen">
 								<GithubIcon className="w-5 h-5 mr-2" />
 								Unsere Projekte
-							</a>
+							</Link>
 						</Button>
 					</div>
 				</div>
@@ -459,35 +398,6 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			{/* Projects Section */}
-			<section
-				className="py-16 px-4 dark:bg-slate-800 bg-gray-50"
-				id="projects"
-			>
-				<div className="container mx-auto max-w-6xl">
-					<div className="text-center mb-12">
-						<h2 className="text-3xl font-bold dark:text-white text-gray-900 mb-4">
-							Unsere Projekte
-						</h2>
-						<p className="dark:text-gray-300 text-gray-600">
-							Entdecke einige unserer aktuellen Open Source Projekte
-						</p>
-					</div>
-
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-						{projects.map((project) => (
-							<Project
-								description={project.description}
-								key={project.name}
-								link={project.link}
-								name={project.name}
-								tech={project.tech}
-							/>
-						))}
-					</div>
-				</div>
-			</section>
-
 			{/* Team Section */}
 			<section
 				className="py-16 px-4 dark:bg-slate-800 bg-gray-50"
@@ -573,10 +483,10 @@ export default function HomePage() {
 									className="dark:hover:bg-slate-600 dark:hover:text-gray-50 dark:text-gray-100 dark:bg-slate-700 bg-black text-white hover:text-gray-50 hover:bg-gray-900"
 									variant="secondary"
 								>
-									<a href="#projects">
+									<Link to="/mitmachen">
 										<GithubIcon className="w-4 h-4 mr-2" />
 										Projekte ansehen
-									</a>
+									</Link>
 								</Button>
 
 								<Button
