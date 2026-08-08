@@ -15,8 +15,8 @@ Contributions are welcome! Please follow these guidelines:
    ```
 3. Install dependencies and start the development server.
    ```bash
-   npm install
-   npm run dev
+   pnpm install
+   pnpm dev
     ```
 4. Make your changes and commit them with a descriptive message to a branch.
 5. Push your changes to your fork.
