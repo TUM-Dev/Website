@@ -1,6 +1,7 @@
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
-import { HeartHandshake, RefreshCw } from "lucide-react";
+import { HeartHandshake, Lightbulb, Mail, RefreshCw, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { RepoCard, type RepoProps } from "@/components/repo-card";
 import { Badge } from "@/components/ui/badge";
@@ -124,6 +125,56 @@ export default function HelpNeededPage() {
 							))}
 						</div>
 					)}
+				</div>
+			</section>
+
+			{/* New Ideas CTA Section */}
+			<section className="py-20 px-4 dark:bg-blue-900 bg-blue-600">
+				<div className="container mx-auto text-center max-w-4xl">
+					<Badge
+						className="mb-6 px-4 py-2 dark:bg-blue-800 bg-blue-700 text-white border-0"
+						variant="secondary"
+					>
+						<Lightbulb className="w-4 h-4 mr-2" />
+						Neue Ideen willkommen
+					</Badge>
+					<h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+						Eigene Projekt- oder Kooperationsidee?
+					</h2>
+					<p className="text-xl dark:text-blue-100 text-blue-100 mb-8 leading-relaxed">
+						Die Liste oben zeigt nur unsere bestehenden Projekte - wir
+						freuen uns aber genauso über komplett neue Ideen
+						und Kooperationsanfragen. Egal ob fertiges Konzept oder erste
+						Idee, schreib uns einfach. Unser Ziel ist es gemeinsam Open Source zu entwickeln.
+					</p>
+					<div className="flex flex-col sm:flex-row gap-4 justify-center">
+						<Button
+							asChild
+							className="bg-white dark:text-blue-800 text-blue-600 hover:bg-gray-100"
+							size="lg"
+							variant="secondary"
+						>
+							<Link to="/contact">
+								<Mail className="w-5 h-5 mr-2" />
+								Idee einreichen
+							</Link>
+						</Button>
+						<Button
+							asChild
+							className="border-white text-slate-900 dark:text-slate-50 hover:bg-white/10"
+							size="lg"
+							variant="outline"
+						>
+							<a
+								href="https://groups.google.com/u/0/a/tum.dev/g/announce/about"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<Users className="w-5 h-5 mr-2" />
+								Team beitreten
+							</a>
+						</Button>
+					</div>
 				</div>
 			</section>
 		</div>
