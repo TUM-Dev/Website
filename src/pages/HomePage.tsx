@@ -25,9 +25,19 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
+import {
+	Dialog,
+	DialogContent,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
+} from "@/components/ui/dialog";
+
+const PAST_EVENTS_PREVIEW_COUNT = 2;
+const PAST_EVENTS_OVERLAY_RANGE_MS = 365 * 24 * 60 * 60 * 1000;
 
 function eventsSection(isLoading: boolean, error: string | null, events: EventProps[]): React.ReactElement {
-	const today = new Date();
+	const now = Date.now();
 
 	// Conditional rendering for loading, error, and no events
 	if (isLoading) {
@@ -42,6 +52,18 @@ function eventsSection(isLoading: boolean, error: string | null, events: EventPr
 		return <div className="text-center py-20 dark:text-gray-300">No scheduled events found.</div>;
 	}
 
+	// Most recent past event first
+	const pastEvents = events
+		.filter((event) => event.endTimestamp < now)
+		.sort((a, b) => b.startTimestamp - a.startTimestamp);
+	const recentPastEvents = pastEvents.slice(0, PAST_EVENTS_PREVIEW_COUNT);
+	const pastYearEvents = pastEvents.filter(
+		(event) => event.startTimestamp >= now - PAST_EVENTS_OVERLAY_RANGE_MS,
+	);
+	const hasMorePastEvents = pastEvents.length > PAST_EVENTS_PREVIEW_COUNT;
+
+	const futureEvents = events.filter((event) => event.endTimestamp >= now);
+
 	return <>
 		{/* Past Events */}
 		<div className="space-y-4">
@@ -49,11 +71,28 @@ function eventsSection(isLoading: boolean, error: string | null, events: EventPr
 				<Users2 className="w-5 h-5 mr-2 dark:text-blue-400 text-blue-500" />
 				Vergangene Treffen
 			</h3>
-			{events
-				.filter((event) => event.endTimestamp < today.getTime())
-				.map((event) => (
-					<Event key={event.title + event.startTimestamp} {...event} />
-				))}
+			{recentPastEvents.map((event) => (
+				<Event key={event.title + event.startTimestamp} {...event} />
+			))}
+			{hasMorePastEvents && (
+				<Dialog>
+					<DialogTrigger asChild>
+						<Button className="w-full" variant="outline">
+							Weitere vergangene Events anzeigen
+						</Button>
+					</DialogTrigger>
+					<DialogContent className="max-h-[80vh] overflow-y-auto">
+						<DialogHeader>
+							<DialogTitle>Vergangene Events (letztes Jahr)</DialogTitle>
+						</DialogHeader>
+						<div className="space-y-4">
+							{pastYearEvents.map((event) => (
+								<Event key={event.title + event.startTimestamp} {...event} />
+							))}
+						</div>
+					</DialogContent>
+				</Dialog>
+			)}
 		</div>
 
 		{/* Future Events */}
@@ -62,11 +101,9 @@ function eventsSection(isLoading: boolean, error: string | null, events: EventPr
 				<CalendarIcon className="w-5 h-5 mr-2 text-blue-400" />
 				Kommende Events
 			</h3>
-			{events
-				.filter((event) => event.endTimestamp >= today.getTime())
-				.map((event) => (
-					<Event key={event.title + event.startTimestamp} {...event} />
-				))}
+			{futureEvents.map((event) => (
+				<Event key={event.title + event.startTimestamp} {...event} />
+			))}
 		</div>
 	</>
 }
