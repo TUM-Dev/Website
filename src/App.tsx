@@ -6,6 +6,7 @@ import AboutPage from '@/pages/AboutPage'
 import ContactPage from '@/pages/ContactPage'
 import DataProtectionPage from '@/pages/DataProtectionPage'
 import ImprintPage from '@/pages/ImprintPage'
+import HelpNeededPage from '@/pages/HelpNeededPage'
 import NotFoundPage from '@/pages/NotFoundPage'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/privacy" element={<DataProtectionPage />} />
         <Route path="/imprint" element={<ImprintPage />} />
+        <Route path="/mitmachen" element={<HelpNeededPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

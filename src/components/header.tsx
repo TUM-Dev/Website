@@ -33,6 +33,16 @@ export const Header = () => {
 								<Link to="/">Zurück</Link>
 							</Button>
 						)}
+						{location.pathname !== "/mitmachen" && (
+							<Button
+								asChild
+								className="dark:text-gray-300 text-gray-600 hover:underline underline-offset-2 hidden sm:flex"
+								size="sm"
+								variant="ghost"
+							>
+								<Link to="/mitmachen">Mitmachen</Link>
+							</Button>
+						)}
 						<ThemeToggle />
 						<Button
 							asChild

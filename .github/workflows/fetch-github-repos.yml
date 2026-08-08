@@ -1,0 +1,49 @@
+name: Fetch GitHub Repos (Node.js)
+
+on:
+  schedule:
+    # Run once a week on Monday at 06:00
+    - cron: '0 6 * * 1'
+  workflow_dispatch: # Allows for a manual run
+
+jobs:
+  fetch_and_dump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v5
+      # Step 2: Set up a Node.js environment
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: true
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22.x'
+          cache: pnpm
+
+      # Step 3: Install Node.js dependencies
+      - name: Install dependencies
+        run: pnpm install
+        working-directory: 'automation'
+
+      # Step 4: Run the Node.js script to fetch repos and save to a file
+      - name: Fetch and save repos
+        run: node get_repos.js
+        working-directory: 'automation'
+        env:
+          # The default token is enough to read public organization data
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 5: Commit the new JSON file back to the repository
+      - name: Commit and push changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add github_repos.json
+          git commit -m "chore(github-repos): Update repository stats from GitHub API" || echo "No changes to commit"
+          git push origin HEAD:github-data --force

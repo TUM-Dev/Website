@@ -2,6 +2,8 @@ import {
 	Calendar,
 	CalendarIcon,
 	Code,
+	Github,
+	HeartHandshake,
 	Lightbulb,
 	Mail,
 	MapPin,
@@ -576,6 +578,17 @@ export default function HomePage() {
 										<GithubIcon className="w-4 h-4 mr-2" />
 										Projekte ansehen
 									</a>
+								</Button>
+
+								<Button
+									asChild
+									className="dark:border-slate-500 dark:text-gray-200 dark:hover:bg-slate-700 border-gray-300 text-gray-700 hover:bg-gray-100"
+									variant="outline"
+								>
+									<Link to="/mitmachen">
+										<HeartHandshake className="w-4 h-4 mr-2" />
+										Hilfe gesucht
+									</Link>
 								</Button>
 							</div>
 						</div>
