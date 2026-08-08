@@ -1,8 +1,15 @@
 import { Mail } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Logo } from "./logos/logo";
 import { ThemeToggle } from "./theme-toggle";
+
+const navLinkClassName = (isActive: boolean) =>
+	cn(
+		"dark:text-gray-300 text-gray-600 hover:underline underline-offset-2",
+		isActive && "underline font-semibold dark:text-white text-gray-900",
+	);
 
 export const Header = () => {
 	const location = useLocation();
@@ -14,35 +21,30 @@ export const Header = () => {
 						<Logo height={50} />
 					</Link>
 					<div className="flex items-center space-x-3">
-						{location.pathname !== "/about" ? (
-							<Button
-								asChild
-								className="dark:text-gray-300 text-gray-600 hover:underline underline-offset-2"
-								size="sm"
-								variant="ghost"
-							>
-								<Link to="/about">Über uns</Link>
-							</Button>
-						) : (
-							<Button
-								asChild
-								className="dark:text-gray-300 text-gray-600  hover:underline underline-offset-2"
-								size="sm"
-								variant="ghost"
-							>
-								<Link to="/">Zurück</Link>
-							</Button>
-						)}
-						{location.pathname !== "/mitmachen" && (
-							<Button
-								asChild
-								className="dark:text-gray-300 text-gray-600 hover:underline underline-offset-2 hidden sm:flex"
-								size="sm"
-								variant="ghost"
-							>
-								<Link to="/mitmachen">Mitmachen</Link>
-							</Button>
-						)}
+						<Button
+							asChild
+							className={navLinkClassName(location.pathname === "/")}
+							size="sm"
+							variant="ghost"
+						>
+							<Link to="/">Der Verein</Link>
+						</Button>
+						<Button
+							asChild
+							className={navLinkClassName(location.pathname === "/about")}
+							size="sm"
+							variant="ghost"
+						>
+							<Link to="/about">Über uns</Link>
+						</Button>
+						<Button
+							asChild
+							className={cn(navLinkClassName(location.pathname === "/mitmachen"), "hidden sm:flex")}
+							size="sm"
+							variant="ghost"
+						>
+							<Link to="/mitmachen">Mitmachen</Link>
+						</Button>
 						<ThemeToggle />
 						<Button
 							asChild
