@@ -39,6 +39,14 @@ export const Header = () => {
 						</Button>
 						<Button
 							asChild
+							className={cn(navLinkClassName(location.pathname === "/apps"), "hidden sm:flex")}
+							size="sm"
+							variant="ghost"
+						>
+							<Link to="/apps">Campus App</Link>
+						</Button>
+						<Button
+							asChild
 							className={cn(navLinkClassName(location.pathname === "/mitmachen"), "hidden sm:flex")}
 							size="sm"
 							variant="ghost"
