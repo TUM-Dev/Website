@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-08-31T12:04:52.601Z",
+  "repos": [
+    {
+      "description": "TUMs lecture streaming service.",
+      "forks": 60,
+      "language": "Go",
+      "name": "gocast",
+      "nameWithOwner": "TUM-Dev/gocast",
+      "openIssues": 94,
+      "openPullRequests": 19,
+      "stars": 259,
+      "updatedAt": "2026-08-30T08:38:06Z",
+      "url": "https://github.com/TUM-Dev/gocast"
+    },
+    {
+      "description": "A website providing links, redirects and tools related to the Technical University Munich :dancer::books:",
+      "forks": 70,
+      "language": "PHP",
+      "name": "TUM.sexy",
+      "nameWithOwner": "TUM-Dev/TUM.sexy",
+      "openIssues": 0,
+      "openPullRequests": 0,
+      "stars": 116,
+      "updatedAt": "2026-08-13T20:44:41Z",
+      "url": "https://github.com/TUM-Dev/TUM.sexy"
+    },
+    {
+      "description": "Development of the cross-platform TUM Campus App with Flutter - for and from students at Technical University of Munich.",
+      "forks": 19,
+      "language": "Dart",
+      "name": "campus_flutter",
+      "nameWithOwner": "TUM-Dev/campus_flutter",
+      "openIssues": 15,
+      "openPullRequests": 2,
+      "stars": 77,
+      "updatedAt": "2026-08-14T10:08:02Z",
+      "url": "https://github.com/TUM-Dev/campus_flutter"
+    },
+    {
+      "description": "Navigating around TUM with excellence – A website and API to search for rooms, buildings and other places",
+      "forks": 18,
+      "language": "Rust",
+      "name": "NavigaTUM",
+      "nameWithOwner": "TUM-Dev/NavigaTUM",
+      "openIssues": 19,
+      "openPullRequests": 10,
+      "stars": 75,
+      "updatedAt": "2026-08-30T21:07:16Z",
+      "url": "https://github.com/TUM-Dev/NavigaTUM"
+    },
+    {
+      "description": "Proxy for the TUM iCal export to remove clutter",
+      "forks": 29,
+      "language": "Go",
+      "name": "CalendarProxy",
+      "nameWithOwner": "TUM-Dev/CalendarProxy",
+      "openIssues": 1,
+      "openPullRequests": 0,
+      "stars": 45,
+      "updatedAt": "2026-08-09T17:03:29Z",
+      "url": "https://github.com/TUM-Dev/CalendarProxy"
+    },
+    {
+      "description": "Microservice that generates subtitles for TUM-Live",
+      "forks": 0,
+      "language": "Go",
+      "name": "gocast-voice-service",
+      "nameWithOwner": "TUM-Dev/gocast-voice-service",
+      "openIssues": 3,
+      "openPullRequests": 3,
+      "stars": 19,
+      "updatedAt": "2026-07-08T12:43:19Z",
+      "url": "https://github.com/TUM-Dev/gocast-voice-service"
+    },
+    {
+      "description": "New backend written in go with gRPC as an API interface",
+      "forks": 7,
+      "language": "Go",
+      "name": "Campus-Backend",
+      "nameWithOwner": "TUM-Dev/Campus-Backend",
+      "openIssues": 5,
+      "openPullRequests": 18,
+      "stars": 18,
+      "updatedAt": "2026-07-31T23:06:43Z",
+      "url": "https://github.com/TUM-Dev/Campus-Backend"
+    },
+    {
+      "description": "A simple website allowing anonymous reports about security issues, harassment, illegal activities, safety concerns, whistleblowing and whatnot. In use at TUM.",
+      "forks": 2,
+      "language": "Go",
+      "name": "meldeplattform",
+      "nameWithOwner": "TUM-Dev/meldeplattform",
+      "openIssues": 3,
+      "openPullRequests": 5,
+      "stars": 6,
+      "updatedAt": "2026-06-07T11:44:40Z",
+      "url": "https://github.com/TUM-Dev/meldeplattform"
+    },
+    {
+      "description": "An open-source live-streaming stack for recording and streaming lectures",
+      "forks": 0,
+      "language": "Go",
+      "name": "LectureMix",
+      "nameWithOwner": "TUM-Dev/LectureMix",
+      "openIssues": 2,
+      "openPullRequests": 1,
+      "stars": 5,
+      "updatedAt": "2026-08-09T12:42:50Z",
+      "url": "https://github.com/TUM-Dev/LectureMix"
+    },
+    {
+      "description": "Nextjs static website for daily meals in some student places around Munich ",
+      "forks": 2,
+      "language": "TypeScript",
+      "name": "TUMenu",
+      "nameWithOwner": "TUM-Dev/TUMenu",
+      "openIssues": 0,
+      "openPullRequests": 5,
+      "stars": 5,
+      "updatedAt": "2026-08-08T14:32:13Z",
+      "url": "https://github.com/TUM-Dev/TUMenu"
+    },
+    {
+      "description": "Public website for Apps @ TUM",
+      "forks": 4,
+      "language": "TypeScript",
+      "name": "Website",
+      "nameWithOwner": "TUM-Dev/Website",
+      "openIssues": 1,
+      "openPullRequests": 0,
+      "stars": 4,
+      "updatedAt": "2026-08-25T19:12:38Z",
+      "url": "https://github.com/TUM-Dev/Website"
+    },
+    {
+      "description": "A Proxy server that allows uniform REST/JSON interfacing with CAMPUSOnline Webservices.",
+      "forks": 0,
+      "language": "Go",
+      "name": "CampusProxy",
+      "nameWithOwner": "TUM-Dev/CampusProxy",
+      "openIssues": 0,
+      "openPullRequests": 1,
+      "stars": 1,
+      "updatedAt": "2025-09-07T13:49:00Z",
+      "url": "https://github.com/TUM-Dev/CampusProxy"
+    },
+    {
+      "description": null,
+      "forks": 0,
+      "language": null,
+      "name": "EduFlow",
+      "nameWithOwner": "TUM-Dev/EduFlow",
+      "openIssues": 0,
+      "openPullRequests": 0,
+      "stars": 0,
+      "updatedAt": "2026-05-05T18:16:01Z",
+      "url": "https://github.com/TUM-Dev/EduFlow"
+    },
+    {
+      "description": "README of the TUM-Dev organization profile",
+      "forks": 0,
+      "language": null,
+      "name": ".github",
+      "nameWithOwner": "TUM-Dev/.github",
+      "openIssues": 0,
+      "openPullRequests": 0,
+      "stars": 0,
+      "updatedAt": "2025-05-03T15:04:42Z",
+      "url": "https://github.com/TUM-Dev/.github"
+    }
+  ]
+}
