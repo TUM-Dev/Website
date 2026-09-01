@@ -26,7 +26,7 @@ jobs:
         with:
           run_install: true # package manager version is in package.json
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
           cache: pnpm
